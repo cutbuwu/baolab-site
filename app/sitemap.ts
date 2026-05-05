@@ -1,48 +1,54 @@
 import { MetadataRoute } from "next";
+import { articles } from "./news/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const baseUrl = "https://baolab.au";
+
+  const staticPages: MetadataRoute.Sitemap = [
     {
-      url: "https://baolab.au",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://shop.baolab.au",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: "https://shop.baolab.au/collections/all",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://baolab.au/compatibility",
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: "https://baolab.au/products",
+      url: `${baseUrl}/products`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: "https://baolab.au/shipping",
+      url: `${baseUrl}/news`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
     {
-      url: "https://baolab.au/compatibility/contact",
+      url: `${baseUrl}/compatibility`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/compatibility/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
     },
   ];
+
+  const newsPages: MetadataRoute.Sitemap = articles.map((article) => ({
+    url: `${baseUrl}/news/${article.slug}`,
+    lastModified: new Date(article.date),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...newsPages];
 }
