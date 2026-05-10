@@ -558,11 +558,18 @@ PILLARS
   overflow: hidden;
   transition: 0.25s;
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  display: block;
 }
 
 .pillar-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(255,255,255,0.18);
+  border-color: rgba(255,107,53,0.35);
+}
+
+.pillar-card:hover h3 {
+  color: #ff6b35;
 }
 
 .pillar-card img {
@@ -760,12 +767,28 @@ RESPONSIVE
 }
 
 @media (max-width: 900px) {
+  .hero {
+    min-height: 600px;
+  }
+
   .hero h1 {
     font-size: 46px;
   }
 
   .hero p {
     font-size: 16px;
+  }
+
+  /* Stack hero buttons vertically on mobile */
+  .hero-content > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .hero-content .secondary-btn {
+    margin-left: 0 !important;
   }
 
   .vehicle-grid {
@@ -787,6 +810,18 @@ RESPONSIVE
 }
 
 @media (max-width: 640px) {
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
   .vehicle-image {
     height: 260px;
   }
