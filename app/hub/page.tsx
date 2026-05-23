@@ -38,59 +38,83 @@ const apps = [
 
 export default function HubPage() {
   return (
-    <main className="min-h-screen bg-black text-white">
-      {/* Hero */}
-      <section className="px-6 pt-32 pb-16 max-w-4xl mx-auto">
-        <p className="text-sm uppercase tracking-[0.3em] text-neutral-500 mb-4">
-          BaoLab Hub
-        </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Denza App Library
-        </h1>
-        <p className="text-lg text-neutral-400 max-w-2xl">
-          Free third-party apps for Denza vehicles. Unlock features that BYD
-          didn&apos;t include from the factory — sentry mode, dashcam recording,
-          wireless CarPlay for Chinese phones, and more.
-        </p>
-        <p className="text-sm text-neutral-600 mt-4">
-          Requires ADB access.{" "}
-          <Link
-            href="/products/adb-unlock-service"
-            className="underline text-neutral-400 hover:text-white transition"
-          >
-            Get it unlocked →
-          </Link>
-        </p>
+    <>
+      <section className="section container" style={{ paddingTop: 140 }}>
+        <div className="section-head">
+          <p style={{ letterSpacing: "0.3em", textTransform: "uppercase", fontSize: 12, color: "var(--muted2)", marginBottom: 8 }}>
+            BaoLab Hub
+          </p>
+          <h2 style={{ fontSize: 38, fontWeight: 700, lineHeight: 1.2 }}>
+            Denza App Library
+          </h2>
+          <p style={{ marginTop: 16, color: "var(--muted)", fontSize: 15, lineHeight: 1.7, maxWidth: 600 }}>
+            Free third-party apps for Denza vehicles. Unlock features that BYD
+            didn&apos;t include from the factory — sentry mode, dashcam recording,
+            wireless CarPlay for Chinese phones, and more.
+          </p>
+          <p style={{ marginTop: 12, color: "var(--muted2)", fontSize: 13 }}>
+            Requires ADB access.{" "}
+            <Link
+              href="/products/adb-unlock-service"
+              style={{ color: "var(--text)", textDecoration: "underline" }}
+            >
+              Get it unlocked →
+            </Link>
+          </p>
+        </div>
       </section>
 
-      {/* Apps Grid */}
-      <section className="px-6 pb-24 max-w-4xl mx-auto">
-        <div className="grid gap-6">
+      {/* Apps */}
+      <section className="section container" style={{ paddingTop: 0 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
           {apps.map((app) => (
             <div
               key={app.name}
-              className="border border-neutral-800 rounded-2xl p-6 md:p-8 hover:border-neutral-600 transition"
+              style={{
+                border: "1px solid var(--border-soft)",
+                borderRadius: 16,
+                padding: "28px 32px",
+                background: "var(--panel)",
+                transition: "border-color 0.25s",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.borderColor = "var(--border)";
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.borderColor = "var(--border-soft)";
+              }}
             >
-              <div className="flex items-start gap-4">
-                <span className="text-3xl">{app.icon}</span>
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h2 className="text-xl font-bold">{app.name}</h2>
-                    <span className="text-xs text-neutral-600 bg-neutral-900 px-2 py-0.5 rounded">
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 16 }}>
+                <span style={{ fontSize: 28 }}>{app.icon}</span>
+                <div style={{ flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+                    <h3 style={{ fontSize: 18, fontWeight: 600, color: "var(--text)" }}>
+                      {app.name}
+                    </h3>
+                    <span
+                      style={{
+                        fontSize: 11,
+                        color: "var(--muted2)",
+                        background: "rgba(255,255,255,0.04)",
+                        padding: "2px 8px",
+                        borderRadius: 4,
+                      }}
+                    >
                       v{app.version}
                     </span>
                   </div>
-                  <p className="text-neutral-400 text-sm mb-4">
+                  <p style={{ color: "var(--muted)", fontSize: 13, lineHeight: 1.65, marginBottom: 14 }}>
                     {app.description}
                   </p>
-                  <div className="flex flex-wrap gap-4 text-xs text-neutral-600 mb-4">
+                  <div style={{ display: "flex", gap: 16, fontSize: 11, color: "var(--muted2)", marginBottom: 16 }}>
                     <span>Size: {app.size}</span>
-                    <span>•</span>
+                    <span>·</span>
                     <span>Compatibility: {app.compatibility}</span>
                   </div>
                   <a
                     href={app.downloadUrl}
-                    className="inline-block bg-white text-black text-sm font-medium px-5 py-2 rounded-full hover:bg-neutral-200 transition"
+                    className="primary-btn"
+                    style={{ display: "inline-block", fontSize: 13, padding: "10px 22px" }}
                   >
                     Download APK ↓
                   </a>
@@ -102,33 +126,42 @@ export default function HubPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-6 pb-24 max-w-4xl mx-auto">
-        <div className="border border-neutral-800 rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold mb-3">
+      <section className="section container" style={{ paddingTop: 0 }}>
+        <div
+          style={{
+            border: "1px solid var(--border-soft)",
+            borderRadius: 16,
+            padding: "40px 32px",
+            textAlign: "center",
+            background: "var(--panel)",
+          }}
+        >
+          <h2 style={{ fontSize: 22, fontWeight: 600, marginBottom: 10 }}>
             Don&apos;t have ADB access yet?
           </h2>
-          <p className="text-neutral-400 mb-6 max-w-lg mx-auto">
+          <p style={{ color: "var(--muted)", fontSize: 14, lineHeight: 1.65, maxWidth: 480, margin: "0 auto 24px" }}>
             You&apos;ll need factory-level ADB access to install these apps. We
             offer a remote unlock service that takes 10 minutes.
           </p>
           <Link
             href="/products/adb-unlock-service"
-            className="inline-block bg-white text-black text-sm font-medium px-6 py-3 rounded-full hover:bg-neutral-200 transition"
+            className="primary-btn"
+            style={{ display: "inline-block" }}
           >
             Get ADB Unlock Service →
           </Link>
         </div>
       </section>
 
-      {/* Footer note */}
-      <section className="px-6 pb-16 max-w-4xl mx-auto">
-        <p className="text-xs text-neutral-700">
+      {/* Disclaimer */}
+      <section className="container" style={{ paddingBottom: 60 }}>
+        <p style={{ fontSize: 11, color: "var(--muted2)", lineHeight: 1.6 }}>
           All apps are provided as-is. Use at your own risk. BaoLab is not
           responsible for any issues caused by third-party software. Apps are
           compatible with Denza B5, B8, D9, Z9 GT, N7 and select BYD models
           with ADB access enabled.
         </p>
       </section>
-    </main>
+    </>
   );
 }
