@@ -572,7 +572,7 @@ export const articles: Article[] = [
 
   {
     slug: "denza-b8-sentry-mode",
-    image: "/b8-sentry-hero.jpg",
+    image: "/sentry_demo.jpg",
     title: "Sentry Mode & Sideloaded Apps on the Denza B5/B8 — What's Possible",
     date: "2026-05-09",
     category: "Technology",
@@ -615,6 +615,8 @@ export const articles: Article[] = [
 
 <h2>Want This on Your Denza?</h2>
 <p>We offer a professional installation service for ADB access and app sideloading on the Denza B5 and B8. <a href="/products/adb-unlock-service">Check out the product page</a> for pricing and availability.</p>
+
+<p><em>Watch our sentry mode demo: <a href="https://youtu.be/FeLjqGn7qvY" target="_blank">YouTube — Denza B8 Sentry Mode</a></em></p>
 `,
   },
 
