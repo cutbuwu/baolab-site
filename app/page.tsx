@@ -223,9 +223,9 @@ export default function Home() {
               </p>
             </a>
 
-            <a href="/hub" className="pillar-card">
-              <img src="/sentry_demo.jpg" alt="Denza Hub" />
-              <h3>Denza Hub</h3>
+            <a href="/lab" className="pillar-card">
+              <img src="/sentry_demo.jpg" alt="Denza Lab" />
+              <h3>Denza Lab</h3>
               <p>
                 Free apps for your Denza — sentry mode, dashcam, wireless
                 CarPlay for Chinese phones, and more.

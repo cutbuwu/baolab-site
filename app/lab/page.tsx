@@ -36,13 +36,13 @@ const apps = [
   },
 ];
 
-export default function HubPage() {
+export default function LabPage() {
   return (
     <>
       <section className="section container" style={{ paddingTop: 140 }}>
         <div className="section-head">
           <p style={{ letterSpacing: "0.3em", textTransform: "uppercase", fontSize: 12, color: "var(--muted2)", marginBottom: 8 }}>
-            BaoLab Hub
+            BaoLab Lab
           </p>
           <h2 style={{ fontSize: 38, fontWeight: 700, lineHeight: 1.2 }}>
             Denza App Library
