@@ -222,6 +222,23 @@ export default function Home() {
                 internal V2L.
               </p>
             </a>
+
+            <a href="/hub" className="pillar-card">
+              <img src="/sentry_demo.jpg" alt="Denza Hub" />
+              <h3>Denza Hub</h3>
+              <p>
+                Free apps for your Denza — sentry mode, dashcam, wireless
+                CarPlay for Chinese phones, and more.
+              </p>
+            </a>
+
+            <a href="/news" className="pillar-card">
+              <img src="/images/premium.jpg" alt="News" />
+              <h3>News</h3>
+              <p>
+                Latest Denza updates, tech explainers, and BaoLab guides.
+              </p>
+            </a>
           </div>
         </section>
 
