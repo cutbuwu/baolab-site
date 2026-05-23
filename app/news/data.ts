@@ -581,7 +581,7 @@ export const articles: Article[] = [
       { slug: "denza-b5-b8-launch", title: "Denza B5 & B8: The Brand Arrives in Australia" },
     ],
     content: `
-<p>The Denza B5 and B8's infotainment system runs on Android. That's no secret — the 15.6-inch screen, the app drawer, the settings menu, it's all Android under the hood. What most people don't know is that you can <strong>sideload apps</strong> onto it, opening up a whole world of functionality that BYD didn't include from the factory.</p>
+<p>The Denza B5 and B8's infotainment system runs on Android. That's no secret — the 17.3-inch screen, the app drawer, the settings menu, it's all Android under the hood. What most people don't know is that you can <strong>sideload apps</strong> onto it, opening up a whole world of functionality that BYD didn't include from the factory.</p>
 
 <h2>What is Sideloading?</h2>
 <p>Sideloading means installing apps from outside the official app store — basically loading APK files directly onto the system. On a phone, this is common. On a car's infotainment system, it's a bit more involved, but the Denza's Android base makes it possible.</p>
@@ -595,10 +595,10 @@ export const articles: Article[] = [
 
 <h3>Quad-View Dashcam</h3>
 <p>Neither the B5 nor the B8 comes with a built-in dashcam from the factory. Most owners end up spending hundreds on an aftermarket unit with ugly cables dangling across the windshield. But the Denza already has cameras everywhere — front, left, right, and rear.</p>
-<p>Our quad-view dashcam app uses the car's 360° camera system to record while driving, with a clean overlay showing <strong>timestamp, speed, and brake/accelerator pedal position</strong> as watermarks. You get four simultaneous camera angles — front, left, right, and rear — all viewable on the 15.6-inch screen. No aftermarket hardware, no cables, no fuss.</p>
+<p>Our quad-view dashcam app uses the car's 360° camera system to record while driving, with a clean overlay showing <strong>timestamp, speed, and brake/accelerator pedal position</strong> as watermarks. You get four simultaneous camera angles — front, left, right, and rear — all viewable on the 17.3-inch screen. No aftermarket hardware, no cables, no fuss.</p>
 
 <h3>Entertainment & Connectivity</h3>
-<p>We also installed a few entertainment and connectivity apps. Video streaming apps like Douyin work while the car is in motion (for passengers, of course), and the large screen makes them surprisingly usable — especially with the B8's 6-seat layout where rear passengers can comfortably watch while parked or charging.</p>
+<p>We also installed a few entertainment and connectivity apps. Video streaming apps like TikTok work while the car is in motion (for passengers, of course), and the large screen makes them surprisingly usable — especially with the B8's 6-seat layout where rear passengers can comfortably watch while parked or charging.</p>
 <p>One of the best additions is <strong>Baidu CarLink</strong> — the "CarPlay equivalent" for Chinese phones. If you're using an Oppo, Vivo, Xiaomi, OnePlus, or any other Chinese-brand phone, Baidu CarLink connects wirelessly the moment you start the car, just like wireless Apple CarPlay. No cables, no pairing menus, it just works.</p>
 
 <h2>How It Works</h2>
@@ -608,7 +608,7 @@ export const articles: Article[] = [
 <li><strong>Wireless:</strong> Enable wireless debugging and install apps remotely from a PC, laptop, or even an Android phone using a wireless ADB assistant app — no cables needed</li>
 </ul>
 
-<p><em>Note: Factory access should only be performed by qualified technicians. Incorrect system changes could affect your vehicle's warranty or functionality.</em></p>
+<p><em>Note: Factory access should only be performed by qualified technicians.</em></p>
 
 <h2>Does It Affect Warranty?</h2>
 <p>That depends on your dealer. The sideloaded apps run on the infotainment system, which is separate from the vehicle's core driving systems. In most cases, a dealer reset would restore the system to factory state. But if you're concerned, check with your dealer before making any changes.</p>
