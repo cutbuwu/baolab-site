@@ -570,6 +570,49 @@ export const articles: Article[] = [
 `,
   },
 
+  {
+    slug: "denza-b8-sentry-mode",
+    image: "/b8-sentry-hero.jpg",
+    title: "Sentry Mode & Sideloaded Apps on the Denza B8 — What's Possible",
+    date: "2026-05-09",
+    category: "Technology",
+    excerpt: "The Denza B8 runs on Android, which means you can sideload apps. We enabled ADB access and installed sentry mode, dashcam viewer, and more. Here's what's possible.",
+    related: [
+      { slug: "denza-b8-led-grille-lights", title: "Denza B8 LED Grille Lights — Installation Guide" },
+      { slug: "denza-b5-b8-launch", title: "Denza B5 & B8: The Brand Arrives in Australia" },
+    ],
+    content: `
+<p>The Denza B8's infotainment system runs on Android. That's no secret — the 15.6-inch screen, the app drawer, the settings menu, it's all Android under the hood. What most people don't know is that you can <strong>sideload apps</strong> onto it, opening up a whole world of functionality that BYD didn't include from the factory.</p>
+
+<h2>What is Sideloading?</h2>
+<p>Sideloading means installing apps from outside the official app store — basically loading APK files directly onto the system. On a phone, this is common. On a car's infotainment system, it's a bit more involved, but the B8's Android base makes it possible.</p>
+
+<h2>What We Installed</h2>
+<p>After enabling ADB (Android Debug Bridge) access on our B8, we sideloaded several apps:</p>
+
+<h3>Sentry Mode</h3>
+<p>The B8 doesn't come with a built-in sentry mode like Tesla. But with the right app, you can use the car's existing cameras as a surveillance system. When parked, the cameras detect motion around the vehicle and start recording. If someone gets too close, you get a notification on your phone.</p>
+<p>This is probably the most useful sideloaded app — in a busy carpark, it's peace of mind that the B8 is watching.</p>
+
+<h3>Dashcam Viewer</h3>
+<p>The B8 has cameras everywhere, but the stock interface doesn't let you easily review footage. A sideloaded dashcam viewer app lets you scrub through recordings, save clips, and export them — all from the 15.6-inch screen.</p>
+
+<h3>Other Apps</h3>
+<p>We also tested a few entertainment apps for when the car is parked — video streaming, music apps, and a file manager. The large screen makes them surprisingly usable, especially with the B8's 6-seat layout where passengers can comfortably watch while charging.</p>
+
+<h2>How It Works</h2>
+<p>The process requires <strong>factory-level access</strong> to the B8's system — this isn't something you can do through the normal settings menu. Once ADB is enabled, you connect an Android phone via USB and use standard Android tools to install APKs.</p>
+
+<p><em>Note: Factory access should only be performed by qualified technicians. Incorrect system changes could affect your vehicle's warranty or functionality.</em></p>
+
+<h2>Does It Affect Warranty?</h2>
+<p>That depends on your dealer. The sideloaded apps run on the infotainment system, which is separate from the vehicle's core driving systems. In most cases, a dealer reset would restore the system to factory state. But if you're concerned, check with your dealer before making any changes.</p>
+
+<h2>Want This on Your B8?</h2>
+<p>We offer a professional installation service for ADB access and app sideloading on the Denza B5 and B8. <a href="/contact">Contact us</a> for pricing and availability.</p>
+`,
+  },
+
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
