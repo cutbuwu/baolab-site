@@ -83,13 +83,13 @@ export default function Home() {
     },
     {
       key: "b8",   note: "Full-Size Adventure SUV",
-      image: "/images/vehicles/B8.png",
+      image: "/images/vehicles/b8.png",
       logo:  "/images/vehicle-logos/b8.png",
       shop:  "https://shop.baolab.au/collections/b8",
     },
     {
       key: "d9",   note: "Luxury Electric MPV",
-      image: "/images/vehicles/D9.png",
+      image: "/images/vehicles/d9.png",
       logo:  "/images/vehicle-logos/d9.png",
       shop:  "https://shop.baolab.au/collections/d9",
     },
