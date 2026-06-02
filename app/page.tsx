@@ -1,248 +1,343 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-export default function Home() {
-  const vehicles = useMemo(
-    () => [
-      {
-        key: "b5",
-        note: "Premium Off-Road SUV",
-        image: "/images/vehicles/b5.png",
-        logo: "/images/vehicle-logos/b5.png",
-        shop: "https://shop.baolab.au/collections/b5",
-      },
-      {
-        key: "b8",
-        note: "Full-Size Adventure SUV",
-        image: "/images/vehicles/b8.png",
-        logo: "/images/vehicle-logos/b8.png",
-        shop: "https://shop.baolab.au/collections/b8",
-      },
-      {
-        key: "d9",
-        note: "Luxury Electric MPV",
-        image: "/images/vehicles/d9.png",
-        logo: "/images/vehicle-logos/d9.png",
-        shop: "https://shop.baolab.au/collections/d9",
-      },
-      {
-        key: "z9gt",
-        note: "Performance Grand Tourer",
-        image: "/images/vehicles/z9gt.png",
-        logo: "/images/vehicle-logos/z9gt.png",
-        shop: "https://shop.baolab.au/collections/z9gt",
-      },
-      {
-        key: "n7",
-        note: "Premium Electric SUV",
-        image: "/images/vehicles/n7.png",
-        logo: "/images/vehicle-logos/n7.png",
-        shop: "https://shop.baolab.au/collections/n7",
-      },
-    ],
-    []
+/* ─────────────────────────────────────────────
+   MAGNETIC BUTTON
+   Subtle cursor-following pull on hover
+───────────────────────────────────────────── */
+function MagBtn({
+  children, href, className, onClick, style,
+}: {
+  children: React.ReactNode;
+  href?: string;
+  className?: string;
+  onClick?: () => void;
+  style?: React.CSSProperties;
+}) {
+  const ref = useRef<HTMLAnchorElement>(null);
+
+  const onMove = (e: React.MouseEvent) => {
+    const el = ref.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left - r.width  / 2) * 0.28;
+    const y = (e.clientY - r.top  - r.height / 2) * 0.28;
+    el.style.transform = `translate(${x}px,${y}px)`;
+  };
+
+  const onLeave = () => {
+    if (ref.current) ref.current.style.transform = "";
+  };
+
+  return (
+    <a
+      ref={ref}
+      href={href}
+      className={className}
+      style={style}
+      onClick={onClick}
+      onMouseMove={onMove}
+      onMouseLeave={onLeave}
+    >
+      {children}
+    </a>
   );
+}
+
+/* ─────────────────────────────────────────────
+   MARQUEE STRIP
+───────────────────────────────────────────── */
+const MARQUEE_ITEMS = [
+  "B5", "B8", "D9", "Z9 GT", "N7",
+  "OEM-FIT", "AUSTRALIA", "BAOLAB",
+  "PREMIUM EV", "OVERLAND READY", "FREE SHIPPING",
+];
+
+function MarqueeStrip() {
+  const doubled = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
+  return (
+    <div className="marquee-wrap" aria-hidden="true">
+      <div className="marquee-track">
+        {doubled.map((item, i) => (
+          <span key={i} className="marquee-item">
+            <span className="marquee-sep">·</span>
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   MAIN PAGE
+───────────────────────────────────────────── */
+export default function Home() {
+  const vehicles = useMemo(() => [
+    {
+      key: "b5",   note: "Premium Off-Road SUV",
+      image: "/images/vehicles/b5.png",
+      logo:  "/images/vehicle-logos/b5.png",
+      shop:  "https://shop.baolab.au/collections/b5",
+    },
+    {
+      key: "b8",   note: "Full-Size Adventure SUV",
+      image: "/images/vehicles/B8.png",
+      logo:  "/images/vehicle-logos/b8.png",
+      shop:  "https://shop.baolab.au/collections/b8",
+    },
+    {
+      key: "d9",   note: "Luxury Electric MPV",
+      image: "/images/vehicles/D9.png",
+      logo:  "/images/vehicle-logos/d9.png",
+      shop:  "https://shop.baolab.au/collections/d9",
+    },
+    {
+      key: "z9gt", note: "Performance Grand Tourer",
+      image: "/images/vehicles/z9gt.png",
+      logo:  "/images/vehicle-logos/z9gt.png",
+      shop:  "https://shop.baolab.au/collections/z9gt",
+    },
+    {
+      key: "n7",   note: "Premium Electric SUV",
+      image: "/images/vehicles/n7.png",
+      logo:  "/images/vehicle-logos/n7.png",
+      shop:  "https://shop.baolab.au/collections/n7",
+    },
+  ], []);
 
   const [selected, setSelected] = useState("b5");
-  const selectedVehicle = vehicles.find((v) => v.key === selected);
+  const selectedVehicle = vehicles.find(v => v.key === selected);
   const [scrollY, setScrollY] = useState(0);
 
+  /* ── Parallax ── */
   useEffect(() => {
     let ticking = false;
-
-    const handleScroll = () => {
-      const currentY = window.scrollY;
-
+    const onScroll = () => {
       if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setScrollY(currentY);
+        requestAnimationFrame(() => {
+          setScrollY(window.scrollY);
           ticking = false;
         });
-
         ticking = true;
       }
     };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const heroImageTransform = `translateY(${scrollY * 0.24}px) scale(${1 + Math.min(scrollY * 0.00012, 0.1)})`;
-  const heroContentTransform = `translateY(${scrollY * -0.12}px)`;
-  const heroContentOpacity = Math.max(1 - scrollY / 400, 0.1);
-  const heroOverlayOpacity = Math.min(0.55 + scrollY / 1400, 0.78);
+  /* ── Scroll reveal (IntersectionObserver) ── */
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in-view");
+            obs.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+    );
+    document.querySelectorAll(".reveal, .v-reveal").forEach(el => obs.observe(el));
+    return () => obs.disconnect();
+  }, []);
+
+  /* ── Derived hero values ── */
+  const heroImgTransform    = `translateY(${scrollY * 0.22}px) scale(${1 + Math.min(scrollY * 0.0001, 0.1)})`;
+  const heroContentTransform = `translateY(${scrollY * -0.10}px)`;
+  const heroContentOpacity  = Math.max(1 - scrollY / 460, 0);
+  const heroOverlayOpacity  = Math.min(0.50 + scrollY / 1100, 0.82);
+
+  /* ── Pillar data ── */
+  const pillars = [
+    { href: "https://shop.baolab.au",                                    img: "/images/premium.jpg",  title: "Premium Accessories", desc: "High-quality upgrades that improve daily comfort and interior finish." },
+    { href: "https://shop.baolab.au/collections/travel-and-camping",    img: "/images/camping.jpg",  title: "Travel & Camping",     desc: "Roof platforms, storage solutions and gear built for road trips and outdoor use." },
+    { href: "https://shop.baolab.au/collections/retrofits",             img: "/images/retrofit.jpg", title: "Retrofits",            desc: "Bring back selected China-spec features such as dashcams and internal V2L." },
+    { href: "/lab",                                                       img: "/sentry_demo.jpg",     title: "Lab",                  desc: "Free apps for your Denza — sentry mode, dashcam, wireless CarPlay and more." },
+    { href: "/news",                                                      img: "/images/premium.jpg",  title: "News",                 desc: "Latest Denza updates, tech explainers, and BAOLAB guides." },
+  ];
 
   return (
     <>
-      <div>
+      {/* ═══════════════════════════════════════
+          HERO
+      ═══════════════════════════════════════ */}
+      <section className="hero">
+        {/* Background */}
+        <div className="hero-bg" style={{ transform: heroImgTransform }}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero.jpg" alt="Denza vehicle" />
+          <div className="hero-overlay" style={{ opacity: heroOverlayOpacity }} />
+          <div className="hero-orb hero-orb-a" />
+          <div className="hero-orb hero-orb-b" />
+        </div>
 
-        {/* HERO */}
-        <section className="hero">
-          <div
-            className="hero-image"
-            style={{ transform: heroImageTransform }}
-          >
-            <img src="/images/hero.jpg" alt="Denza vehicle" />
-            <div
-              className="hero-overlay"
-              style={{ opacity: heroOverlayOpacity }}
-            ></div>
+        {/* Content */}
+        <div
+          className="hero-content container"
+          style={{ transform: heroContentTransform, opacity: heroContentOpacity }}
+        >
+          <span className="eyebrow hero-eyebrow">BAOLAB — AUSTRALIA</span>
+
+          <h1 className="hero-h1">
+            <span className="line-clip">
+              <span className="line-inner line-a">Premium Accessories</span>
+            </span>
+            <span className="line-clip">
+              <span className="line-inner line-b">for Denza Owners</span>
+            </span>
+          </h1>
+
+          <p className="hero-sub">
+            From daily essentials to overland builds, BAOLAB curates OEM-fit
+            accessories engineered for modern electric mobility.
+          </p>
+
+          <div className="hero-btns">
+            <MagBtn className="btn-primary" href="#vehicles">
+              Explore Accessories
+            </MagBtn>
+            <MagBtn className="btn-ghost" href="https://shop.baolab.au/pages/compatibility">
+              View Compatibility
+            </MagBtn>
           </div>
+        </div>
 
-          <div
-            className="hero-content container"
-            style={{
-              transform: heroContentTransform,
-              opacity: heroContentOpacity,
-            }}
-          >
-            <h1>
-              Premium Accessories <br /> for Denza Owners
-            </h1>
+        {/* Scroll indicator */}
+        <div className="scroll-hint" aria-hidden="true">
+          <span>SCROLL</span>
+          <div className="scroll-line" />
+        </div>
+      </section>
 
-            <p>
-              From daily essentials to overland builds, Baolab curates OEM-fit
-              accessories engineered for modern electric mobility.
-            </p>
+      {/* ═══════════════════════════════════════
+          MARQUEE
+      ═══════════════════════════════════════ */}
+      <MarqueeStrip />
 
-            <div style={{ marginTop: 40 }}>
-              <a className="primary-btn" href="#vehicles">
-                Explore Accessories
-              </a>
-
-              <a
-                className="secondary-btn"
-                href="#pillars"
-                style={{ marginLeft: 20 }}
-              >
-                View Compatibility
-              </a>
-            </div>
-          </div>
-        </section>
-
-        {/* VEHICLE PICKER */}
-        <section id="vehicles" className="section container">
-          <div className="section-head">
+      {/* ═══════════════════════════════════════
+          VEHICLE CONFIGURATOR
+      ═══════════════════════════════════════ */}
+      <section id="vehicles" className="section">
+        <div className="container">
+          <div className="s-head reveal">
+            <p className="eyebrow">CONFIGURE</p>
             <h2>Select your vehicle</h2>
-            <p>
-              {selectedVehicle?.note ||
-                "Browse accessories curated for each Denza model."}
+            <p className="s-sub">
+              {selectedVehicle?.note ?? "Browse accessories curated for each Denza model."}
             </p>
           </div>
 
           <div className="vehicle-grid">
-  {vehicles.map((v, index) => {
-    const active = v.key === selected;
-
-    return (
-      <button
-        key={v.key}
-        className={`vehicle-card vehicle-reveal ${active ? "active" : ""}`}
-        style={{ animationDelay: `${index * 120}ms` }}
-        onClick={() => {
-          setSelected(v.key);
-          window.location.href = v.shop;
-        }}
-        onMouseMove={(e) => {
-          const card = e.currentTarget;
-          const rect = card.getBoundingClientRect();
-          const x = e.clientX - rect.left;
-          const y = e.clientY - rect.top;
-
-          const centerX = rect.width / 2;
-          const centerY = rect.height / 2;
-
-          const moveX = (x - centerX) / 40;
-          const moveY = (y - centerY) / 40;
-
-          card.style.setProperty("--mx", `${moveX}px`);
-          card.style.setProperty("--my", `${moveY}px`);
-        }}
-        onMouseLeave={(e) => {
-          const card = e.currentTarget;
-          card.style.setProperty("--mx", `0px`);
-          card.style.setProperty("--my", `0px`);
-        }}
-        type="button"
-      >
-        <div className="vehicle-image">
-          <div className="vehicle-logo">
-            <img src={v.logo} alt={v.key} />
+            {vehicles.map((v, i) => {
+              const active = v.key === selected;
+              return (
+                <button
+                  key={v.key}
+                  className={`vehicle-card vehicle-reveal${active ? " active" : ""}`}
+                  style={{ animationDelay: `${i * 120}ms` }}
+                  onClick={() => {
+                    setSelected(v.key);
+                    window.location.href = v.shop;
+                  }}
+                  onMouseMove={e => {
+                    const card = e.currentTarget;
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    card.style.setProperty("--mx", `${(x - rect.width  / 2) / 40}px`);
+                    card.style.setProperty("--my", `${(y - rect.height / 2) / 40}px`);
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.setProperty("--mx", "0px");
+                    e.currentTarget.style.setProperty("--my", "0px");
+                  }}
+                  type="button"
+                >
+                  <div className="vehicle-image">
+                    <div className="vehicle-logo">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={v.logo} alt={v.key} />
+                    </div>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img className="vehicle-car" src={v.image} alt={v.key} />
+                    <div className="vehicle-desc">{v.note}</div>
+                  </div>
+                </button>
+              );
+            })}
           </div>
 
-          <img className="vehicle-car" src={v.image} alt={v.key} />
-
-          <div className="vehicle-desc">{v.note}</div>
+          <div style={{ marginTop: 28 }} className="reveal">
+            <MagBtn className="btn-ghost" href="https://shop.baolab.au">
+              Browse all accessories →
+            </MagBtn>
+          </div>
         </div>
-      </button>
-    );
-  })}
-</div>
+      </section>
 
-          <div style={{ marginTop: 22 }}>
-            <a
-              className="secondary-btn"
-              href="https://shop.baolab.au"
+      {/* ═══════════════════════════════════════
+          STATS BAND
+      ═══════════════════════════════════════ */}
+      <div className="stats-band">
+        <div className="container stats-inner">
+          {[
+            { num: "5",    label: "Denza Models Supported" },
+            { num: "OEM",  label: "Factory-Fit Precision"  },
+            { num: "AU",   label: "Australia-Wide Shipping" },
+          ].map(({ num, label }, i) => (
+            <div
+              key={label}
+              className="stat-item reveal"
+              style={{ "--reveal-delay": `${i * 0.1}s` } as React.CSSProperties}
             >
-              Browse compatible accessories
-            </a>
-          </div>
-        </section>
-
-        {/* PILLARS */}
-        <section id="pillars" className="section container">
-          <div className="pillar-grid">
-            <a href="https://shop.baolab.au" className="pillar-card">
-              <img src="/images/premium.jpg" alt="Premium accessories" />
-              <h3>Premium Accessories</h3>
-              <p>
-                High-quality upgrades that improve daily comfort and interior
-                finish.
-              </p>
-            </a>
-
-            <a href="https://shop.baolab.au/collections/travel-and-camping" className="pillar-card">
-              <img src="/images/camping.jpg" alt="Travel and camping" />
-              <h3>Travel &amp; Camping</h3>
-              <p>
-                Roof platforms, storage solutions and gear built for road trips
-                and outdoor use.
-              </p>
-            </a>
-
-            <a href="https://shop.baolab.au/collections/retrofits" className="pillar-card">
-              <img src="/images/retrofit.jpg" alt="Advanced retrofits" />
-              <h3>Retrofits</h3>
-              <p>
-                Bring back selected China-spec features such as dashcams and
-                internal V2L.
-              </p>
-            </a>
-
-            <a href="/lab" className="pillar-card">
-              <img src="/sentry_demo.jpg" alt="Lab" />
-              <h3>Lab</h3>
-              <p>
-                Free apps for your Denza — sentry mode, dashcam, wireless
-                CarPlay for Chinese phones, and more.
-              </p>
-            </a>
-
-            <a href="/news" className="pillar-card">
-              <img src="/images/premium.jpg" alt="News" />
-              <h3>News</h3>
-              <p>
-                Latest Denza updates, tech explainers, and BaoLab guides.
-              </p>
-            </a>
-          </div>
-        </section>
-
+              <span className="stat-num">{num}</span>
+              <span className="stat-label">{label}</span>
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* ═══════════════════════════════════════
+          PILLARS — BAOLAB ECOSYSTEM
+      ═══════════════════════════════════════ */}
+      <section id="pillars" className="section">
+        <div className="container">
+          <div className="s-head reveal">
+            <p className="eyebrow">EXPLORE</p>
+            <h2>The BAOLAB ecosystem</h2>
+            <p className="s-sub">
+              Curated for Denza owners — from daily protection to overland
+              builds and software unlocks.
+            </p>
+          </div>
+
+          <div className="pillar-grid">
+            {pillars.map((p, i) => (
+              <a
+                key={p.title}
+                href={p.href}
+                className="pillar-card reveal"
+                style={{ "--reveal-delay": `${i * 0.08}s` } as React.CSSProperties}
+              >
+                <div className="pillar-img-wrap">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={p.img} alt={p.title} />
+                  <div className="pillar-img-overlay" />
+                </div>
+                <div className="pillar-body">
+                  <h3>{p.title}</h3>
+                  <p>{p.desc}</p>
+                  <span className="pillar-arrow">→</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }

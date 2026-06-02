@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Header from "./Header";
+import Cursor from "./components/Cursor";
 
 export const metadata: Metadata = {
   title: "BaoLab — Premium Denza Accessories Australia",
@@ -52,6 +53,10 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+
+        {/* Custom cursor (pointer devices only) */}
+        <Cursor />
+
         <Header />
 
         <main>{children}</main>
@@ -59,7 +64,8 @@ export default function RootLayout({
         <footer className="footer">
           <div className="container footer-inner">
             <div className="footer-brand">
-              <div className="logo">BAOLAB</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/baolab-logo.png" alt="BAOLAB" className="footer-logo-img" />
               <p className="footer-desc">
                 Premium accessories designed for Denza owners across Australia.
               </p>
