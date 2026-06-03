@@ -659,7 +659,7 @@ body::after {
 
 /* ── HEADER ─────────────────────────────────── */
 .header {
-  position: sticky; top: 0; z-index: 9000;
+  position: relative; z-index: 9000;
   height: 58px; display: flex; align-items: center;
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
