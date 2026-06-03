@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Header from "./Header";
-import Cursor from "./components/Cursor";
+
 
 export const metadata: Metadata = {
   title: "BaoLab — Premium Denza Accessories Australia",
@@ -53,9 +53,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-
-        {/* Custom cursor (pointer devices only) */}
-        <Cursor />
 
         <Header />
 
