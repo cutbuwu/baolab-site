@@ -168,8 +168,16 @@ export default function Home() {
       <section className="hero">
         {/* Background */}
         <div className="hero-bg" style={{ transform: heroImgTransform }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/hero.jpg" alt="Denza vehicle" />
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="hero-video"
+            poster="/images/hero.jpg"
+          >
+            <source src="/hero-video.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay" style={{ opacity: heroOverlayOpacity }} />
           <div className="hero-orb hero-orb-a" />
           <div className="hero-orb hero-orb-b" />
