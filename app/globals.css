@@ -337,29 +337,64 @@ body::after {
   letter-spacing: 0.01em;
   font-family: inherit;
   text-decoration: none;
-  border: none;
+  position: relative;
+  overflow: hidden;
   transition: transform var(--tb), box-shadow var(--tb), background var(--tf), border-color var(--tb);
 }
 
+/* liquid glass specular highlight */
+.btn-primary::before,
+.btn-ghost::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 8%; right: 8%;
+  height: 48%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.28), transparent);
+  border-radius: var(--pill) var(--pill) 0 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .btn-primary {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.82);
   color: #050505;
   font-weight: 650;
+  border: 1px solid rgba(255,255,255,0.55);
+  backdrop-filter: blur(20px) saturate(1.6);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  box-shadow:
+    0 1.5px 0 rgba(255,255,255,0.90) inset,
+    0 -1px 0 rgba(0,0,0,0.07) inset,
+    0 8px 28px rgba(0,0,0,0.22),
+    0 2px 8px rgba(0,0,0,0.12);
 }
 .btn-primary:hover {
-  background: #eeeeee;
-  box-shadow: 0 14px 36px rgba(0,0,0,0.38);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow:
+    0 1.5px 0 rgba(255,255,255,1) inset,
+    0 -1px 0 rgba(0,0,0,0.07) inset,
+    0 14px 40px rgba(0,0,0,0.30),
+    0 4px 12px rgba(0,0,0,0.18);
 }
 
 .btn-ghost {
-  border: 1px solid var(--b);
+  background: rgba(255, 255, 255, 0.08);
   color: var(--text);
-  background: rgba(255,255,255,0.04);
-  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.20);
+  backdrop-filter: blur(20px) saturate(1.8) brightness(1.06);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8) brightness(1.06);
+  box-shadow:
+    0 1.5px 0 rgba(255,255,255,0.22) inset,
+    0 -1px 0 rgba(0,0,0,0.10) inset,
+    0 4px 16px rgba(0,0,0,0.18);
 }
 .btn-ghost:hover {
-  border-color: var(--bh);
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255,255,255,0.32);
+  box-shadow:
+    0 1.5px 0 rgba(255,255,255,0.30) inset,
+    0 -1px 0 rgba(0,0,0,0.12) inset,
+    0 8px 28px rgba(0,0,0,0.26);
 }
 
 /* backward-compat aliases */
@@ -661,16 +696,23 @@ body::after {
 .header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 9000;
   height: 58px; display: flex; align-items: center;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  background: rgba(5,5,5,0.95);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  transition: background var(--ts), border-color var(--ts), box-shadow var(--ts);
+  backdrop-filter: blur(32px) saturate(1.9) brightness(1.08);
+  -webkit-backdrop-filter: blur(32px) saturate(1.9) brightness(1.08);
+  background: rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.14) inset,
+    0 8px 40px rgba(0,0,0,0.22);
+  transition: background var(--ts), border-color var(--ts), box-shadow var(--ts), backdrop-filter var(--ts);
 }
 .header-scrolled {
-  background: rgba(5,5,5,0.70);
-  border-bottom: 1px solid rgba(255,255,255,0.07);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.028);
+  background: rgba(255, 255, 255, 0.09);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(40px) saturate(2.1) brightness(1.10);
+  -webkit-backdrop-filter: blur(40px) saturate(2.1) brightness(1.10);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.18) inset,
+    0 8px 40px rgba(0,0,0,0.30);
 }
 .nav {
   display: flex; justify-content: space-between;
