@@ -239,6 +239,7 @@ export default function Home() {
                   key={v.key}
                   className={`vehicle-card vehicle-reveal${active ? " active" : ""}`}
                   style={{ animationDelay: `${i * 120}ms` }}
+                  onAnimationEnd={e => e.currentTarget.classList.remove("vehicle-reveal")}
                   onClick={() => {
                     setSelected(v.key);
                     window.location.href = v.shop;
