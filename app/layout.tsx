@@ -55,6 +55,59 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
+        {/* ── Liquid glass SVG filter definitions ── */}
+        <svg
+          style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden' }}
+          aria-hidden="true"
+          focusable="false"
+        >
+          <defs>
+            <filter
+              id="liquid-refract"
+              x="-15%" y="-15%"
+              width="130%" height="130%"
+              colorInterpolationFilters="sRGB"
+            >
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.012 0.022"
+                numOctaves="3"
+                seed="7"
+                result="noise"
+              />
+              <feColorMatrix
+                type="matrix"
+                values="3 0 0 0 -1
+                        0 3 0 0 -1
+                        0 0 3 0 -1
+                        0 0 0 1 0"
+                in="noise"
+                result="sharpNoise"
+              />
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="sharpNoise"
+                scale="9"
+                xChannelSelector="R"
+                yChannelSelector="G"
+                result="displaced"
+              />
+              <feGaussianBlur in="displaced" stdDeviation="0.5" result="soft" />
+              <feComposite in="soft" in2="SourceGraphic" operator="in" />
+            </filter>
+
+            <filter
+              id="glass-specular"
+              x="-10%" y="-10%"
+              width="120%" height="120%"
+              colorInterpolationFilters="sRGB"
+            >
+              <feGaussianBlur stdDeviation="1.2" result="glow" />
+              <feComposite in="glow" in2="SourceGraphic" operator="over" />
+            </filter>
+          </defs>
+        </svg>
+
         <Cursor />
         <Header />
 
