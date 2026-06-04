@@ -108,6 +108,31 @@ export default function RootLayout({
           </defs>
         </svg>
 
+        {/*
+          CRITICAL: these filter references MUST live in an inline <style> in the
+          document — NOT in globals.css. In an external stylesheet, `url(#id)`
+          resolves against the stylesheet's URL (/_next/static/css/...) and the
+          filter is never found, so displacement silently does nothing. Inline
+          here, `url(#id)` resolves against this document, where the <svg> filter
+          above lives, so the refraction actually renders. Do not move these into
+          globals.css.
+        */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              .header::before,
+              .vehicle-card::after,
+              .pillar-card::after,
+              .product-card::after,
+              .btn-primary::before,
+              .btn-ghost::before { filter: url(#liquid-refract); }
+
+              .btn-primary::after,
+              .btn-ghost::after { filter: url(#glass-specular); }
+            `,
+          }}
+        />
+
         <Cursor />
         <Header />
 
