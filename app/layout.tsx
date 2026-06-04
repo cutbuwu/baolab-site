@@ -176,7 +176,7 @@ export default function RootLayout({
         <Cursor />
         <Header />
 
-        <main className="page-spotlight">{children}</main>
+        <main>{children}</main>
 
         <footer className="footer">
           <div className="container footer-inner">
