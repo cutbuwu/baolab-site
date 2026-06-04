@@ -356,7 +356,7 @@ body::after {
     rgba(255, 255, 255, 0.14) 22%,
     transparent 55%
   );
-  filter: url(#liquid-refract);
+
   pointer-events: none;
   z-index: 0;
 }
@@ -601,7 +601,7 @@ body::after {
     rgba(255,255,255,0.08) 20%,
     transparent 48%
   );
-  filter: url(#liquid-refract);
+
   opacity: 0;
   transition: opacity var(--ts);
   pointer-events: none;
@@ -759,7 +759,7 @@ body::after {
     rgba(255,255,255,0.06) 20%,
     transparent 48%
   );
-  filter: url(#liquid-refract);
+
   opacity: 0;
   transition: opacity var(--ts);
   pointer-events: none;
@@ -861,7 +861,6 @@ body::after {
     rgba(255, 255, 255, 0.06) 22%,
     transparent 50%
   );
-  filter: url(#liquid-refract);
   pointer-events: none;
   z-index: -1;
 }
@@ -1058,7 +1057,7 @@ body::after {
   background: radial-gradient(
     circle at var(--lx, 50%) var(--ly, 50%),
     rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.06) 20%, transparent 48%);
-  filter: url(#liquid-refract);
+
   opacity: 0; transition: opacity var(--ts);
   pointer-events: none; z-index: 3;
 }
