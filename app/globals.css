@@ -595,16 +595,17 @@ body::after {
   border-radius: inherit;
   background: radial-gradient(
     circle at var(--lx, 50%) var(--ly, 50%),
-    rgba(255,255,255,0.22) 0%,
-    rgba(255,255,255,0.08) 20%,
-    transparent 48%
+    rgba(255,255,255,0.65) 0%,
+    rgba(255,255,255,0.30) 15%,
+    rgba(255,255,255,0.08) 35%,
+    transparent 55%
   );
   opacity: 0;
   transition: opacity var(--ts);
   pointer-events: none;
   z-index: 4;
 }
-.vehicle-card:hover::after { opacity: 0.6; }
+.vehicle-card:hover::after { opacity: 0.85; }
 
 /* staggered reveal */
 @keyframes vehicleReveal {
@@ -752,16 +753,17 @@ body::after {
   border-radius: inherit;
   background: radial-gradient(
     circle at var(--lx, 50%) var(--ly, 50%),
-    rgba(255,255,255,0.18) 0%,
-    rgba(255,255,255,0.06) 20%,
-    transparent 48%
+    rgba(255,255,255,0.55) 0%,
+    rgba(255,255,255,0.22) 15%,
+    rgba(255,255,255,0.06) 35%,
+    transparent 55%
   );
   opacity: 0;
   transition: opacity var(--ts);
   pointer-events: none;
   z-index: 3;
 }
-.pillar-card:hover::after { opacity: 0.5; }
+.pillar-card:hover::after { opacity: 0.75; }
 
 .pillar-img-wrap {
   overflow: hidden;
