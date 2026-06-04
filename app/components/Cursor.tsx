@@ -7,6 +7,13 @@ export default function Cursor() {
   const dotRef  = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // backdrop-filter: url(#svg) displacement is Chromium-only. Gate the
+    // dramatic nav refraction so Safari/Firefox fall back to plain blur
+    // (otherwise the whole backdrop-filter declaration would be dropped).
+    const ua = navigator.userAgent;
+    const isChromium = /Chrome|Chromium|Edg|OPR/.test(ua) && !/Firefox/.test(ua);
+    if (isChromium) document.documentElement.classList.add("lg-displace");
+
     const ring = ringRef.current;
     const dot  = dotRef.current;
     if (!ring || !dot) return;

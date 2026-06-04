@@ -105,28 +105,64 @@ export default function RootLayout({
               <feGaussianBlur stdDeviation="1.2" result="glow" />
               <feComposite in="glow" in2="SourceGraphic" operator="over" />
             </filter>
+
+            {/*
+              nav-glass: DRAMATIC backdrop refraction for the navbar only.
+              Applied via backdrop-filter (Chromium-only) so it warps the actual
+              page content scrolling BEHIND the fixed navbar. The filter region is
+              deliberately oversized (y/height) so displaced pixels near the short
+              bar's edges still have backdrop to sample — otherwise the warp goes
+              transparent at the edges. `scale` is the drama knob.
+            */}
+            <filter
+              id="nav-glass"
+              x="-20%" y="-120%"
+              width="140%" height="340%"
+              colorInterpolationFilters="sRGB"
+            >
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.009 0.016"
+                numOctaves="2"
+                seed="11"
+                result="noise"
+              />
+              <feGaussianBlur in="noise" stdDeviation="1.1" result="smooth" />
+              <feDisplacementMap
+                in="SourceGraphic"
+                in2="smooth"
+                scale="22"
+                xChannelSelector="R"
+                yChannelSelector="G"
+              />
+            </filter>
           </defs>
         </svg>
 
         {/*
-          CRITICAL: these filter references MUST live in an inline <style> in the
-          document — NOT in globals.css. In an external stylesheet, `url(#id)`
-          resolves against the stylesheet's URL (/_next/static/css/...) and the
-          filter is never found, so displacement silently does nothing. Inline
-          here, `url(#id)` resolves against this document, where the <svg> filter
-          above lives, so the refraction actually renders. Do not move these into
-          globals.css.
+          CRITICAL: filter references MUST live in an inline <style> in the
+          document — NOT in globals.css. From an external stylesheet, `url(#id)`
+          resolves against the stylesheet's URL and the filter is never found, so
+          it silently does nothing. Inline here, it resolves against this
+          document where the <svg> filters live. Do not move into globals.css.
         */}
         <style
           dangerouslySetInnerHTML={{
             __html: `
-              .header::before,
-              .vehicle-card::after,
-              .pillar-card::after,
-              .product-card::after,
-              .btn-primary::before,
-              .btn-ghost::before { filter: url(#liquid-refract); }
+              /* DRAMATIC backdrop refraction — navbar only, Chromium only.
+                 Warps the real page content scrolling behind the fixed nav.
+                 .lg-displace is added to <html> by Cursor.tsx when the browser
+                 supports it; Safari/Firefox keep the plain blur fallback in
+                 globals.css so nothing breaks. */
+              html.lg-displace .header {
+                backdrop-filter: url(#nav-glass) blur(5px) saturate(1.7);
+                -webkit-backdrop-filter: url(#nav-glass) blur(5px) saturate(1.7);
+              }
 
+              /* navbar cursor-light shimmer overlay */
+              .header::before { filter: url(#liquid-refract); }
+
+              /* button specular rim */
               .btn-primary::after,
               .btn-ghost::after { filter: url(#glass-specular); }
             `,
