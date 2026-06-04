@@ -864,8 +864,8 @@ body::after {
 /* on scroll — pill tightens + glass deepens */
 .header-scrolled {
   max-width: 920px;
-  background: rgba(9, 10, 13, 0.68);
-  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(9, 10, 13, 0.22);
+  border-color: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(40px) saturate(1.9);
   -webkit-backdrop-filter: blur(40px) saturate(1.9);
   box-shadow:

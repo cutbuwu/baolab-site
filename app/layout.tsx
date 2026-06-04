@@ -131,7 +131,7 @@ export default function RootLayout({
               <feDisplacementMap
                 in="SourceGraphic"
                 in2="smooth"
-                scale="22"
+                scale="45"
                 xChannelSelector="R"
                 yChannelSelector="G"
               />
@@ -157,6 +157,10 @@ export default function RootLayout({
               html.lg-displace .header {
                 backdrop-filter: url(#nav-glass) blur(5px) saturate(1.7);
                 -webkit-backdrop-filter: url(#nav-glass) blur(5px) saturate(1.7);
+              }
+              html.lg-displace .header-scrolled {
+                backdrop-filter: url(#nav-glass) blur(2px) saturate(1.4);
+                -webkit-backdrop-filter: url(#nav-glass) blur(2px) saturate(1.4);
               }
 
               /* navbar cursor-light shimmer overlay */
