@@ -15,10 +15,22 @@ export default function Cursor() {
     let rx = -200, ry = -200;
     let raf: number;
 
+    const GLASS_SELECTOR =
+      ".header, .vehicle-card, .pillar-card, .product-card, .btn-primary, .btn-ghost, .filter-chip";
+
     const onMove = (e: MouseEvent) => {
       mx = e.clientX;
       my = e.clientY;
       dot.style.transform = `translate3d(${mx}px,${my}px,0)`;
+
+      // cursor acts as a light source on whichever glass element it's over
+      const target = e.target as Element | null;
+      const glass = target?.closest?.(GLASS_SELECTOR) as HTMLElement | null;
+      if (glass) {
+        const r = glass.getBoundingClientRect();
+        glass.style.setProperty("--lx", `${((e.clientX - r.left) / r.width) * 100}%`);
+        glass.style.setProperty("--ly", `${((e.clientY - r.top) / r.height) * 100}%`);
+      }
     };
 
     const tick = () => {
