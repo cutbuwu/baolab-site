@@ -1,12 +1,10 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
-import LiquidGlass from "liquid-glass-react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -16,52 +14,31 @@ export default function Header() {
   }, []);
 
   return (
-    <div ref={containerRef} style={{ position: "fixed", inset: 0, pointerEvents: "none", zIndex: 9000 }}>
-      <LiquidGlass
-        displacementScale={scrolled ? 35 : 50}
-        blurAmount={scrolled ? 0.2 : 0.15}
-        saturation={scrolled ? 180 : 160}
-        aberrationIntensity={2}
-        elasticity={0.2}
-        cornerRadius={999}
-        mouseContainer={containerRef}
-        style={{
-          position: "fixed",
-          top: "18px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: scrolled ? "min(920px, calc(100% - 40px))" : "min(1060px, calc(100% - 40px))",
-          height: "56px",
-          display: "flex",
-          alignItems: "center",
-          pointerEvents: "auto",
-          transition: "width 0.4s cubic-bezier(0.22,1,0.36,1)",
-        }}
-      >
-        <div className="container nav" style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <a href="/" className="logo">
-            <img src="/baolab-logo.png" alt="BaoLab" className="logo-img" />
-          </a>
+    <header className={`header ${scrolled ? "header-scrolled" : ""}`}>
+      <div className="container nav">
+        <a href="/" className="logo">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/baolab-logo.png" alt="BaoLab" className="logo-img" />
+        </a>
 
-          <nav className="main-nav">
-            <a href="https://shop.baolab.au">Products</a>
-            <a href="/lab">Lab</a>
-            <a href="/news">News</a>
-            <a href="https://shop.baolab.au/pages/compatibility">Compatibility</a>
-            <a href="https://shop.baolab.au/pages/shipping">Shipping</a>
-            <a href="https://shop.baolab.au/pages/contact">Contact</a>
-          </nav>
+        <nav className="main-nav">
+          <a href="https://shop.baolab.au">Products</a>
+          <a href="/lab">Lab</a>
+          <a href="/news">News</a>
+          <a href="https://shop.baolab.au/pages/compatibility">Compatibility</a>
+          <a href="https://shop.baolab.au/pages/shipping">Shipping</a>
+          <a href="https://shop.baolab.au/pages/contact">Contact</a>
+        </nav>
 
-          <button
-            className={`hamburger ${menuOpen ? "open" : ""}`}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-            type="button"
-          >
-            <span /><span /><span />
-          </button>
-        </div>
-      </LiquidGlass>
+        <button
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+          type="button"
+        >
+          <span /><span /><span />
+        </button>
+      </div>
 
       {/* Mobile menu */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
@@ -74,6 +51,6 @@ export default function Header() {
           <a href="https://shop.baolab.au/pages/contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
