@@ -116,8 +116,8 @@ export default function RootLayout({
             */}
             <filter
               id="nav-glass"
-              x="-20%" y="-120%"
-              width="140%" height="340%"
+              x="-50%" y="-300%"
+              width="200%" height="700%"
               colorInterpolationFilters="sRGB"
             >
               <feTurbulence
