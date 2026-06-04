@@ -30,6 +30,10 @@ export default function Cursor() {
       my = e.clientY;
       dot.style.transform = `translate3d(${mx}px,${my}px,0)`;
 
+      // page-level ambient spotlight
+      document.documentElement.style.setProperty("--ax", `${e.clientX}px`);
+      document.documentElement.style.setProperty("--ay", `${e.clientY}px`);
+
       // cursor acts as a light source on whichever glass element it's over
       const target = e.target as Element | null;
       const glass = target?.closest?.(GLASS_SELECTOR) as HTMLElement | null;
