@@ -163,15 +163,6 @@ export default function RootLayout({
                 -webkit-backdrop-filter: url(#nav-glass) blur(2px) saturate(1.4);
               }
 
-              /* card spotlight refraction — warps the cursor-light on cards */
-              html.lg-displace .vehicle-card::after,
-              html.lg-displace .pillar-card::after,
-              html.lg-displace .product-card::after { filter: url(#liquid-refract); }
-
-              /* button refraction */
-              html.lg-displace .btn-primary::before,
-              html.lg-displace .btn-ghost::before { filter: url(#liquid-refract); }
-
               /* navbar cursor-light shimmer overlay */
               .header::before { filter: url(#liquid-refract); }
 
