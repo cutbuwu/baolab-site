@@ -116,8 +116,8 @@ export default function RootLayout({
             */}
             <filter
               id="nav-glass"
-              x="-50%" y="-300%"
-              width="200%" height="700%"
+              x="-40%" y="-150%"
+              width="180%" height="400%"
               colorInterpolationFilters="sRGB"
             >
               <feTurbulence
@@ -128,9 +128,30 @@ export default function RootLayout({
                 result="noise"
               />
               <feGaussianBlur in="noise" stdDeviation="1.1" result="smooth" />
+              {/*
+                EDGE-CRACK FIX: backdrop-filter only captures the element's own
+                box as backdrop. On a 56px-tall bar, large VERTICAL displacement
+                samples below the bar where no backdrop exists -> transparent
+                cracks at the bottom edge. So we flatten the green (vertical)
+                channel toward neutral 0.5 — G_out = 0.12*G_in + 0.44 — leaving
+                max ~2.7px of vertical shift. The red (horizontal) channel stays
+                at full scale 45: the bar is ~1000px wide, so 22px of horizontal
+                sampling stays safely inside the captured backdrop. Result: full
+                dramatic horizontal refraction, no edge cracks.
+                Knob: to eliminate vertical entirely, set row 2 to "0 0 0 0 0.5".
+              */}
+              <feColorMatrix
+                in="smooth"
+                type="matrix"
+                values="1 0    0 0 0
+                        0 0.12 0 0 0.44
+                        0 0    1 0 0
+                        0 0    0 1 0"
+                result="dispMap"
+              />
               <feDisplacementMap
                 in="SourceGraphic"
-                in2="smooth"
+                in2="dispMap"
                 scale="45"
                 xChannelSelector="R"
                 yChannelSelector="G"
@@ -163,8 +184,10 @@ export default function RootLayout({
                 -webkit-backdrop-filter: url(#nav-glass) blur(2px) saturate(1.4);
               }
 
-              /* navbar cursor-light shimmer overlay */
-              .header::before { filter: url(#liquid-refract); }
+              /* navbar cursor spotlight stays a CLEAN radial glow (no
+                 displacement) — displacing the bright overlay made the edge
+                 cracking more visible. The 40% white radial gradient lives in
+                 globals.css and is unaffected. */
 
               /* button specular rim */
               .btn-primary::after,
