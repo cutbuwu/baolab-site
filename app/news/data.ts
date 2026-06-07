@@ -620,6 +620,61 @@ export const articles: Article[] = [
 `,
   },
 
+  {
+    slug: "denza-triple-threat",
+    image: "/images/news/denza-triple-threat.jpg",
+    title:
+      "Denza\'s Triple Threat: A Cargo Ship, an OTA Update, and a Suspension That Changes Its Own Tyres",
+    date: "2026-06-07",
+    category: "Technology",
+    excerpt:
+      "Three major developments in three weeks: BYD\'s own cargo ship delivers 4,810 vehicles to Melbourne, the B5 and B8 get a free OTA update, and the new DiSus-P Ultra suspension can lift a wheel off the ground for tyre changes.",
+    related: [
+      { slug: "denza-b5-b8-launch", title: "Denza B5 & B8: The Brand Arrives in Australia" },
+      { slug: "denza-n7-premium-suv", title: "Denza N7: The Premium Electric SUV" },
+    ],
+    content: `
+<p>Denza has been on an absolute tear in Australia this month. Three developments landed in the span of two weeks, and each one matters if you own — or are considering — a Denza.</p>
+
+<h2>1. The BYD Zhengzhou: 4,810 Vehicles on BYD\'s Own Ship</h2>
+<p>On June 1, a 199.9-metre cargo carrier called the <strong>BYD Zhengzhou</strong> pulled into Webb Dock West in Melbourne. It\'s the first international run of BYD\'s purpose-built car carrier fleet — one of eight RORO (roll-on roll-off) vessels the company owns. The ship was named after Zhengzhou, the capital of Henan Province, and its maiden voyage was deliberately routed to Australia.</p>
+
+<p><strong>4,810 new BYD and Denza vehicles</strong> were unloaded, bound for Australian customers. The shipment includes B5, B8, and D9 models — exactly the models that have had waitlists stretching for months.</p>
+
+<p><strong>Why it matters:</strong> BYD isn\'t just shipping cars — it\'s shipping cars on its own ships. This is vertical integration on a level we haven\'t seen from a Chinese automaker in Australia. BYD controls the factory, the battery supply, and now the logistics. Shorter wait times, fewer supply chain bottlenecks, and a clear signal that Australia is a priority market.</p>
+
+<h2>2. Free OTA Update for B5 and B8</h2>
+<p>Denza pushed a free over-the-air software update to all B5 and B8 owners in Australia on May 28, improving towing and off-road capability. No dealer visit required — your car got better while you slept.</p>
+
+<p>The update refines the traction control logic for towing scenarios and improves the off-road drive modes. If you\'ve been towing a trailer or hitting gravel roads, the B5 and B8 now handle it better than at launch.</p>
+
+<p><strong>Why it matters:</strong> OTA updates are still rare in the PHEV/4WD space. Tesla does it. Rivian does it. But a Chinese PHEV SUV getting meaningful capability improvements over the air? That\'s new. Denza is treating these cars like software products — buy once, keep getting better.</p>
+
+<h2>3. DiSus-P Ultra: The Suspension That Changes Its Own Tyres</h2>
+<p><img src="/images/news/disus-ultra.jpg" alt="Fangchengbao Bao 8 DiSus-P Ultra three-wheel driving" style="width:100%;border-radius:12px;margin:16px 0" /></p>
+
+<p>This is the big one. In China, the 2026 <strong>Fangchengbao Bao 8</strong> (Denza B8 equivalent) launched with BYD\'s new <strong>DiSus-P Ultra</strong> hydraulic suspension system. The headline feature? It can lift any individual wheel completely off the ground.</p>
+
+<p>Three modes:</p>
+<ul>
+<li><strong>Tyre Change Mode</strong> — the suspension raises one wheel into the air, no jack needed. Just crouch down and swap the tyre. On the side of a highway. In the rain. Without crawling under the car.</li>
+<li><strong>Three-Wheel Driving</strong> — with one wheel lifted, the three-motor AWD system redistributes power to the remaining three wheels. The car literally drives itself out of trouble on three wheels.</li>
+<li><strong>Wheel-Lift Recovery</strong> — stuck in a rut? The suspension can cyclically lift and drop individual wheels to rock the car free, like a mechanical version of what you\'d do manually with a Hi-Lift jack.</li>
+</ul>
+
+<p>The Bao 8 Flash Charging Edition also gets <strong>1000-volt flash charging</strong> and a 3-motor AWD setup. It starts at 305,800 yuan (~$60,000 AUD) in China.</p>
+
+<p><strong>Why it matters:</strong> This tech will almost certainly make its way to the Australian B8. BYD has been clear that the Denza B5 and B8 are global products — what launches in China today arrives here within months. The DiSus-P Ultra turns the B8 from \'a nice 4WD\' into \'the 4WD that doesn\'t need a jack.\'</p>
+
+<h2>The Bigger Picture</h2>
+<p>Three weeks. Three announcements. A cargo ship that means shorter wait times. An OTA update that makes existing cars better. And suspension technology that sounds like science fiction.</p>
+
+<p>Denza isn\'t just competing with Toyota and Ford anymore. It\'s competing with Tesla on software, with Land Rover on off-road tech, and with Porsche on logistics speed. And it\'s doing all of it at half the price.</p>
+
+<p>If you\'ve been on the fence about a Denza, June 2026 might be the month that tips it.</p>
+`,
+  },
+
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
