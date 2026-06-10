@@ -5,14 +5,14 @@ import Cursor from "./components/Cursor";
 
 
 export const metadata: Metadata = {
-  title: "BaoLab — Premium Denza Accessories Australia",
+  title: "BAOLAB — Denza Accessories & ADB Unlock Service Australia",
   description:
-    "Premium aftermarket accessories for Denza B5, B8, D9, Z9 GT, and N7. Quality tested, shipped from China. Free shipping over $99.",
+    "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB unlocking & app sideloading service for BYD/Denza vehicles.",
   metadataBase: new URL("https://baolab.au"),
   openGraph: {
-    title: "BaoLab — Premium Denza Accessories Australia",
+    title: "BAOLAB — Denza Accessories & ADB Unlock Service Australia",
     description:
-      "Premium aftermarket accessories for Denza B5, B8, D9, Z9 GT, and N7.",
+      "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB unlocking & app sideloading service.",
     url: "https://baolab.au",
     siteName: "BaoLab",
     locale: "en_AU",
@@ -27,7 +27,7 @@ const jsonLd = {
   url: "https://baolab.au",
   logo: "https://baolab.au/logo.png",
   description:
-    "Premium aftermarket accessories for Denza B5, B8, D9, Z9 GT, and N7. Quality tested, shipped from China.",
+    "Australia's first dedicated Denza accessory store. Premium B5, B8, D9, Z9 GT, N7 upgrades. ADB unlocking & app sideloading service for BYD/Denza vehicles.",
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
