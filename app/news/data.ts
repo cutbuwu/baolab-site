@@ -614,7 +614,7 @@ export const articles: Article[] = [
 <p>That depends on your dealer. The sideloaded apps run on the infotainment system, which is separate from the vehicle's core driving systems. In most cases, a dealer reset would restore the system to factory state. But if you're concerned, check with your dealer before making any changes.</p>
 
 <h2>Want This on Your Denza?</h2>
-<p>We offer a professional installation service for ADB access and app sideloading on the Denza B5 and B8. <a href="/products/adb-unlock-service">Check out the product page</a> for pricing and availability.</p>
+<p>We offer a professional installation service for ADB access and app sideloading on the Denza B5 and B8. <a href="https://shop.baolab.au/products/denza-b5-b8-adb-unlocking-app-sideloading-service">Check out the product page</a> for pricing and availability.</p>
 
 <p><em>Watch our sentry mode demo: <a href="https://youtu.be/FeLjqGn7qvY" target="_blank">YouTube — Denza B8 Sentry Mode</a></em></p>
 `,
