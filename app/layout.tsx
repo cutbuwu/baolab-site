@@ -101,6 +101,18 @@ export default function RootLayout({
           </defs>
         </svg>
 
+        {/* Inline style for nav-glass displacement — must be in document, not external CSS */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          html.lg-displace .header {
+            backdrop-filter: url(#nav-glass) blur(3px) saturate(1.7);
+            -webkit-backdrop-filter: url(#nav-glass) blur(3px) saturate(1.7);
+          }
+          html.lg-displace .header-scrolled {
+            backdrop-filter: url(#nav-glass) blur(3px) saturate(1.9);
+            -webkit-backdrop-filter: url(#nav-glass) blur(3px) saturate(1.9);
+          }
+        `}} />
+
         <Header />
         <Cursor />
         {children}
