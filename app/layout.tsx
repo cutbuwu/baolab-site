@@ -130,6 +130,23 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Cursor tracking for spotlight effect on glass elements */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('mousemove', function(e) {
+                document.querySelectorAll('.card, .btn, button[type="submit"], .header').forEach(function(el) {
+                  var rect = el.getBoundingClientRect();
+                  var x = ((e.clientX - rect.left) / rect.width * 100).toFixed(1);
+                  var y = ((e.clientY - rect.top) / rect.height * 100).toFixed(1);
+                  el.style.setProperty('--lx', x + '%');
+                  el.style.setProperty('--ly', y + '%');
+                });
+              });
+            `,
+          }}
+        />
       </body>
     </html>
   );
