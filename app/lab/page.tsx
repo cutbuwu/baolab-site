@@ -57,7 +57,7 @@ export default function LabPage() {
           <p style={{ marginTop: 12, color: "var(--muted2)", fontSize: 13 }}>
             Requires ADB access.{" "}
             <Link
-              href="/products/adb-unlock-service"
+              href="https://shop.baolab.au/products/adb-unlocking-service"
               style={{ color: "var(--text)", textDecoration: "underline" }}
             >
               Get it unlocked →
@@ -146,7 +146,7 @@ export default function LabPage() {
             offer a remote unlock service that takes 10 minutes.
           </p>
           <Link
-            href="/products/adb-unlock-service"
+            href="https://shop.baolab.au/products/adb-unlocking-service"
             className="primary-btn"
             style={{ display: "inline-block" }}
           >
