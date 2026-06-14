@@ -135,12 +135,16 @@ export default function LabPage() {
             style={{
               width: "100%",
               padding: "12px 16px",
-              borderRadius: 12,
-              border: "1px solid var(--border-soft)",
-              background: "var(--panel)",
+              borderRadius: 999,
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              background: "rgba(255, 255, 255, 0.08)",
+              backdropFilter: "blur(16px) saturate(1.8)",
+              WebkitBackdropFilter: "blur(16px) saturate(1.8)",
               color: "var(--text)",
               fontSize: 14,
               outline: "none",
+              boxShadow: "0 1.5px 0 rgba(255, 255, 255, 0.22) inset, 0 -1px 0 rgba(0, 0, 0, 0.08) inset, 0 8px 24px rgba(0, 0, 0, 0.18)",
+              transition: "all 0.2s ease",
             }}
           />
         </div>
@@ -239,11 +243,30 @@ export default function LabPage() {
               </div>
               <a
                 href={app.downloadUrl}
-                className="primary-btn"
                 style={{
-                  display: "inline-block",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                   fontSize: 13,
-                  padding: "10px 22px",
+                  padding: "10px 24px",
+                  borderRadius: 999,
+                  background: "rgba(255, 255, 255, 0.08)",
+                  backdropFilter: "blur(16px) saturate(1.8)",
+                  WebkitBackdropFilter: "blur(16px) saturate(1.8)",
+                  border: "1px solid rgba(255, 255, 255, 0.18)",
+                  color: "var(--text)",
+                  textDecoration: "none",
+                  transition: "all 0.2s ease",
+                  boxShadow: "0 1.5px 0 rgba(255, 255, 255, 0.22) inset, 0 -1px 0 rgba(0, 0, 0, 0.08) inset, 0 8px 24px rgba(0, 0, 0, 0.18)",
+                  width: "fit-content",
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.background = "rgba(255, 255, 255, 0.14)";
+                  (e.currentTarget as HTMLElement).style.transform = "translateY(-1px)";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.background = "rgba(255, 255, 255, 0.08)";
+                  (e.currentTarget as HTMLElement).style.transform = "translateY(0)";
                 }}
               >
                 Download APK ↓
