@@ -4,30 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 const apps = [
-  {
-    name: "Sentry Mode",
-    description:
-      "Turn your Denza's cameras into a parking surveillance system. Motion detection, hazard light alerts, horn activation, and phone notifications — all from the factory cameras.",
-    version: "1.0",
-    size: "~15MB",
-    compatibility: "B5, B8, D9, Z9 GT, N7",
-    downloadUrl:
-      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/sentry-mode.apk",
-    icon: "📹",
-    category: "Safety",
-  },
-  {
-    name: "Quad-View Dashcam",
-    description:
-      "Record while driving using the car's 360° cameras. Four simultaneous angles — front, left, right, rear — with timestamp, speed, and pedal position overlays. No aftermarket hardware needed.",
-    version: "1.0",
-    size: "~12MB",
-    compatibility: "B5, B8, D9, Z9 GT, N7",
-    downloadUrl:
-      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/quad-view-dashcam.apk",
-    icon: "🎬",
-    category: "Recording",
-  },
+
+
   {
     name: "Baidu CarLink",
     description:
@@ -43,7 +21,7 @@ const apps = [
   {
     name: "DiPlus",
     description:
-      "BYD's official companion app for your phone. Connect to your car remotely — check battery, control A/C, lock/unlock, and view vehicle status. Works with all Denza models.",
+      "The largest 3rd-party BYD companion app from China. Includes sentry mode, quad-view dashcam, remote vehicle control, automations, energy tracking, and more. Works with all Denza models. Requires ADB unlock for full features.",
     version: "1.3.8-beta21",
     size: "~50MB",
     compatibility: "B5, B8, D9, Z9 GT, N7",
@@ -53,9 +31,9 @@ const apps = [
     category: "Connectivity",
   },
   {
-    name: "Car Fish Audio",
+    name: "车鱼视听",
     description:
-      "Car-optimized entertainment app with Douyin (TikTok) and music streaming. Designed for in-car use with large buttons and voice control. Perfect for passengers.",
+      "ByteDance's official 2-in-1 app with Douyin and Qishui Music. Car-optimized entertainment for your Denza's centre screen.",
     version: "3.20.1",
     size: "~40MB",
     compatibility: "B5, B8, D9, Z9 GT, N7",
@@ -67,7 +45,7 @@ const apps = [
   {
     name: "Baidu CarLife",
     description:
-      "Baidu's car connectivity platform. Supports navigation, music, and phone mirroring for Chinese apps. Works with most Android phones.",
+      "Car connectivity for Chinese Android phones without Google Services. This is your ONLY option for phone mirroring, navigation, and music. Supports Oppo, Vivo, Xiaomi, OnePlus, and more. Works with most Chinese Android phones.",
     version: "4.0",
     size: "~60MB",
     compatibility: "B5, B8, D9, Z9 GT, N7",
