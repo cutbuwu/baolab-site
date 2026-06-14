@@ -104,6 +104,20 @@ export default function RootLayout({
         <Header />
         <Cursor />
         {children}
+
+        {/* Detect Chromium browsers for liquid glass displacement */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var ua = navigator.userAgent;
+                if (/Chrome|Chromium|Edg|OPR/.test(ua) && !/Firefox/.test(ua)) {
+                  document.documentElement.classList.add('lg-displace');
+                }
+              })();
+            `,
+          }}
+        />
       </body>
     </html>
   );
