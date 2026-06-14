@@ -86,6 +86,18 @@ export default function RootLayout({
               />
               <feGaussianBlur in="displaced" stdDeviation="0.5" />
             </filter>
+
+            {/* nav-glass: dramatic backdrop refraction for navbar */}
+            <filter id="nav-glass" x="-40%" y="-150%" width="180%" height="400%" colorInterpolationFilters="sRGB">
+              <feTurbulence type="fractalNoise" baseFrequency="0.009 0.016" numOctaves="2" seed="11" result="noise"/>
+              <feGaussianBlur in="noise" stdDeviation="1.1" result="smooth"/>
+              <feColorMatrix in="smooth" type="matrix"
+                values="1 0    0 0 0
+                        0 0.12 0 0 0.44
+                        0 0    1 0 0
+                        0 0    0 1 0" result="dispMap"/>
+              <feDisplacementMap in="SourceGraphic" in2="dispMap" scale="45" xChannelSelector="R" yChannelSelector="G"/>
+            </filter>
           </defs>
         </svg>
 
