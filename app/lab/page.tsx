@@ -163,13 +163,16 @@ export default function LabPage() {
             <div
               key={app.name}
               style={{
-                border: "1px solid var(--border-soft)",
+                border: "1px solid rgba(255, 255, 255, 0.18)",
                 borderRadius: 16,
                 padding: "28px 32px",
-                background: "var(--panel)",
-                transition: "border-color 0.25s, transform 0.25s",
+                background: "rgba(255, 255, 255, 0.06)",
+                backdropFilter: "blur(20px) saturate(1.8)",
+                WebkitBackdropFilter: "blur(20px) saturate(1.8)",
+                transition: "all 0.25s ease",
                 display: "flex",
                 flexDirection: "column",
+                boxShadow: "0 1.5px 0 rgba(255, 255, 255, 0.22) inset, 0 -1px 0 rgba(0, 0, 0, 0.08) inset, 0 10px 30px rgba(0, 0, 0, 0.22)",
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.borderColor =
@@ -310,8 +313,22 @@ export default function LabPage() {
           </p>
           <Link
             href="https://shop.baolab.au/products/adb-unlocking-service"
-            className="primary-btn"
-            style={{ display: "inline-block" }}
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 14,
+              padding: "12px 28px",
+              borderRadius: 999,
+              background: "rgba(255, 255, 255, 0.08)",
+              backdropFilter: "blur(16px) saturate(1.8)",
+              WebkitBackdropFilter: "blur(16px) saturate(1.8)",
+              border: "1px solid rgba(255, 255, 255, 0.18)",
+              color: "var(--text)",
+              textDecoration: "none",
+              transition: "all 0.2s ease",
+              boxShadow: "0 1.5px 0 rgba(255, 255, 255, 0.22) inset, 0 -1px 0 rgba(0, 0, 0, 0.08) inset, 0 8px 24px rgba(0, 0, 0, 0.18)",
+            }}
           >
             Get ADB Unlock Service →
           </Link>
