@@ -40,6 +40,65 @@ const apps = [
     icon: "📱",
     category: "Connectivity",
   },
+  {
+    name: "DiPlus",
+    description:
+      "BYD's official companion app for your phone. Connect to your car remotely — check battery, control A/C, lock/unlock, and view vehicle status. Works with all Denza models.",
+    version: "1.3.8-beta21",
+    size: "~50MB",
+    compatibility: "B5, B8, D9, Z9 GT, N7",
+    downloadUrl:
+      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/%E8%BF%AA%E5%8A%A0.1.3.8-beta21.apk",
+    icon: "🚗",
+    category: "Connectivity",
+  },
+  {
+    name: "Car Fish Audio",
+    description:
+      "Car-optimized entertainment app with Douyin (TikTok) and music streaming. Designed for in-car use with large buttons and voice control. Perfect for passengers.",
+    version: "3.20.1",
+    size: "~40MB",
+    compatibility: "B5, B8, D9, Z9 GT, N7",
+    downloadUrl:
+      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/%E8%BD%A6%E9%B1%BC%E8%A7%86%E5%90%AC3.20.1(%E8%BD%A6%E6%9C%BA%E7%89%88%E6%8A%96%E9%9F%B3%2B%E6%B1%BD%E6%B0%B4%E9%9F%B3%E4%B9%90).apk",
+    icon: "🎵",
+    category: "Entertainment",
+  },
+  {
+    name: "Baidu CarLife",
+    description:
+      "Baidu's car connectivity platform. Supports navigation, music, and phone mirroring for Chinese apps. Works with most Android phones.",
+    version: "4.0",
+    size: "~60MB",
+    compatibility: "B5, B8, D9, Z9 GT, N7",
+    downloadUrl:
+      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/%E6%9C%80%E6%96%B04.0%E8%BD%A6%E6%9C%BA%E7%89%88%E7%99%BE%E5%BA%A6CarLife.apk",
+    icon: "🗺️",
+    category: "Connectivity",
+  },
+  {
+    name: "全民K歌 (Karaoke)",
+    description:
+      "Sing karaoke in your Denza! BYD-customized version with lyrics display on the centre screen. Great for waiting while charging.",
+    version: "1.5.1.137",
+    size: "~35MB",
+    compatibility: "B5, B8, D9, Z9 GT, N7",
+    downloadUrl:
+      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/%E5%85%A8%E6%B0%91K%E6%AD%8C%E6%AF%94%E4%BA%9A%E8%BF%AA%E5%AE%9A%E5%88%B6%E7%89%88-1.5.1.137.apk",
+    icon: "🎤",
+    category: "Entertainment",
+  },
+  {
+    name: "Electro",
+    description:
+      "Brazilian EV companion app. View charging stations, track energy consumption, and connect with the EV community. Popular in South America.",
+    version: "latest",
+    size: "~25MB",
+    compatibility: "B5, B8, D9, Z9 GT, N7",
+    downloadUrl: "https://electro.app.br/car-apk",
+    icon: "⚡",
+    category: "Connectivity",
+  },
 ];
 
 export default function LabPage() {
