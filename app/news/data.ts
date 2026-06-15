@@ -593,9 +593,19 @@ export const articles: Article[] = [
 <p>The Denza B5 and B8 don't come with a built-in sentry mode like Tesla. But with the right app, you can use the car's existing cameras as a surveillance system. When parked, the cameras detect motion around the vehicle and start recording. If someone gets too close or the car detects strong vibrations, it can <strong>flash the hazard lights or even honk the horn</strong> to scare them off — and you get a notification on your phone.</p>
 <p>This is probably the most useful sideloaded app — in a busy carpark, it's peace of mind that your Denza is watching.</p>
 
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:24px 0">
+<iframe src="https://www.youtube.com/embed/0NnAfIczeRs" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:-16px">▲ Sentry mode in action — motion detection + hazard light alerts</p>
+
 <h3>Quad-View Dashcam</h3>
 <p>Neither the B5 nor the B8 comes with a built-in dashcam from the factory. Most owners end up spending hundreds on an aftermarket unit with ugly cables dangling across the windshield. But the Denza already has cameras everywhere — front, left, right, and rear.</p>
 <p>Our quad-view dashcam app uses the car's 360° camera system to record while driving, with a clean overlay showing <strong>timestamp, speed, and brake/accelerator pedal position</strong> as watermarks. You get four simultaneous camera angles — front, left, right, and rear — all viewable on the 17.3-inch screen. No aftermarket hardware, no cables, no fuss.</p>
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:24px 0">
+<iframe src="https://www.youtube.com/embed/WWS6Dddk2kY" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:-16px">▲ Quad-view dashcam — 360° recording while driving</p>
 
 <h3>Entertainment & Connectivity</h3>
 <p>We also installed a few entertainment and connectivity apps. Video streaming apps like TikTok work while the car is in motion (for passengers, of course), and the large screen makes them surprisingly usable — especially with the B8's 6-seat layout where rear passengers can comfortably watch while parked or charging.</p>
@@ -616,7 +626,7 @@ export const articles: Article[] = [
 <h2>Want This on Your Denza?</h2>
 <p>We offer a professional installation service for ADB access and app sideloading on the Denza B5 and B8. <a href="https://shop.baolab.au/products/denza-b5-b8-adb-unlocking-app-sideloading-service">Check out the product page</a> for pricing and availability.</p>
 
-<p><em>Watch our sentry mode demo: <a href="https://youtu.be/FeLjqGn7qvY" target="_blank">YouTube — Denza B8 Sentry Mode</a></em></p>
+<p><em>Watch our demos: <a href="https://youtu.be/0NnAfIczeRs" target="_blank">Sentry Mode</a> | <a href="https://youtu.be/WWS6Dddk2kY" target="_blank">Quad-View Dashcam</a></em></p>
 `,
   },
 
