@@ -6,17 +6,7 @@ import { useState } from "react";
 const apps = [
 
 
-  {
-    name: "Baidu CarLink",
-    description:
-      'The "CarPlay equivalent" for Chinese phones. Connects wirelessly the moment you start the car — supports Oppo, Vivo, Xiaomi, OnePlus, Huawei, and more. No cables, no pairing menus.',
-    version: "latest",
-    size: "~80MB",
-        downloadUrl:
-      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/baidu-carlink.apk",
-    icon: "📱",
-    category: "Connectivity",
-  },
+
   {
     name: "DiPlus",
     description:
