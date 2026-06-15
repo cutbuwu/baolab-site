@@ -5,7 +5,7 @@ export interface Article {
   date: string;
   category: string;
   excerpt: string;
-  related?: { slug: string; title: string }[  {
+  related?: { slug: string; title: string }[];
     slug: "how-to-install-apps-on-byd-dilink-5",
     image: "/images/news/byd-app-install.jpg",
     title: "How to Install Third-Party Apps on BYD DiLink 5.0+",
