@@ -16,44 +16,80 @@ export interface Article {
       { slug: "denza-b8-sentry-mode", title: "Denza B8 Sentry Mode + Sideloaded Apps" },
       { slug: "denza-triple-threat", title: "Denza Triple Threat" },
     ],
-    content: `<h1>How to Install Third-Party Apps on BYD DiLink 5.0+</h1><p><strong>A step-by-step guide to unlocking ADB and sideloading apps on your BYD or Denza vehicle.</strong></p><p>\---</p><h2>What is ADB Unlocking?</h2><p>ADB (Android Debug Bridge) unlocking gives you full control over your BYD's infotainment system. Once unlocked, you can install any Android app — sentry mode, dashcam recording, wireless CarPlay for Chinese phones, and more.</p><p><strong>Why doesn't BYD allow this by default?</strong>
-BYD restricts third-party apps for safety and warranty reasons. But for many owners, the factory apps don't cover everything they need — especially for features like parking surveillance and entertainment.</p><p>\---</p><h2>Step 1: Check Compatibility</h2><p>
--region or spec of car doesn't matter
--follow step 2, if a QR code appears, then IS 100% compatible!
--if says IMEI and ENTER PASSWORD, not compatible as the car is running a lower version of DiLink. but there is plenty of guides on the web for older DiLinks
--known to be not compatible (in AU/NZ): atto 1, atto 2, atto 3, seal, sealion 6 </p><p>---</p><h2>Step 2: Access the QR Code Page</h2><p>This is where most people get stuck. Here's how to access the hidden QR code page:</p><p>1. <strong>Open the Bluetooth phone dialer</strong> on your infotainment screen (NOT the regular phone app — use the one in the Bluetooth settings)
-2. <strong>Enter the secret code:</strong> <code>\<em>#91532547#\</em></code>
-3. <strong>should automatically redirect, if not redirected, check that the code entered was correct.</strong>
-4. A hidden menu will appear 
-5. you'll see a <strong>QR code</strong> on screen</p><p><strong>Important:</strong> The QR code is only valid for <strong>300 seconds</strong> (5 minutes). Once it expires, you'll need to regenerate it.</p><p><strong>What the QR code page looks like:</strong></p><p>* A screen saying "Perform secret code verification"
-* A large QR code in the center
-* Buttons saying "Please scan with WeCom" or "Please scan with VDS"</p><p>\---</p><h2>Step 3: Get the QR Code Scanned</h2><p>This is the part that requires professional tools. </p><p></p><p><strong>What happens after scanning:</strong></p><p>* The QR code gets authorized
-* You gain access to "Factory Mode"
-* to enable ADB, enable: "wireless adb switch" and "enable debugging mode after USB connection" 
-* ADB is now enabled on your vehicle, you may exit that page. Note: please ensure BOTH buttons are toggled, after exiting that page, another QR code authentication will be required.</p><p>\---</p><h2>Step 4: Install Apps via USB (this may not work for all regions, please refer to step 5 if the infotainment refuses installing from unknown sources) </h2><p>Once ADB is enabled, you can install apps via USB:</p><p>1. <strong>Download the APK files</strong> you want to install (see our <a href="https://baolab.au/lab">App Library</a>)
-2. <strong>Copy them to a USB drive</strong> (FAT32 format)
-3. <strong>Plug the USB into your car's USB port</strong>
-4. <strong>Open the file manager</strong> on your infotainment screen
-5. <strong>Navigate to the USB drive</strong> and tap the APK file
-6. <strong>Allow installation from unknown sources</strong> if prompted
-7. <strong>Install and enjoy!</strong></p><p><strong>Recommended apps \[VISIT (link to lab)]:</strong></p><p>* <strong>DiPlus</strong> — sentry mode, dashcam, remote control</p><p>\---</p><h2>Step 5: Install Apps Wirelessly (Advanced)</h2><p>For wireless installation, you'll need to enable wireless ADB:</p><p>1. <strong>Connect your car to WiFi</strong> (home WiFi or mobile hotspot)
-2. <strong>Enable wireless ADB</strong> in the factory mode settings
-3. <strong>Open terminal/command prompt</strong> on your computer (no admin privileges needed)
-4. <strong>Use ADB commands</strong> from your computer:</p><p>   <pre><code>
-   adb connect [car-ip-address]:5555
-   adb install app.apk
-   </code></pre><p>   <strong>How it works:</strong>
-   - <code>adb connect</code> links your computer to the car over WiFi
-   - <code>adb install</code> sends the APK file from your computer to the car and installs it
-   - The APK file needs to be on your computer (e.g., <code>C:\Downloads\app.apk</code>)
-   - You don't need to copy it to the car first — ADB sends it directly</p><p><strong>Note:</strong> This requires some technical knowledge. If you're not comfortable with command line, stick with the USB method or reach out to us.</p><p>\---</p><h2>Frequently Asked Questions</h2><p><strong>Q: Will this void my warranty?</strong>
-A: It depends on your dealer. Some don't mind, others might flag it. We recommend asking your dealer first.</p><p><strong>Q: Can I reverse the unlock?</strong>
-A: Yes, you can disable ADB in the factory mode settings anytime.</p><p><strong>Q: How long will the ADB authentication last for</strong>
-A: Forever, until a factory reset is performed
-<strong>Q: Will it affect OTA updates? if I do an OTA update, will I lose ADB?</strong>
-A: OTA Updates will not be affected. You will still receive the latest OTA updates as BYD rolls it out. OTA Updates generally will not affect the ADB as well. If anything happens, contact us and we will be happy to help. </p><p><strong>Q: Is it safe?</strong>
-A: The apps we recommend are safe and widely used in the BYD community. However, installing unknown APKs always carries some risk.</p><p><strong>Q: What if I brick my car?</strong>
-A: We are not responsible if you install a virus. So please be aware of the file's origin prior to installing. Always run a security check on the installation package downloaded from the internet.</p><p>\---</p><h2>Need Help?</h2><p>If you get stuck at any step, we're here to help:</p><p>* <strong>Email:</strong> hello@baolab.au</p><p><strong>Ready to unlock?</strong> <a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Unlock Service →</a></p><p>\---</p><p><em>This guide is for educational purposes only. BaoLab is not responsible for any issues caused by modifying your vehicle's software. Always follow local laws and regulations.</em></p><p></p>`,
+    content: `<h1>How to Install Third-Party Apps on BYD DiLink 5.0+</h1>
+<p><strong>A step-by-step guide to unlocking ADB and sideloading apps on your BYD or Denza vehicle.</strong></p>
+
+<h2>What is ADB Unlocking?</h2>
+<p>ADB (Android Debug Bridge) unlocking gives you full control over your BYD's infotainment system. Once unlocked, you can install any Android app — sentry mode, dashcam recording, wireless CarPlay for Chinese phones, and more.</p>
+<p><strong>Why doesn't BYD allow this by default?</strong> BYD restricts third-party apps for safety and warranty reasons. But for many owners, the factory apps don't cover everything they need — especially for features like parking surveillance and entertainment.</p>
+
+<h2>Step 1: Check Compatibility</h2>
+<p>Region or spec of car doesn't matter — follow step 2, if a QR code appears, then it's 100% compatible! If it says IMEI and ENTER PASSWORD, not compatible as the car is running a lower version of DiLink.</p>
+<p><strong>Known incompatible (AU/NZ):</strong> Atto 1, Atto 2, Atto 3, Seal, Sealion 6</p>
+
+<h2>Step 2: Access the QR Code Page</h2>
+<p>This is where most people get stuck. Here's how to access the hidden QR code page:</p>
+<ol>
+<li><strong>Open the Bluetooth phone dialer</strong> on your infotainment screen (NOT the regular phone app — use the one in the Bluetooth settings)</li>
+<li><strong>Enter the secret code:</strong> *#91532547#*</li>
+<li>Should automatically redirect — if not, check the code was entered correctly</li>
+<li>A hidden menu will appear</li>
+<li>You'll see a <strong>QR code</strong> on screen</li>
+</ol>
+<p><strong>Important:</strong> The QR code is only valid for 300 seconds (5 minutes). Once it expires, you'll need to regenerate it.</p>
+
+<h2>Step 3: Get the QR Code Scanned</h2>
+<p>This is the part that requires professional tools. The QR code needs to be scanned by BYD's diagnostic software.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><strong>Use our service</strong> (recommended) — we scan the QR code remotely for $99 AUD. Takes 10 minutes. <a href="https://shop.baolab.au/products/adb-unlocking-service">Get it unlocked →</a></li>
+<li><strong>Visit a BYD dealer</strong> — some dealers will do this for free if you ask nicely</li>
+<li><strong>Find a local technician</strong> — search for BYD service technicians in your area</li>
+</ul>
+<p><strong>What happens after scanning:</strong></p>
+<ul>
+<li>The QR code gets authorized</li>
+<li>You gain access to "Factory Mode"</li>
+<li>Enable: "wireless adb switch" and "enable debugging mode after USB connection"</li>
+<li>ADB is now enabled on your vehicle</li>
+</ul>
+
+<h2>Step 4: Install Apps via USB</h2>
+<p>Once ADB is enabled, you can install apps via USB:</p>
+<ol>
+<li><strong>Download the APK files</strong> you want to install (see our <a href="https://baolab.au/lab">App Library</a>)</li>
+<li><strong>Copy them to a USB drive</strong> (FAT32 format)</li>
+<li><strong>Plug the USB into your car's USB port</strong></li>
+<li><strong>Open the file manager</strong> on your infotainment screen</li>
+<li><strong>Navigate to the USB drive</strong> and tap the APK file</li>
+<li><strong>Allow installation from unknown sources</strong> if prompted</li>
+<li><strong>Install and enjoy!</strong></li>
+</ol>
+
+<h2>Step 5: Install Apps Wirelessly (Advanced)</h2>
+<p>For wireless installation, you'll need to enable wireless ADB:</p>
+<ol>
+<li><strong>Connect your car to WiFi</strong> (home WiFi or mobile hotspot)</li>
+<li><strong>Enable wireless ADB</strong> in the factory mode settings</li>
+<li><strong>Open terminal/command prompt</strong> on your computer (no admin privileges needed)</li>
+<li><strong>Use ADB commands:</strong></li>
+</ol>
+<pre><code>adb connect [car-ip-address]:5555
+adb install app.apk</code></pre>
+<p><strong>How it works:</strong> adb connect links your computer to the car over WiFi. adb install sends the APK file from your computer to the car and installs it directly. The APK needs to be on your computer — no need to copy it to the car first.</p>
+
+<h2>Frequently Asked Questions</h2>
+<p><strong>Q: Will this void my warranty?</strong><br>A: It depends on your dealer. Some don't mind, others might flag it. We recommend asking your dealer first.</p>
+<p><strong>Q: Can I reverse the unlock?</strong><br>A: Yes, you can disable ADB in the factory mode settings anytime.</p>
+<p><strong>Q: How long will the ADB authentication last?</strong><br>A: Forever, until a factory reset is performed.</p>
+<p><strong>Q: Will it affect OTA updates?</strong><br>A: OTA updates will not be affected. You will still receive the latest OTA updates. OTA updates generally will not affect ADB either.</p>
+<p><strong>Q: Is it safe?</strong><br>A: The apps we recommend are safe and widely used in the BYD community. However, installing unknown APKs always carries some risk.</p>
+<p><strong>Q: What if I brick my car?</strong><br>A: We are not responsible if you install a virus. Always run a security check on files downloaded from the internet.</p>
+
+<h2>Need Help?</h2>
+<p>If you get stuck at any step, we're here to help:</p>
+<p><strong>Email:</strong> hello@baolab.au</p>
+<p><strong>Ready to unlock?</strong> <a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Unlock Service →</a></p>`,
   },
 ];
   content: string; // HTML
@@ -736,44 +772,80 @@ export const articles: Article[] = [
       { slug: "denza-b8-sentry-mode", title: "Denza B8 Sentry Mode + Sideloaded Apps" },
       { slug: "denza-triple-threat", title: "Denza Triple Threat" },
     ],
-    content: `<h1>How to Install Third-Party Apps on BYD DiLink 5.0+</h1><p><strong>A step-by-step guide to unlocking ADB and sideloading apps on your BYD or Denza vehicle.</strong></p><p>\---</p><h2>What is ADB Unlocking?</h2><p>ADB (Android Debug Bridge) unlocking gives you full control over your BYD's infotainment system. Once unlocked, you can install any Android app — sentry mode, dashcam recording, wireless CarPlay for Chinese phones, and more.</p><p><strong>Why doesn't BYD allow this by default?</strong>
-BYD restricts third-party apps for safety and warranty reasons. But for many owners, the factory apps don't cover everything they need — especially for features like parking surveillance and entertainment.</p><p>\---</p><h2>Step 1: Check Compatibility</h2><p>
--region or spec of car doesn't matter
--follow step 2, if a QR code appears, then IS 100% compatible!
--if says IMEI and ENTER PASSWORD, not compatible as the car is running a lower version of DiLink. but there is plenty of guides on the web for older DiLinks
--known to be not compatible (in AU/NZ): atto 1, atto 2, atto 3, seal, sealion 6 </p><p>---</p><h2>Step 2: Access the QR Code Page</h2><p>This is where most people get stuck. Here's how to access the hidden QR code page:</p><p>1. <strong>Open the Bluetooth phone dialer</strong> on your infotainment screen (NOT the regular phone app — use the one in the Bluetooth settings)
-2. <strong>Enter the secret code:</strong> <code>\<em>#91532547#\</em></code>
-3. <strong>should automatically redirect, if not redirected, check that the code entered was correct.</strong>
-4. A hidden menu will appear 
-5. you'll see a <strong>QR code</strong> on screen</p><p><strong>Important:</strong> The QR code is only valid for <strong>300 seconds</strong> (5 minutes). Once it expires, you'll need to regenerate it.</p><p><strong>What the QR code page looks like:</strong></p><p>* A screen saying "Perform secret code verification"
-* A large QR code in the center
-* Buttons saying "Please scan with WeCom" or "Please scan with VDS"</p><p>\---</p><h2>Step 3: Get the QR Code Scanned</h2><p>This is the part that requires professional tools. </p><p></p><p><strong>What happens after scanning:</strong></p><p>* The QR code gets authorized
-* You gain access to "Factory Mode"
-* to enable ADB, enable: "wireless adb switch" and "enable debugging mode after USB connection" 
-* ADB is now enabled on your vehicle, you may exit that page. Note: please ensure BOTH buttons are toggled, after exiting that page, another QR code authentication will be required.</p><p>\---</p><h2>Step 4: Install Apps via USB (this may not work for all regions, please refer to step 5 if the infotainment refuses installing from unknown sources) </h2><p>Once ADB is enabled, you can install apps via USB:</p><p>1. <strong>Download the APK files</strong> you want to install (see our <a href="https://baolab.au/lab">App Library</a>)
-2. <strong>Copy them to a USB drive</strong> (FAT32 format)
-3. <strong>Plug the USB into your car's USB port</strong>
-4. <strong>Open the file manager</strong> on your infotainment screen
-5. <strong>Navigate to the USB drive</strong> and tap the APK file
-6. <strong>Allow installation from unknown sources</strong> if prompted
-7. <strong>Install and enjoy!</strong></p><p><strong>Recommended apps \[VISIT (link to lab)]:</strong></p><p>* <strong>DiPlus</strong> — sentry mode, dashcam, remote control</p><p>\---</p><h2>Step 5: Install Apps Wirelessly (Advanced)</h2><p>For wireless installation, you'll need to enable wireless ADB:</p><p>1. <strong>Connect your car to WiFi</strong> (home WiFi or mobile hotspot)
-2. <strong>Enable wireless ADB</strong> in the factory mode settings
-3. <strong>Open terminal/command prompt</strong> on your computer (no admin privileges needed)
-4. <strong>Use ADB commands</strong> from your computer:</p><p>   <pre><code>
-   adb connect [car-ip-address]:5555
-   adb install app.apk
-   </code></pre><p>   <strong>How it works:</strong>
-   - <code>adb connect</code> links your computer to the car over WiFi
-   - <code>adb install</code> sends the APK file from your computer to the car and installs it
-   - The APK file needs to be on your computer (e.g., <code>C:\Downloads\app.apk</code>)
-   - You don't need to copy it to the car first — ADB sends it directly</p><p><strong>Note:</strong> This requires some technical knowledge. If you're not comfortable with command line, stick with the USB method or reach out to us.</p><p>\---</p><h2>Frequently Asked Questions</h2><p><strong>Q: Will this void my warranty?</strong>
-A: It depends on your dealer. Some don't mind, others might flag it. We recommend asking your dealer first.</p><p><strong>Q: Can I reverse the unlock?</strong>
-A: Yes, you can disable ADB in the factory mode settings anytime.</p><p><strong>Q: How long will the ADB authentication last for</strong>
-A: Forever, until a factory reset is performed
-<strong>Q: Will it affect OTA updates? if I do an OTA update, will I lose ADB?</strong>
-A: OTA Updates will not be affected. You will still receive the latest OTA updates as BYD rolls it out. OTA Updates generally will not affect the ADB as well. If anything happens, contact us and we will be happy to help. </p><p><strong>Q: Is it safe?</strong>
-A: The apps we recommend are safe and widely used in the BYD community. However, installing unknown APKs always carries some risk.</p><p><strong>Q: What if I brick my car?</strong>
-A: We are not responsible if you install a virus. So please be aware of the file's origin prior to installing. Always run a security check on the installation package downloaded from the internet.</p><p>\---</p><h2>Need Help?</h2><p>If you get stuck at any step, we're here to help:</p><p>* <strong>Email:</strong> hello@baolab.au</p><p><strong>Ready to unlock?</strong> <a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Unlock Service →</a></p><p>\---</p><p><em>This guide is for educational purposes only. BaoLab is not responsible for any issues caused by modifying your vehicle's software. Always follow local laws and regulations.</em></p><p></p>`,
+    content: `<h1>How to Install Third-Party Apps on BYD DiLink 5.0+</h1>
+<p><strong>A step-by-step guide to unlocking ADB and sideloading apps on your BYD or Denza vehicle.</strong></p>
+
+<h2>What is ADB Unlocking?</h2>
+<p>ADB (Android Debug Bridge) unlocking gives you full control over your BYD's infotainment system. Once unlocked, you can install any Android app — sentry mode, dashcam recording, wireless CarPlay for Chinese phones, and more.</p>
+<p><strong>Why doesn't BYD allow this by default?</strong> BYD restricts third-party apps for safety and warranty reasons. But for many owners, the factory apps don't cover everything they need — especially for features like parking surveillance and entertainment.</p>
+
+<h2>Step 1: Check Compatibility</h2>
+<p>Region or spec of car doesn't matter — follow step 2, if a QR code appears, then it's 100% compatible! If it says IMEI and ENTER PASSWORD, not compatible as the car is running a lower version of DiLink.</p>
+<p><strong>Known incompatible (AU/NZ):</strong> Atto 1, Atto 2, Atto 3, Seal, Sealion 6</p>
+
+<h2>Step 2: Access the QR Code Page</h2>
+<p>This is where most people get stuck. Here's how to access the hidden QR code page:</p>
+<ol>
+<li><strong>Open the Bluetooth phone dialer</strong> on your infotainment screen (NOT the regular phone app — use the one in the Bluetooth settings)</li>
+<li><strong>Enter the secret code:</strong> *#91532547#*</li>
+<li>Should automatically redirect — if not, check the code was entered correctly</li>
+<li>A hidden menu will appear</li>
+<li>You'll see a <strong>QR code</strong> on screen</li>
+</ol>
+<p><strong>Important:</strong> The QR code is only valid for 300 seconds (5 minutes). Once it expires, you'll need to regenerate it.</p>
+
+<h2>Step 3: Get the QR Code Scanned</h2>
+<p>This is the part that requires professional tools. The QR code needs to be scanned by BYD's diagnostic software.</p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><strong>Use our service</strong> (recommended) — we scan the QR code remotely for $99 AUD. Takes 10 minutes. <a href="https://shop.baolab.au/products/adb-unlocking-service">Get it unlocked →</a></li>
+<li><strong>Visit a BYD dealer</strong> — some dealers will do this for free if you ask nicely</li>
+<li><strong>Find a local technician</strong> — search for BYD service technicians in your area</li>
+</ul>
+<p><strong>What happens after scanning:</strong></p>
+<ul>
+<li>The QR code gets authorized</li>
+<li>You gain access to "Factory Mode"</li>
+<li>Enable: "wireless adb switch" and "enable debugging mode after USB connection"</li>
+<li>ADB is now enabled on your vehicle</li>
+</ul>
+
+<h2>Step 4: Install Apps via USB</h2>
+<p>Once ADB is enabled, you can install apps via USB:</p>
+<ol>
+<li><strong>Download the APK files</strong> you want to install (see our <a href="https://baolab.au/lab">App Library</a>)</li>
+<li><strong>Copy them to a USB drive</strong> (FAT32 format)</li>
+<li><strong>Plug the USB into your car's USB port</strong></li>
+<li><strong>Open the file manager</strong> on your infotainment screen</li>
+<li><strong>Navigate to the USB drive</strong> and tap the APK file</li>
+<li><strong>Allow installation from unknown sources</strong> if prompted</li>
+<li><strong>Install and enjoy!</strong></li>
+</ol>
+
+<h2>Step 5: Install Apps Wirelessly (Advanced)</h2>
+<p>For wireless installation, you'll need to enable wireless ADB:</p>
+<ol>
+<li><strong>Connect your car to WiFi</strong> (home WiFi or mobile hotspot)</li>
+<li><strong>Enable wireless ADB</strong> in the factory mode settings</li>
+<li><strong>Open terminal/command prompt</strong> on your computer (no admin privileges needed)</li>
+<li><strong>Use ADB commands:</strong></li>
+</ol>
+<pre><code>adb connect [car-ip-address]:5555
+adb install app.apk</code></pre>
+<p><strong>How it works:</strong> adb connect links your computer to the car over WiFi. adb install sends the APK file from your computer to the car and installs it directly. The APK needs to be on your computer — no need to copy it to the car first.</p>
+
+<h2>Frequently Asked Questions</h2>
+<p><strong>Q: Will this void my warranty?</strong><br>A: It depends on your dealer. Some don't mind, others might flag it. We recommend asking your dealer first.</p>
+<p><strong>Q: Can I reverse the unlock?</strong><br>A: Yes, you can disable ADB in the factory mode settings anytime.</p>
+<p><strong>Q: How long will the ADB authentication last?</strong><br>A: Forever, until a factory reset is performed.</p>
+<p><strong>Q: Will it affect OTA updates?</strong><br>A: OTA updates will not be affected. You will still receive the latest OTA updates. OTA updates generally will not affect ADB either.</p>
+<p><strong>Q: Is it safe?</strong><br>A: The apps we recommend are safe and widely used in the BYD community. However, installing unknown APKs always carries some risk.</p>
+<p><strong>Q: What if I brick my car?</strong><br>A: We are not responsible if you install a virus. Always run a security check on files downloaded from the internet.</p>
+
+<h2>Need Help?</h2>
+<p>If you get stuck at any step, we're here to help:</p>
+<p><strong>Email:</strong> hello@baolab.au</p>
+<p><strong>Ready to unlock?</strong> <a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Unlock Service →</a></p>`,
   },
 ];
 
