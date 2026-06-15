@@ -594,6 +594,11 @@ export const articles: Article[] = [
 <p>This is probably the most useful sideloaded app — in a busy carpark, it's peace of mind that your Denza is watching.</p>
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:24px 0">
+<iframe src="https://www.youtube.com/embed/FeLjqGn7qvY" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:-16px">▲ Sentry mode demo — how it works</p>
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;margin:24px 0">
 <iframe src="https://www.youtube.com/embed/0NnAfIczeRs" style="position:absolute;top:0;left:0;width:100%;height:100%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p style="font-size:12px;color:rgba(255,255,255,0.5);margin-top:-16px">▲ Sentry mode in action — motion detection + hazard light alerts</p>
