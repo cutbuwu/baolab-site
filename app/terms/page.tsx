@@ -72,7 +72,7 @@ export default function TermsPage() {
               "Returns & Refunds",
               "Warranty",
               "Installation",
-              "Limitation of Liability",
+              "Product Liability",
               "Product Compatibility",
               "Acceptance",
             ].map((item, i) => (
@@ -419,6 +419,17 @@ export default function TermsPage() {
             </p>
           </Section>
 
+          <Section id="section-14" number="14" title="Acceptance">
+            <p>
+              By purchasing and using our ADB Unlocking Service, you acknowledge
+              that you have read, understood, and agree to be bound by these Terms
+              &amp; Conditions.
+            </p>
+            <p style={{ marginTop: 16, color: "var(--muted2)", fontSize: 13 }}>
+              These terms are effective as of June 16, 2026.
+            </p>
+          </Section>
+
           {/* ═══════════════════════════════════════
               PHYSICAL PRODUCTS SECTION
           ═══════════════════════════════════════ */}
@@ -435,7 +446,7 @@ export default function TermsPage() {
             </p>
           </div>
 
-          <Section id="section-16" number="16" title="Product Information">
+          <Section id="section-15" number="15" title="Product Information">
             <p>
               We endeavour to ensure that all product descriptions, images, and specifications on our website are as accurate as possible. However, we do not warrant that product descriptions or other content is accurate, complete, reliable, current, or error-free.
             </p>
@@ -444,7 +455,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-17" number="17" title="Pricing & Payment">
+          <Section id="section-16" number="16" title="Pricing & Payment">
             <ul>
               <li>
                 <strong>Price:</strong> All prices are displayed in AUD (Australian Dollars)
@@ -461,7 +472,7 @@ export default function TermsPage() {
             </ul>
           </Section>
 
-          <Section id="section-18" number="18" title="Shipping & Delivery">
+          <Section id="section-17" number="17" title="Shipping & Delivery">
             <ul>
               <li>
                 <strong>Processing time:</strong> 1-2 business days
@@ -481,7 +492,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-19" number="19" title="Returns & Refunds">
+          <Section id="section-18" number="18" title="Returns & Refunds">
             <p>
               We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.
             </p>
@@ -516,7 +527,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-20" number="20" title="Warranty">
+          <Section id="section-19" number="19" title="Warranty">
             <p>
               All BaoLab products come with a minimum 12-month warranty against manufacturing defects, in accordance with Australian Consumer Law.
             </p>
@@ -563,7 +574,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-21" number="21" title="Installation">
+          <Section id="section-20" number="20" title="Installation">
             <p>
               Some products may require professional installation. We recommend having products installed by a qualified automotive technician.
             </p>
@@ -572,7 +583,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-22" number="22" title="Limitation of Liability — Physical Products">
+          <Section id="section-21" number="21" title="Limitation of Liability — Physical Products">
             <p>
               <strong>To the maximum extent permitted by law:</strong>
             </p>
@@ -592,7 +603,7 @@ export default function TermsPage() {
             </ul>
           </Section>
 
-          <Section id="section-23" number="23" title="Product Compatibility">
+          <Section id="section-22" number="22" title="Product Compatibility">
             <p>
               While we strive to ensure our products are compatible with the vehicles listed on our website, we cannot guarantee compatibility with all vehicle configurations, modifications, or aftermarket accessories.
             </p>
@@ -601,7 +612,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-24" number="24" title="Acceptance — Physical Products">
+          <Section id="section-23" number="23" title="Acceptance — Physical Products">
             <p>
               By purchasing physical products from BaoLab, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions.
             </p>
@@ -610,16 +621,7 @@ export default function TermsPage() {
             </p>
           </Section>
 
-          <Section id="section-15" number="15" title="Acceptance">
-            <p>
-              By purchasing and using our ADB Unlocking Service, you acknowledge
-              that you have read, understood, and agree to be bound by these Terms
-              &amp; Conditions.
-            </p>
-            <p style={{ marginTop: 16, color: "var(--muted2)", fontSize: 13 }}>
-              These terms are effective as of June 16, 2026.
-            </p>
-          </Section>
+
         </div>
       </section>
     </>
