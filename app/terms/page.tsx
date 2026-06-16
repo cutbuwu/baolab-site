@@ -66,6 +66,15 @@ export default function TermsPage() {
               "Entire Agreement",
               "Contact",
               "Acceptance",
+              "Product Information",
+              "Pricing & Payment",
+              "Shipping & Delivery",
+              "Returns & Refunds",
+              "Warranty",
+              "Installation",
+              "Limitation of Liability",
+              "Product Compatibility",
+              "Acceptance",
             ].map((item, i) => (
               <a
                 key={item}
@@ -407,6 +416,197 @@ export default function TermsPage() {
               <a href="mailto:hello@baolab.au" style={{ color: "var(--text)" }}>
                 hello@baolab.au
               </a>
+            </p>
+          </Section>
+
+          {/* ═══════════════════════════════════════
+              PHYSICAL PRODUCTS SECTION
+          ═══════════════════════════════════════ */}
+          
+          <div style={{ marginTop: 40, marginBottom: 20 }}>
+            <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>
+              Physical Products
+            </p>
+            <h2 style={{ fontSize: 28, fontWeight: 700, color: "var(--text)", marginBottom: 8 }}>
+              Terms & Conditions — Physical Products
+            </h2>
+            <p style={{ color: "var(--muted)", fontSize: 14 }}>
+              This section applies to all physical products sold on shop.baolab.au, including but not limited to vehicle accessories, floor mats, boot mats, and other automotive accessories.
+            </p>
+          </div>
+
+          <Section id="section-16" number="16" title="Product Information">
+            <p>
+              We endeavour to ensure that all product descriptions, images, and specifications on our website are as accurate as possible. However, we do not warrant that product descriptions or other content is accurate, complete, reliable, current, or error-free.
+            </p>
+            <p>
+              <strong>Colour Disclaimer:</strong> Product colours may vary slightly from images shown on our website due to differences in display settings, lighting conditions, and manufacturing batches.
+            </p>
+          </Section>
+
+          <Section id="section-17" number="17" title="Pricing & Payment">
+            <ul>
+              <li>
+                <strong>Price:</strong> All prices are displayed in AUD (Australian Dollars)
+              </li>
+              <li>
+                <strong>Taxes:</strong> Prices include GST where applicable
+              </li>
+              <li>
+                <strong>Payment:</strong> Required at time of purchase
+              </li>
+              <li>
+                <strong>Currency:</strong> All transactions are processed in AUD
+              </li>
+            </ul>
+          </Section>
+
+          <Section id="section-18" number="18" title="Shipping & Delivery">
+            <ul>
+              <li>
+                <strong>Processing time:</strong> 1-2 business days
+              </li>
+              <li>
+                <strong>Estimated delivery:</strong> 5-7 business days (international shipping from China)
+              </li>
+              <li>
+                <strong>Ships to:</strong> Australia-wide
+              </li>
+              <li>
+                <strong>Free shipping:</strong> On orders over $99 AUD
+              </li>
+            </ul>
+            <p>
+              <strong>Note:</strong> Delivery times are estimates and may vary due to customs processing, carrier delays, or other factors beyond our control. We are not responsible for delays caused by shipping carriers or customs.
+            </p>
+          </Section>
+
+          <Section id="section-19" number="19" title="Returns & Refunds">
+            <p>
+              We have a 30-day return policy, which means you have 30 days after receiving your item to request a return.
+            </p>
+            <p>
+              <strong>Eligibility:</strong> To be eligible for a return, your item must be in the same condition that you received it, unworn or unused, with tags, and in its original packaging. You&apos;ll also need the receipt or proof of purchase.
+            </p>
+            <div
+              style={{
+                background: "rgba(255, 255, 255, 0.04)",
+                border: "1px solid rgba(255, 255, 255, 0.08)",
+                borderRadius: 12,
+                padding: "16px 20px",
+                marginTop: 16,
+              }}
+            >
+              <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>
+                Exceptions / Non-Returnable Items
+              </p>
+              <ul style={{ margin: 0 }}>
+                <li>Digital services (once completed)</li>
+                <li>Custom products or special orders</li>
+                <li>Personalised items</li>
+                <li>Gift cards</li>
+                <li>Sale items (unless defective)</li>
+              </ul>
+            </div>
+            <p>
+              <strong>Refund processing:</strong> Once we receive and inspect your return, we will notify you if the refund was approved. If approved, you&apos;ll be automatically refunded on your original payment method within 10 business days. Please remember it can take some time for your bank or credit card company to process and post the refund too.
+            </p>
+            <p>
+              <strong>Exchanges:</strong> The fastest way to ensure you get what you want is to return the item you have, and once the return is accepted, make a separate purchase for the new item.
+            </p>
+          </Section>
+
+          <Section id="section-20" number="20" title="Warranty">
+            <p>
+              All BaoLab products come with a minimum 12-month warranty against manufacturing defects, in accordance with Australian Consumer Law.
+            </p>
+            <div
+              style={{
+                background: "rgba(255, 255, 255, 0.04)",
+                border: "1px solid rgba(255, 255, 255, 0.08)",
+                borderRadius: 12,
+                padding: "16px 20px",
+                marginTop: 16,
+              }}
+            >
+              <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>
+                What&apos;s Covered
+              </p>
+              <ul style={{ margin: 0 }}>
+                <li>Manufacturing defects</li>
+                <li>Material faults</li>
+                <li>Functionality issues under normal use</li>
+              </ul>
+            </div>
+            <div
+              style={{
+                background: "rgba(255, 255, 255, 0.04)",
+                border: "1px solid rgba(255, 255, 255, 0.08)",
+                borderRadius: 12,
+                padding: "16px 20px",
+                marginTop: 16,
+              }}
+            >
+              <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>
+                What&apos;s NOT Covered
+              </p>
+              <ul style={{ margin: 0 }}>
+                <li>Normal wear and tear</li>
+                <li>Damage from misuse or accidents</li>
+                <li>Modifications or unauthorized repairs</li>
+                <li>Water damage (unless specified)</li>
+                <li>Installation damage</li>
+              </ul>
+            </div>
+            <p>
+              <strong>Australian Consumer Law:</strong> Our products come with guarantees that cannot be excluded under the Australian Consumer Law. You are entitled to a replacement or refund for a major failure and compensation for any other reasonably foreseeable loss or damage.
+            </p>
+          </Section>
+
+          <Section id="section-21" number="21" title="Installation">
+            <p>
+              Some products may require professional installation. We recommend having products installed by a qualified automotive technician.
+            </p>
+            <p>
+              <strong>Disclaimer:</strong> We are not responsible for any damage caused during installation, including but not limited to damage to your vehicle, the product, or third-party property. Installation is at your own risk.
+            </p>
+          </Section>
+
+          <Section id="section-22" number="22" title="Limitation of Liability — Physical Products">
+            <p>
+              <strong>To the maximum extent permitted by law:</strong>
+            </p>
+            <ul>
+              <li>
+                Our total liability shall not exceed the purchase price of the product
+              </li>
+              <li>
+                We are not liable for indirect, incidental, or consequential damages
+              </li>
+              <li>
+                We are not liable for damage caused by improper installation or misuse
+              </li>
+              <li>
+                We are not liable for vehicle modifications made using our products
+              </li>
+            </ul>
+          </Section>
+
+          <Section id="section-23" number="23" title="Product Compatibility">
+            <p>
+              While we strive to ensure our products are compatible with the vehicles listed on our website, we cannot guarantee compatibility with all vehicle configurations, modifications, or aftermarket accessories.
+            </p>
+            <p>
+              <strong>Vehicle Compatibility:</strong> It is your responsibility to verify that the product is compatible with your specific vehicle model, year, and configuration before purchasing.
+            </p>
+          </Section>
+
+          <Section id="section-24" number="24" title="Acceptance — Physical Products">
+            <p>
+              By purchasing physical products from BaoLab, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions.
+            </p>
+            <p style={{ marginTop: 16, color: "var(--muted2)", fontSize: 13 }}>
+              These terms are effective as of June 16, 2026.
             </p>
           </Section>
 
