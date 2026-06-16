@@ -49,49 +49,47 @@ export default function TermsPage() {
           <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 16 }}>
             Contents
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 8 }}>
-            {[
-              "Service Description",
-              "Eligibility",
-              "Service Process",
-              "Payment & Pricing",
-              "Your Responsibilities",
-              "Limitation of Liability",
-              "Indemnification",
-              "Intellectual Property",
-              "Privacy",
-              "Governing Law",
-              "Changes to Terms",
-              "Severability",
-              "Entire Agreement",
-              "Contact",
-              "Acceptance",
-              "Product Information",
-              "Pricing & Payment",
-              "Shipping & Delivery",
-              "Returns & Refunds",
-              "Warranty",
-              "Installation",
-              "Product Liability",
-              "Product Compatibility",
-              "Acceptance",
-            ].map((item, i) => (
-              <a
-                key={item}
-                href={`#section-${i + 1}`}
-                style={{
-                  color: "var(--muted)",
-                  fontSize: 13,
-                  textDecoration: "none",
-                  padding: "6px 0",
-                  transition: "color 0.2s",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
-              >
-                {i + 1}. {item}
-              </a>
-            ))}
+          
+          {/* ADB Unlocking Service Section */}
+          <div style={{ marginBottom: 24 }}>
+            <p style={{ color: "var(--text)", fontSize: 14, fontWeight: 600, marginBottom: 12, display: "flex", alignItems: "center", gap: 8 }}>
+              <span style={{ background: "rgba(255, 255, 255, 0.08)", borderRadius: 6, padding: "2px 8px", fontSize: 11, color: "var(--muted2)" }}>I</span>
+              ADB Unlocking Service
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 8, paddingLeft: 32 }}>
+              {["Service Description", "Eligibility", "Service Process", "Payment & Pricing", "Your Responsibilities", "Limitation of Liability", "Indemnification", "Intellectual Property", "Privacy", "Governing Law", "Changes to Terms", "Severability", "Entire Agreement", "Contact", "Acceptance"].map((item, i) => (
+                <a
+                  key={item}
+                  href={`#section-${i + 1}`}
+                  style={{ color: "var(--muted)", fontSize: 13, textDecoration: "none", padding: "6px 0", transition: "color 0.2s" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
+                >
+                  {i + 1}. {item}
+                </a>
+              ))}
+            </div>
+          </div>
+          
+          {/* Physical Products Section */}
+          <div>
+            <p style={{ color: "var(--text)", fontSize: 14, fontWeight: 600, marginBottom: 12, display: "flex", alignItems: "center", gap: 8 }}>
+              <span style={{ background: "rgba(255, 255, 255, 0.08)", borderRadius: 6, padding: "2px 8px", fontSize: 11, color: "var(--muted2)" }}>II</span>
+              Physical Products
+            </p>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 8, paddingLeft: 32 }}>
+              {["Product Information", "Pricing & Payment", "Shipping & Delivery", "Returns & Refunds", "Warranty", "Installation", "Product Liability", "Product Compatibility", "Acceptance"].map((item, i) => (
+                <a
+                  key={item}
+                  href={`#section-${i + 15}`}
+                  style={{ color: "var(--muted)", fontSize: 13, textDecoration: "none", padding: "6px 0", transition: "color 0.2s" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "var(--text)")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "var(--muted)")}
+                >
+                  {i + 15}. {item}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
