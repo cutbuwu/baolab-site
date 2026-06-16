@@ -97,6 +97,22 @@ export default function TermsPage() {
 
         {/* Sections */}
         <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
+          {/* ═══════════════════════════════════════
+              ADB UNLOCKING SERVICE SECTION
+          ═══════════════════════════════════════ */}
+          
+          <div style={{ marginBottom: 20 }}>
+            <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>
+              ADB Unlocking Service
+            </p>
+            <h2 style={{ fontSize: 28, fontWeight: 700, color: "var(--text)", marginBottom: 8 }}>
+              Terms & Conditions — ADB Unlocking Service
+            </h2>
+            <p style={{ color: "var(--muted)", fontSize: 14 }}>
+              This section applies to the ADB Unlocking Service provided by BaoLab for BYD and Denza vehicles.
+            </p>
+          </div>
+
           <Section id="section-1" number="1" title="Service Description">
             <p>
               BaoLab (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) provides an ADB (Android Debug Bridge)
