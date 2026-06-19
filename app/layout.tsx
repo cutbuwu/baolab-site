@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "./Header";
 import Cursor from "./components/Cursor";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "BAOLAB — Denza Accessories & ADB Unlock Service Australia",
@@ -116,6 +117,7 @@ export default function RootLayout({
         <Header />
         <Cursor />
         {children}
+        <Analytics />
 
         {/* Detect Chromium browsers for liquid glass displacement */}
         <script
