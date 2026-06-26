@@ -1,37 +1,34 @@
-// BaoLab Confetti for Engineer tier (only when actually selected)
+// BaoLab Confetti for Engineer tier v5
 (function(){
+  var fired=false;
   var s=document.createElement('script');
   s.src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js';
   s.onload=function(){
-    function triggerConfetti(x,y){
-      confetti({
-        particleCount:150,
-        spread:100,
-        origin:{x:x/window.innerWidth, y:y/window.innerHeight},
-        colors:['#f97316','#ffffff','#fbbf24','#000000'],
-        ticks:80,
-        gravity:0.8
-      });
+    function boom(x,y){
+      confetti({particleCount:150,spread:100,origin:{x:x,y:y},colors:['#f97316','#ffffff','#fbbf24'],ticks:80,gravity:0.8});
     }
-    // Watch radio buttons — only fire when Engineer is the SELECTED value
     document.addEventListener('change',function(e){
-      var t=e.target;
-      if(t.type==='radio'&&t.name&&t.name.indexOf('option')!==-1){
-        // Small delay to let Shopify update, then verify it's actually selected
-        setTimeout(function(){
-          if(t.checked&&t.value&&t.value.indexOf('Engineer')!==-1){
-            triggerConfetti(t.getBoundingClientRect().x+50, t.getBoundingClientRect().y);
-          }
-        },1000);
+      var val=e.target.value||'';
+      if(e.target.tagName==='SELECT'&&e.target.selectedIndex>=0){
+        val=e.target.options[e.target.selectedIndex].text||val;
       }
-      // Select dropdowns
-      if(t.tagName==='SELECT'){
-        setTimeout(function(){
-          var selected=t.options[t.selectedIndex];
-          if(selected&&selected.text&&selected.text.indexOf('Engineer')!==-1){
-            triggerConfetti(t.getBoundingClientRect().x+50, t.getBoundingClientRect().y);
-          }
-        },1000);
+      if(val.indexOf('Engineer')!==-1){
+        fired=true;
+        var rect=e.target.getBoundingClientRect();
+        setTimeout(function(){boom((rect.x+rect.width/2)/window.innerWidth,rect.y/window.innerHeight)},800);
+      } else {fired=false;}
+    });
+    document.addEventListener('click',function(e){
+      var el=e.target;
+      var label=el.closest('label');
+      if(!label) return;
+      var text=label.textContent||'';
+      if(text.indexOf('Engineer')===-1) return;
+      var radio=document.getElementById(label.getAttribute('for'));
+      if(!radio) return;
+      if(radio.value.indexOf('Engineer')!==-1&&!fired){
+        fired=true;
+        setTimeout(function(){boom(e.clientX/window.innerWidth,e.clientY/window.innerHeight)},800);
       }
     });
   };
