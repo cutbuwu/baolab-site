@@ -21,6 +21,7 @@ export default function Cursor() {
     let mx = -200, my = -200;
     let rx = -200, ry = -200;
     let raf: number;
+    let prevGlass: HTMLElement | null = null;
 
     const GLASS_SELECTOR =
       ".header, .vehicle-card, .pillar-card, .product-card, .btn-primary, .btn-ghost, .filter-chip";
@@ -37,6 +38,17 @@ export default function Cursor() {
         const r = glass.getBoundingClientRect();
         glass.style.setProperty("--lx", `${((e.clientX - r.left) / r.width) * 100}%`);
         glass.style.setProperty("--ly", `${((e.clientY - r.top) / r.height) * 100}%`);
+        // If we moved to a different glass element, hide spotlight on the previous one
+        if (prevGlass && prevGlass !== glass) {
+          prevGlass.style.setProperty("--lx", `-100%`);
+          prevGlass.style.setProperty("--ly", `-100%`);
+        }
+        prevGlass = glass;
+      } else if (prevGlass) {
+        // cursor moved off any glass element — hide spotlight
+        prevGlass.style.setProperty("--lx", `-100%`);
+        prevGlass.style.setProperty("--ly", `-100%`);
+        prevGlass = null;
       }
     };
 
