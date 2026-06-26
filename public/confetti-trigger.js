@@ -1,4 +1,4 @@
-// BaoLab Confetti for Engineer tier (cursor position + delay)
+// BaoLab Confetti for Engineer tier (only when actually selected)
 (function(){
   var s=document.createElement('script');
   s.src='https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js';
@@ -13,25 +13,25 @@
         gravity:0.8
       });
     }
-    // Watch for variant selection changes
+    // Watch radio buttons — only fire when Engineer is the SELECTED value
     document.addEventListener('change',function(e){
       var t=e.target;
-      var val='';
-      if(t.value) val=t.value;
-      if(t.tagName==='SELECT'&&t.selectedIndex>=0){
-        val=t.options[t.selectedIndex].text||t.value;
+      if(t.type==='radio'&&t.name&&t.name.indexOf('option')!==-1){
+        // Small delay to let Shopify update, then verify it's actually selected
+        setTimeout(function(){
+          if(t.checked&&t.value&&t.value.indexOf('Engineer')!==-1){
+            triggerConfetti(t.getBoundingClientRect().x+50, t.getBoundingClientRect().y);
+          }
+        },1000);
       }
-      if(val.indexOf('Engineer')!==-1){
-        // 1 second delay for Shopify to update price
-        setTimeout(function(){triggerConfetti(t.getBoundingClientRect().x+50, t.getBoundingClientRect().y)}, 1000);
-      }
-    });
-    // Also watch for clicks on variant labels/buttons
-    document.addEventListener('click',function(e){
-      var el=e.target;
-      var text=el.textContent||el.innerText||'';
-      if(text.indexOf('Engineer')!==-1){
-        setTimeout(function(){triggerConfetti(e.clientX, e.clientY)}, 1000);
+      // Select dropdowns
+      if(t.tagName==='SELECT'){
+        setTimeout(function(){
+          var selected=t.options[t.selectedIndex];
+          if(selected&&selected.text&&selected.text.indexOf('Engineer')!==-1){
+            triggerConfetti(t.getBoundingClientRect().x+50, t.getBoundingClientRect().y);
+          }
+        },1000);
       }
     });
   };
