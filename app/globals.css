@@ -1337,3 +1337,16 @@ html.lg-displace .header-scrolled {
 .footer-bottom a:hover {
   color: #f97316;
 }
+
+/* Footer logo */
+.footer-logo {
+  height: 32px;
+  width: auto;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}

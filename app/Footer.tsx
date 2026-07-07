@@ -23,26 +23,10 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        {/* Country flags - social proof */}
-        <div className="footer-flags">
-          <span className="footer-flags-label">Trusted worldwide</span>
-          <div className="footer-flag-row">
-            <span>Australia</span>
-            <span>United Kingdom</span>
-            <span>Croatia</span>
-            <span>Turkey</span>
-            <span>Ukraine</span>
-            <span>Qatar</span>
-            <span>Egypt</span>
-            <span>Austria</span>
-            <span>Brazil</span>
-          </div>
-        </div>
-
         {/* Main footer content */}
         <div className="footer-grid">
           <div className="footer-brand">
-            <h3>BAOLAB</h3>
+            <img src="/baolab-logo.png" alt="BaoLab" className="footer-logo" />
             <p>Premium Denza accessories & ADB unlock service for BYD/Denza vehicles worldwide.</p>
           </div>
 
