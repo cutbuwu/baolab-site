@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "./Header";
 import Cursor from "./components/Cursor";
+import Footer from "./Footer";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
@@ -117,6 +118,7 @@ export default function RootLayout({
         <Header />
         <Cursor />
         {children}
+        <Footer />
         <Analytics />
 
         {/* Detect Chromium browsers for liquid glass displacement */}
