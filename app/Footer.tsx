@@ -27,15 +27,15 @@ export default function Footer() {
         <div className="footer-flags">
           <span className="footer-flags-label">Trusted worldwide</span>
           <div className="footer-flag-row">
-            <span title="Australia">🇦🇺</span>
-            <span title="United Kingdom">🇬🇧</span>
-            <span title="Croatia">🇭🇷</span>
-            <span title="Turkey">🇹🇷</span>
-            <span title="Ukraine">🇺🇦</span>
-            <span title="Qatar">🇶🇦</span>
-            <span title="Egypt">🇪🇬</span>
-            <span title="Austria">🇦🇹</span>
-            <span title="Brazil">🇧🇷</span>
+            <span>Australia</span>
+            <span>United Kingdom</span>
+            <span>Croatia</span>
+            <span>Turkey</span>
+            <span>Ukraine</span>
+            <span>Qatar</span>
+            <span>Egypt</span>
+            <span>Austria</span>
+            <span>Brazil</span>
           </div>
         </div>
 
