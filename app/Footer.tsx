@@ -18,6 +18,7 @@ export default function Footer() {
     { name: "Lab", href: "https://baolab.au/lab" },
     { name: "News", href: "https://baolab.au/news" },
     { name: "Terms", href: "https://baolab.au/terms" },
+    { name: "Partnership", href: "https://docs.google.com/forms/d/e/1FAIpQLScF18KKeNbezOnlERJ5NHV7-X21tYOwhpw4ailx8C-47PTwkw/viewform" },
   ];
 
   return (
