@@ -1341,10 +1341,13 @@ html.lg-displace .header-scrolled {
 /* Footer logo */
 .footer-logo {
   height: 32px;
+  max-width: 140px;
   width: auto;
   margin-bottom: 0.5rem;
   opacity: 0.9;
   transition: opacity 0.2s;
+  object-fit: contain;
+  display: block;
 }
 
 .footer-logo:hover {
