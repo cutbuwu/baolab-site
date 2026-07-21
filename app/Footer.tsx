@@ -15,24 +15,26 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
-        {/* Main footer content */}
         <div className="footer-grid">
+          {/* Brand column */}
           <div className="footer-brand">
             <img src="/baolab-logo.png" alt="BaoLab" className="footer-logo" />
             <p>Premium aftermarket accessories for Denza vehicles in Australia. OEM-fit parts, product warranty included, local support.</p>
           </div>
 
+          {/* Shop column */}
           <div className="footer-links">
             <h4>SHOP</h4>
             <ul>
-              <li><a href="https://shop.baolab.au">Denza B5</a></li>
-              <li><a href="https://shop.baolab.au">Denza B8</a></li>
-              <li><a href="https://shop.baolab.au">Denza D9</a></li>
-              <li><a href="https://shop.baolab.au">Denza Z9 GT</a></li>
-              <li><a href="https://shop.baolab.au">Denza N7</a></li>
+              <li><a href="https://shop.baolab.au/collections/b5">Denza B5</a></li>
+              <li><a href="https://shop.baolab.au/collections/b8">Denza B8</a></li>
+              <li><a href="https://shop.baolab.au/collections/d9">Denza D9</a></li>
+              <li><a href="https://shop.baolab.au/collections/z9gt">Denza Z9 GT</a></li>
+              <li><a href="https://shop.baolab.au/collections/n7">Denza N7</a></li>
             </ul>
           </div>
 
+          {/* Support column */}
           <div className="footer-links">
             <h4>SUPPORT</h4>
             <ul>
@@ -43,6 +45,7 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* Legal column */}
           <div className="footer-links">
             <h4>LEGAL</h4>
             <ul>
@@ -53,7 +56,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Social media links */}
+        {/* Social media row */}
         <div className="footer-socials">
           {socials.map((social) => (
             <a
@@ -72,6 +75,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="footer-bottom">
           <p>© {year} BaoLab. All rights reserved.</p>
+          <p className="footer-disclaimer">BaoLab is an independent aftermarket accessories brand. Not affiliated with, endorsed by, or connected to BYD Company Ltd. or any of its subsidiaries.</p>
           <a href="https://baolab.au">www.baolab.au</a>
         </div>
       </div>

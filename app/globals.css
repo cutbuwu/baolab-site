@@ -1228,7 +1228,7 @@ html.lg-displace .header-scrolled {
 /* Grid layout */
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -1319,6 +1319,8 @@ html.lg-displace .header-scrolled {
   align-items: center;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(255,255,255,0.04);
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .footer-bottom p {
@@ -1336,6 +1338,14 @@ html.lg-displace .header-scrolled {
 
 .footer-bottom a:hover {
   color: #f97316;
+}
+
+.footer-disclaimer {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 0.25rem;
+  font-size: 0.65rem;
+  color: #444;
 }
 
 /* Footer logo */
