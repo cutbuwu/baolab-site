@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — BaoLab",
+  title: "About — BAOLAB",
   description:
-    "BaoLab is Australia's destination for premium aftermarket Denza & BYD accessories. Born from passion, built for enthusiasts.",
+    "BAOLAB is Australia's destination for premium aftermarket Denza & BYD accessories. Born from passion, built for enthusiasts.",
 };
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
         <div style={{ marginTop: 48 }}>
           <h2 style={{ fontSize: 20, marginBottom: 16 }}>Who We Are</h2>
           <p style={{ color: "rgba(255,255,255,0.7)", lineHeight: 1.8 }}>
-            BaoLab was born from a simple observation: Denza and BYD owners in Australia 
+            BAOLAB was born from a simple observation: Denza and BYD owners in Australia 
             deserve access to the same premium aftermarket accessories available overseas. 
             We source, test, and curate the best accessories for Denza B5, B8, D9, Z9 GT, 
             and BYD N7 — so you can personalise your vehicle without compromising on quality.

@@ -86,7 +86,7 @@ export default function LabPage() {
               marginBottom: 8,
             }}
           >
-            BaoLab Lab
+            BAOLAB Lab
           </p>
           <h2 style={{ fontSize: 38, fontWeight: 700, lineHeight: 1.2 }}>
             App Library
@@ -328,7 +328,7 @@ export default function LabPage() {
       {/* Disclaimer */}
       <section className="container" style={{ paddingBottom: 60 }}>
         <p style={{ fontSize: 11, color: "var(--muted2)", lineHeight: 1.6 }}>
-          All apps are provided as-is. Use at your own risk. BaoLab is not
+          All apps are provided as-is. Use at your own risk. BAOLAB is not
           responsible for any issues caused by third-party software. Apps are
           compatible with Denza B5, B8, D9, Z9 GT, N7 and select BYD models
           with ADB access enabled.

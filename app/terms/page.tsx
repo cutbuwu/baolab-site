@@ -27,7 +27,7 @@ export default function TermsPage() {
               lineHeight: 1.7,
             }}
           >
-            ADB Unlocking Service — BaoLab
+            ADB Unlocking Service — BAOLAB
           </p>
           <p style={{ marginTop: 8, color: "var(--muted2)", fontSize: 13 }}>
             Last updated: June 16, 2026
@@ -107,13 +107,13 @@ export default function TermsPage() {
               Terms & Conditions — ADB Unlocking Service
             </h2>
             <p style={{ color: "var(--muted)", fontSize: 14 }}>
-              This section applies to the ADB Unlocking Service provided by BaoLab for BYD and Denza vehicles.
+              This section applies to the ADB Unlocking Service provided by BAOLAB for BYD and Denza vehicles.
             </p>
           </div>
 
           <Section id="section-1" number="1" title="Service Description">
             <p>
-              BaoLab (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) provides an ADB (Android Debug Bridge)
+              BAOLAB (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) provides an ADB (Android Debug Bridge)
               unlocking service for BYD and Denza vehicles running DiLink 5.0 or
               newer. The service involves:
             </p>
@@ -345,7 +345,7 @@ export default function TermsPage() {
 
           <Section id="section-7" number="7" title="Indemnification">
             <p>
-              You agree to indemnify, defend, and hold harmless BaoLab, its
+              You agree to indemnify, defend, and hold harmless BAOLAB, its
               officers, directors, employees, and agents from and against any
               claims, liabilities, damages, losses, and expenses (including
               reasonable attorneys&apos; fees) arising from or related to:
@@ -362,7 +362,7 @@ export default function TermsPage() {
           <Section id="section-8" number="8" title="Intellectual Property">
             <ul>
               <li>
-                The BaoLab name, logo, and website are our intellectual property
+                The BAOLAB name, logo, and website are our intellectual property
               </li>
               <li>You may not use our trademarks without written permission</li>
               <li>The service methodology and processes are proprietary</li>
@@ -409,7 +409,7 @@ export default function TermsPage() {
 
           <Section id="section-13" number="13" title="Entire Agreement">
             <p>
-              These terms constitute the entire agreement between you and BaoLab
+              These terms constitute the entire agreement between you and BAOLAB
               regarding the ADB Unlocking Service, superseding any prior agreements
               or understandings.
             </p>
@@ -417,7 +417,7 @@ export default function TermsPage() {
 
           <Section id="section-14" number="14" title="Contact Information">
             <p>
-              <strong>BaoLab</strong>
+              <strong>BAOLAB</strong>
             </p>
             <p>
               Website:{" "}
@@ -543,7 +543,7 @@ export default function TermsPage() {
 
           <Section id="section-19" number="19" title="Warranty">
             <p>
-              All BaoLab products come with a minimum 12-month warranty against manufacturing defects, in accordance with Australian Consumer Law.
+              All BAOLAB products come with a minimum 12-month warranty against manufacturing defects, in accordance with Australian Consumer Law.
             </p>
             <div
               style={{
@@ -628,7 +628,7 @@ export default function TermsPage() {
 
           <Section id="section-23" number="23" title="Acceptance — Physical Products">
             <p>
-              By purchasing physical products from BaoLab, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions.
+              By purchasing physical products from BAOLAB, you acknowledge that you have read, understood, and agree to be bound by these Terms &amp; Conditions.
             </p>
             <p style={{ marginTop: 16, color: "var(--muted2)", fontSize: 13 }}>
               These terms are effective as of June 16, 2026.

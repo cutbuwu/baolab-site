@@ -333,7 +333,7 @@ export const articles: Article[] = [
 
 <p>If Denza brings the N7 to Australia, it won't just fill a gap in their lineup. It'll challenge the entire segment to raise its game.</p>
 
-<p>We're ready for it. When the N7 arrives, Baolab will have accessories designed to match its premium character.</p>
+<p>We're ready for it. When the N7 arrives, BAOLAB will have accessories designed to match its premium character.</p>
 
 <p>Watch this space.</p>
 `,

@@ -104,7 +104,7 @@ export default function Home() {
             </h1>
 
             <p>
-              From daily essentials to overland builds, Baolab curates OEM-fit
+              From daily essentials to overland builds, BAOLAB curates OEM-fit
               accessories engineered for modern electric mobility.
             </p>
 

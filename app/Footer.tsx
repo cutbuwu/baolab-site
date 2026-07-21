@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Brand column */}
           <div className="footer-brand">
-            <img src="/baolab-logo.png" alt="BaoLab" className="footer-logo-img" />
+            <img src="/baolab-logo.png" alt="BAOLAB" className="footer-logo-img" />
             <p className="footer-desc">Premium aftermarket accessories for Denza vehicles in Australia. OEM-fit parts, product warranty included, local support.</p>
             <div className="footer-social-icons">
               {socials.map((social) => (
@@ -55,7 +55,7 @@ export default function Footer() {
               <li><a href="https://baolab.au">Home</a></li>
               <li><a href="https://baolab.au/lab">Lab</a></li>
               <li><a href="https://baolab.au/news">News</a></li>
-              <li><a href="https://baolab.au/about">About Baolab</a></li>
+              <li><a href="https://baolab.au/about">About BAOLAB</a></li>
             </ul>
           </div>
 
@@ -73,10 +73,10 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="footer-bottom">
-          <p>© {year} BaoLab. All rights reserved.</p>
+          <p>© {year} BAOLAB. All rights reserved.</p>
           <a href="https://baolab.au">www.baolab.au</a>
         </div>
-        <p className="footer-disclaimer">BaoLab is an independent aftermarket accessories brand. Not affiliated with, endorsed by, or connected to BYD Company Ltd. or any of its subsidiaries.</p>
+        <p className="footer-disclaimer">BAOLAB is an independent aftermarket accessories brand. Not affiliated with, endorsed by, or connected to BYD Company Ltd. or any of its subsidiaries.</p>
       </div>
     </footer>
   );

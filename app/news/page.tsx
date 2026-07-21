@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { getArticlesSorted } from "./data";
 
 export const metadata: Metadata = {
-  title: "Denza News Australia — BaoLab",
+  title: "Denza News Australia — BAOLAB",
   description:
     "The latest Denza news, launches, and technology updates for Australia. Z9 GT, B5, B8, D9, Flash Charge, and more.",
   openGraph: {
-    title: "Denza News Australia — BaoLab",
+    title: "Denza News Australia — BAOLAB",
     description:
       "Latest Denza news, launches, and technology updates for Australia.",
     url: "https://baolab.au/news",

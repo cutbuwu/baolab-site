@@ -987,7 +987,7 @@ html.lg-displace .header-scrolled {
 }
 .footer-inner  { display: flex; flex-direction: column; gap: 22px; align-items: flex-start; }
 .footer-brand  { display: flex; flex-direction: column; gap: 10px; }
-.footer-logo-img { height: 26px; max-width: 140px; width: auto; opacity: 0.52; display: block; object-fit: contain; margin: 0; }
+.footer-logo-img { height: 28px; max-width: 140px; width: auto; opacity: 1; display: block; object-fit: contain; margin: 0; padding: 0; }
 .footer-desc   { color: rgba(255,255,255,0.34); font-size: 13px; }
 .footer-disclaimer { font-size: 12px; line-height: 1.65; color: rgba(255,255,255,0.24); max-width: 760px; }
 

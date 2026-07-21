@@ -15,7 +15,7 @@ export function generateMetadata({
     const article = getArticleBySlug(slug);
     if (!article) return {};
     return {
-      title: `${article.title} — BaoLab News`,
+      title: `${article.title} — BAOLAB News`,
       description: article.excerpt,
       openGraph: {
         title: article.title,
@@ -46,7 +46,7 @@ export default async function ArticlePage({
     url: `https://baolab.au/news/${slug}`,
     publisher: {
       "@type": "Organization",
-      name: "BaoLab",
+      name: "BAOLAB",
       url: "https://baolab.au",
     },
   };

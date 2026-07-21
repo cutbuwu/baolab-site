@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB unlocking & app sideloading service.",
     url: "https://baolab.au",
-    siteName: "BaoLab",
+    siteName: "BAOLAB",
     locale: "en_AU",
     type: "website",
   },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "BaoLab",
+  name: "BAOLAB",
   url: "https://baolab.au",
   logo: "https://baolab.au/logo.png",
   description:
