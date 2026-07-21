@@ -1235,8 +1235,36 @@ html.lg-displace .header-scrolled {
 
 @media (max-width: 768px) {
   .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+  .footer-social-icons {
+    justify-content: flex-start;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .footer-disclaimer {
+    text-align: center;
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .footer-brand {
+    grid-column: auto;
+  }
+  .footer {
+    padding: 2rem 1rem 1.5rem;
   }
 }
 
