@@ -906,7 +906,6 @@ adb install app.apk</code></pre>
 <p>The side mirrors unfold to give the cameras a clear view of the vehicle's surroundings. This is normal behavior. Be mindful of mirror damage if you park in very tight spaces.</p>`,
   },
   {
-  {
     slug: "denza-b8-passenger-screen-world-first",
     image: "/images/news/",
     title: "World-First RHD Passenger Entertainment Screen for Denza B8 - Now Available in Australia",
