@@ -26,12 +26,12 @@ export const articles: Article[] = [
     content: `
 <p>The Denza Z9 GT made its Australian debut at the 2026 Melbourne International Motor Show, and it's nothing short of a statement. BYD's premium sub-brand is aiming squarely at the Porsche Taycan with an all-electric grand tourer that produces a staggering <strong>850kW</strong> from three electric motors and sprints from 0–100 km/h in just <strong>2.7 seconds</strong>.</p>
 
-<h2>What is the Z9 GT?</h2>
+<h2 style="margin-top:2.5rem;">What is the Z9 GT?</h2>
 <p>The Z9 GT is a luxury electric shooting brake — think of it as a sleek wagon meets supercar. It's built on BYD's 800-volt high-voltage <strong>e³ platform</strong> and is the first Denza model to use the company's next-generation <strong>Blade Battery 2.0</strong> with Flash Ultra Charging capability.</p>
 
 <p>Denza Australia Chief Operating Officer Mark Harland said at the reveal: <em>"Australia is a market that demands performance without compromise, and the Z9 GT has been engineered to meet or exceed expectations. It proves that electrification can deliver not just efficiency, but exhilarating performance, extraordinary safety and genuine long-distance usability."</em></p>
 
-<h2>Powertrain & Performance</h2>
+<h2 style="margin-top:2.5rem;">Powertrain & Performance</h2>
 <p>The Z9 GT uses a tri-motor setup — one motor on the front axle and two on the rear — producing a combined 850kW. This gives it a claimed 0–100 km/h time of 2.7 seconds, which puts it in serious supercar territory. For context, the Porsche Taycan Turbo S does 0–100 in 2.8 seconds.</p>
 
 <table>
@@ -47,7 +47,7 @@ export const articles: Article[] = [
 <tr><td>Price (expected)</td><td>~$180,000–$220,000 (TBC, undercuts Taycan)</td></tr>
 </table>
 
-<h2>Range & Charging</h2>
+<h2 style="margin-top:2.5rem;">Range & Charging</h2>
 <p>The Z9 GT will ship with the large 122.5kWh battery, giving it a CLTC-rated range of <strong>1,036 km</strong>. Real-world range has been demonstrated at over <strong>1,000 km</strong> in a Chinese media test — a Z9 GT drove around Hainan Island with two passengers, AC set to 23°C on auto, at speed limits across various road types, and covered 1,009 km with 9% battery remaining (estimated 93 km range left). Even conservative driving estimates put it at 800+ km in real-world conditions.</p>
 
 <p>But the headline feature is <strong>Flash Ultra Charging</strong>. Using Blade Battery 2.0 technology, the Z9 GT supports up to 1500kW DC charging — nearly four times Australia's current fastest public charger (400kW). Denza claims a 10–97% charge in just <strong>nine minutes</strong> under optimal conditions. That's shorter than a typical petrol fill-up.</p>
@@ -56,7 +56,7 @@ export const articles: Article[] = [
 
 <p><em>Read more: <a href="/news/flash-charge-blade-battery">Flash Ultra Charging & Blade Battery 2.0 — What It Means for Australia</a></em></p>
 
-<h2>Interior & Technology</h2>
+<h2 style="margin-top:2.5rem;">Interior & Technology</h2>
 <p>Inside, the Z9 GT is packed with luxury features:</p>
 <ul>
 <li>Nappa leather upholstery with massaging and ventilated seats</li>
@@ -67,7 +67,7 @@ export const articles: Article[] = [
 <li>Air suspension for a plush, wafting ride</li>
 </ul>
 
-<h2>When Can You Get One?</h2>
+<h2 style="margin-top:2.5rem;">When Can You Get One?</h2>
 <p>Denza has confirmed Australian deliveries will commence in <strong>Q3 2026</strong> (July–September). Pricing hasn't been announced yet, but it's expected to significantly undercut the Porsche Taycan's $181,000 starting price while offering more power, more range, and faster charging.</p>
 
 <p>The Z9 GT will be the fourth Denza model in Australia, following the B5, B8, and D9. It's also the brand's first fully electric vehicle for the local market.</p>
@@ -91,7 +91,7 @@ export const articles: Article[] = [
     content: `
 <p>When Denza revealed the Z9 GT at the 2026 Melbourne Motor Show, the car's 850kW output and 2.7-second 0–100 time grabbed the headlines. But underneath all that performance is an even bigger story: <strong>Blade Battery 2.0</strong> and <strong>Flash Ultra Charging</strong>.</p>
 
-<h2>What is Blade Battery 2.0?</h2>
+<h2 style="margin-top:2.5rem;">What is Blade Battery 2.0?</h2>
 <p>BYD's original Blade Battery, introduced in 2020, was already a game-changer. It used lithium iron phosphate (LFP) chemistry arranged in long, thin cells — like blades — that could pass a nail penetration test without catching fire. This made it one of the safest EV battery designs on the market.</p>
 
 <p>Blade Battery 2.0 builds on that foundation with significant improvements:</p>
@@ -102,7 +102,7 @@ export const articles: Article[] = [
 <li><strong>Longer cycle life</strong> — designed to last beyond 4,000 charge cycles</li>
 </ul>
 
-<h2>Flash Ultra Charging: 10–97% in 9 Minutes</h2>
+<h2 style="margin-top:2.5rem;">Flash Ultra Charging: 10–97% in 9 Minutes</h2>
 <p>The headline number is almost unbelievable: <strong>10% to 97% in nine minutes</strong>. To put that in perspective:</p>
 
 <table>
@@ -114,14 +114,14 @@ export const articles: Article[] = [
 
 <p>Nine minutes. That's less time than it takes to order and collect a flat white at your local café.</p>
 
-<h2>But Can Australia Even Support This?</h2>
+<h2 style="margin-top:2.5rem;">But Can Australia Even Support This?</h2>
 <p>Here's the catch — Australia's current fastest public chargers top out at around <strong>350–400kW</strong>. So you won't be getting 1500kW charging at your local servo any time soon. However, the Z9 GT's battery is backward compatible with all existing CCS2 chargers. You'll just charge at whatever speed the charger supports.</p>
 
 <p>The good news: charging infrastructure in Australia is rapidly expanding. The federal government's National Electric Vehicle Strategy includes funding for ultra-fast charging corridors along major highways. And companies like Chargefox, Evie Networks, and Tesla are all rolling out faster chargers.</p>
 
 <p>Even at 350kW, the Z9 GT's 122.5kWh battery would charge from 10–80% in roughly 20–25 minutes — still faster than most EVs on sale today.</p>
 
-<h2>Why This Matters</h2>
+<h2 style="margin-top:2.5rem;">Why This Matters</h2>
 <p>Range anxiety and charging time are the two biggest barriers to EV adoption in Australia. Blade Battery 2.0 and Flash Ultra Charging address both head-on. With 1000+ km of range and the ability to top up in under 10 minutes (when infrastructure catches up), the Z9 GT removes almost every excuse for not going electric.</p>
 
 <p>The Z9 GT will be the first Denza in Australia to feature this technology. Expect it to trickle down to future BYD and Denza models over the next 12–24 months.</p>
@@ -145,12 +145,12 @@ export const articles: Article[] = [
     content: `
 <p>In December 2025, BYD officially launched its premium sub-brand <strong>Denza</strong> in Australia with two models that nobody expected: not sleek city EVs, but rugged, body-on-frame plug-in hybrid 4×4 SUVs. The <strong>Denza B5</strong> and <strong>B8</strong> arrived as direct challengers to the Toyota LandCruiser, Nissan Patrol, and Jeep Wrangler — but with a high-tech electrified twist.</p>
 
-<h2>What is Denza?</h2>
+<h2 style="margin-top:2.5rem;">What is Denza?</h2>
 <p>Denza (腾势) is BYD's premium brand, positioned above BYD's mainstream models. Think of it like Lexus is to Toyota, or Genesis is to Hyundai. While BYD focuses on accessible electric vehicles, Denza targets the luxury and performance segments.</p>
 
 <p>The brand launched in China in 2010 as a joint venture with Mercedes-Benz (then Daimler). BYD took full control in 2024 and has since turned it into one of China's fastest-growing premium brands, selling over 126,000 vehicles in China in 2025.</p>
 
-<h2>The Denza B8: Flagship Off-Roader</h2>
+<h2 style="margin-top:2.5rem;">The Denza B8: Flagship Off-Roader</h2>
 <p>The B8 is the bigger, more capable of the two. It's a full-size body-on-frame SUV with serious off-road hardware:</p>
 
 <table>
@@ -215,12 +215,12 @@ export const articles: Article[] = [
 <li>5-star ANCAP safety rating</li>
 </ul>
 
-<h2>The Denza B5: Compact Adventure SUV</h2>
+<h2 style="margin-top:2.5rem;">The Denza B5: Compact Adventure SUV</h2>
 <p>The B5 LEOPARD is the smaller, more affordable sibling. It also uses the DMO platform and DiSus-P hydraulic suspension (140mm travel), though its DiSus-P implementation is a simpler two-tier damping system compared to the B8's three-tier setup, and it lacks the B8's preaim (云辇预瞄) feature — the LiDAR/camera-based system that scans the road ahead and pre-adjusts the suspension. It also uses a 1.5-litre turbo engine instead of the B8's 2.0-litre, producing 400kW combined versus the B8's 425kW.</p>
 
 <p>While the B8 competes with LandCruiser and Patrol, the B5 targets vehicles like the Toyota Fortuner, Isuzu MU-X, and Jeep Wrangler — but with plug-in hybrid efficiency and significantly more power.</p>
 
-<h2>What This Means for Australia</h2>
+<h2 style="margin-top:2.5rem;">What This Means for Australia</h2>
 <p>The B5 and B8 represent something genuinely new in the Australian market: body-on-frame 4×4 SUVs that can also be daily commuters on pure electric power. With 100–115km of electric range, most Australian daily commutes can be done without using a drop of petrol. But when you want to go off-road or tow a caravan, the petrol engine and electric motors provide serious combined grunt.</p>
 
 <p>The 5-star ANCAP rating for the B8 was also a significant milestone, addressing one of the common concerns about Chinese-brand vehicles in Australia.</p>
@@ -248,12 +248,12 @@ export const articles: Article[] = [
 
 <img src="/images/articles/n7/n7 exterior.jpeg" alt="Denza N7 exterior" class="article-img" />
 
-<h2>What is the N7?</h2>
+<h2 style="margin-top:2.5rem;">What is the N7?</h2>
 <p>The Denza N7 is a full-electric "shooting brake" SUV — think of it as the premium, more athletic sibling to the BYD Sealion 7. Where the Sealion 7 offers excellent value in the mid-size EV SUV segment, the N7 takes the same fundamental platform and elevates everything: the chassis, the interior, the technology, the driving experience.</p>
 
 <p>In China, the N7 sits in the 239,800–289,800 RMB range (roughly AUD $50,000–$60,000), positioning it squarely against the Tesla Model Y Performance, Hyundai Ioniq 5, and Kia EV6 GT.</p>
 
-<h2>The Specs</h2>
+<h2 style="margin-top:2.5rem;">The Specs</h2>
 <p>Built on BYD's e-Platform 3.0, the N7 packs serious numbers:</p>
 
 <table>
@@ -272,7 +272,7 @@ export const articles: Article[] = [
 
 <img src="/images/articles/n7/n7 exterior 2.jpeg" alt="Denza N7 profile view" class="article-img" />
 
-<h2>Chassis — Where It Beats the Sealion 7</h2>
+<h2 style="margin-top:2.5rem;">Chassis — Where It Beats the Sealion 7</h2>
 <p>This is where the N7 separates itself. The Sealion 7 runs a capable double-wishbone front and multi-link rear setup. The N7 takes it further:</p>
 <ul>
 <li><strong>Double-wishbone front, five-link rear</strong> — standard</li>
@@ -287,7 +287,7 @@ export const articles: Article[] = [
 
 <img src="/images/articles/n7/n7 e platform 3.0.jpeg" alt="Denza N7 e-Platform 3.0" class="article-img" />
 
-<h2>Interior — Five Screens</h2>
+<h2 style="margin-top:2.5rem;">Interior — Five Screens</h2>
 <p>The N7's cabin is where the premium positioning really shows:</p>
 
 <img src="/images/articles/n7/三幅式真皮方向盘.jpeg" alt="Denza N7 steering wheel and screens" class="article-img" />
@@ -311,7 +311,7 @@ export const articles: Article[] = [
 
 <img src="/images/articles/n7/n7 devialet.jpeg" alt="Denza N7 Devialet 16-speaker sound system" class="article-img" />
 
-<h2>N7 vs Sealion 7 — Quick Comparison</h2>
+<h2 style="margin-top:2.5rem;">N7 vs Sealion 7 — Quick Comparison</h2>
 <table>
 <tr><th>Feature</th><th>Denza N7</th><th>BYD Sealion 7</th></tr>
 <tr><td>Positioning</td><td>Premium / luxury</td><td>Mainstream / value</td></tr>
@@ -326,7 +326,7 @@ export const articles: Article[] = [
 
 <img src="/images/articles/n7/sealion 7 hero.png" alt="BYD Sealion 7" class="article-img" />
 
-<h2>Why Australia Needs This Car</h2>
+<h2 style="margin-top:2.5rem;">Why Australia Needs This Car</h2>
 <p>The mid-size premium EV SUV segment in Australia is competitive but thin on genuine value. The Tesla Model Y dominates on brand recognition. The Hyundai Ioniq 5 wins on design. The Kia EV6 impresses on driving dynamics.</p>
 
 <p>The N7 doesn't try to beat any of them at their own game. It plays a different game entirely — offering air suspension, rear-wheel steering, a five-screen interior, and 702 km of range at a price point that undercuts the Europeans by tens of thousands of dollars.</p>
@@ -354,12 +354,12 @@ export const articles: Article[] = [
     content: `
 <p>While the B5 and B8 grabbed attention as rugged off-roaders, Denza's third Australian model targets a very different buyer: the <strong>Denza D9</strong> is a luxury electric people mover designed to replace the traditional family van with something far more refined.</p>
 
-<h2>What is the D9?</h2>
+<h2 style="margin-top:2.5rem;">What is the D9?</h2>
 <p>The D9 is a large, all-electric MPV (multi-purpose vehicle) that seats up to seven passengers. In China, it's been a massive hit — rivalling the Toyota Alphard in sales and becoming one of the best-selling premium MPVs in the country. Now it's heading to Australia.</p>
 
 <p>Think of it as a Kia Carnival or Volkswagen Multivan, but with the refinement of a Mercedes S-Class and the powertrain of an electric car.</p>
 
-<h2>Design & Comfort</h2>
+<h2 style="margin-top:2.5rem;">Design & Comfort</h2>
 <p>The D9 is built for passengers, not drivers (though the driver's seat is plenty comfortable too). The key selling point is the second row:</p>
 <ul>
 <li>Two individual captain's chairs with electric adjustment</li>
@@ -372,7 +372,7 @@ export const articles: Article[] = [
 
 <p>The third row isn't an afterthought either — it offers genuine adult-sized legroom, unlike most SUVs where the third row is only suitable for children.</p>
 
-<h2>Powertrain</h2>
+<h2 style="margin-top:2.5rem;">Powertrain</h2>
 <p>The D9 for Australia is expected to feature:</p>
 <table>
 <tr><th>Spec</th><th>Denza D9</th></tr>
@@ -387,7 +387,7 @@ export const articles: Article[] = [
 <tr><td>0–100 km/h</td><td>6.9 seconds (AWD)</td></tr>
 </table>
 
-<h2>Who is it For?</h2>
+<h2 style="margin-top:2.5rem;">Who is it For?</h2>
 <p>The D9 targets families who want space and luxury without the fuel bills of a V6 people mover. It's also ideal for:</p>
 <ul>
 <li><strong>Executive transport</strong> — airport transfers, corporate shuttles</li>
@@ -396,7 +396,7 @@ export const articles: Article[] = [
 <li><strong>Accessibility</strong> — flat floor, wide sliding doors, low step-in height</li>
 </ul>
 
-<h2>The Australian MPV Market</h2>
+<h2 style="margin-top:2.5rem;">The Australian MPV Market</h2>
 <p>Australia's people mover market has been dominated by the Kia Carnival for years, with the Volkswagen Multivan and Hyundai Staria offering alternatives. The D9 brings something none of them offer: full electric power combined with luxury-car levels of refinement.</p>
 
 <p>Pricing hasn't been confirmed yet, but given the B8 tops out at $97,990, expect the D9 to sit in a similar bracket. That would make it competitive with a loaded Kia Carnival Hybrid or entry-level Volkswagen Multivan — but with significantly more technology and a fully electric driving experience.</p>
@@ -423,15 +423,15 @@ export const articles: Article[] = [
     content: `
 <p>When BYD unveiled its DiSus Intelligent Body Control System in April 2023, it became the first Chinese automaker to own the full-stack intelligent vehicle body control technology — from the sensors to the actuators to the software that ties it all together. The system was developed exclusively for new energy vehicles (NEVs) and is now rolling out across BYD, Denza, and YangWang models.</p>
 
-<h2>What Does "DiSus" Mean?</h2>
+<h2 style="margin-top:2.5rem;">What Does "DiSus" Mean?</h2>
 <p>The English name combines <strong>Di</strong> (the "D" from BYD — it appears across many BYD names, like the Xiao Di voice assistant and DiPilot self-driving system) with <strong>Sus</strong> (from suspension). The Chinese name is <strong>云辇 (Yǔnnián)</strong>, which loosely translates to something like "cloud carriage" — a poetic reference to the emperor's cloud-like chariot and the floating ride quality the system aims to deliver.</p>
 
-<h2>Why It Matters</h2>
+<h2 style="margin-top:2.5rem;">Why It Matters</h2>
 <p>Suspension technology has traditionally been the domain of European luxury brands. Mercedes-Benz has AIRMATIC and MAGIC BODY CONTROL, BMW has Adaptive M Suspension, and Porsche has PASM. DiSus represents BYD's answer — and in some ways, it exceeds what the Europeans offer, particularly in the hydraulic and extreme-performance tiers.</p>
 
 <p>The key innovation is that DiSus is purpose-built for electric and hybrid vehicles, where heavy battery packs change the dynamics of how a car rides and handles. Traditional suspension tuning assumes a petrol engine and fuel tank — DiSus accounts for the weight and placement of batteries from the ground up.</p>
 
-<h2>The Four Tiers</h2>
+<h2 style="margin-top:2.5rem;">The Four Tiers</h2>
 
 <h3>DiSus-C: Intelligent Damping Body Control</h3>
 <p><strong>What it is:</strong> The entry-level tier, similar to CDC (Continuously Damping Control) variable damping systems found in many premium cars.</p>
@@ -459,7 +459,7 @@ export const articles: Article[] = [
 <h3>DiSus-X: Extreme Performance</h3>
 <p><strong>What it is:</strong> The most extreme tier — found on the YangWang U9 electric supercar. Enables the U9 to drive on three wheels and "dance" by bouncing its body on command. A technology showcase proving the system has headroom far beyond what any road car currently needs.</p>
 
-<h2>How the Tiers Compare</h2>
+<h2 style="margin-top:2.5rem;">How the Tiers Compare</h2>
 <table>
 <tr><th>Feature</th><th>DiSus-C</th><th>DiSus-A</th><th>DiSus-P</th><th>DiSus-X</th></tr>
 <tr><td>Type</td><td>Variable damping</td><td>Air suspension</td><td>Hydraulic</td><td>Extreme hydraulic</td></tr>
@@ -501,7 +501,7 @@ export const articles: Article[] = [
     content: `
 <p>Every car brand has its defining platform — the underlying architecture that determines what a vehicle can do. Volkswagen has MEB, Hyundai has E-GMP, and Tesla has its skateboard chassis. For Denza, BYD's premium sub-brand, that platform is <strong>e³</strong> — pronounced "e cube".</p>
 
-<h2>What is e³?</h2>
+<h2 style="margin-top:2.5rem;">What is e³?</h2>
 <p>The e³ platform is an industry-leading architecture developed specifically for Denza by BYD. According to BYD's own media materials, the name comes from its combination of <strong>three major components</strong>:</p>
 <ol>
 <li><strong>Powertrain architecture</strong> — compatible with both plug-in hybrid (PHEV) and pure electric (BEV) configurations, including the first use of Cell-to-Body construction in a super hybrid vehicle</li>
@@ -511,7 +511,7 @@ export const articles: Article[] = [
 
 <p>Unlike a simple chassis that you bolt different bodies onto, e³ is a ground-up design where the battery, motors, suspension, and electronics are all engineered as a single integrated system.</p>
 
-<h2>800-Volt High-Voltage Architecture</h2>
+<h2 style="margin-top:2.5rem;">800-Volt High-Voltage Architecture</h2>
 <p>One of the headline specs of the e³ platform is its <strong>800-volt high-voltage electrical system</strong>. Most EVs on sale today use 400V architecture. The move to 800V unlocks several major advantages:</p>
 <ul>
 <li><strong>Faster charging</strong> — higher voltage means more power can flow through the same cables with less heat. The Z9 GT on e³ supports up to 1500kW DC charging.</li>
@@ -522,7 +522,7 @@ export const articles: Article[] = [
 
 <p>Porsche was the first to bring 800V to production cars with the Taycan in 2019. BYD's e³ platform brings the same voltage level to Denza at a significantly lower price point.</p>
 
-<h2>Tri-Motor Independent Drive</h2>
+<h2 style="margin-top:2.5rem;">Tri-Motor Independent Drive</h2>
 <p>The e³ platform supports a <strong>tri-motor layout</strong> — one motor on the front axle and two independent motors on the rear. This is the configuration used in the Z9 GT, producing a combined 850kW.</p>
 <p>The dual rear motors enable features that a single rear motor can't achieve:</p>
 <ul>
@@ -531,10 +531,10 @@ export const articles: Article[] = [
 <li><strong>Better traction control</strong> — if one wheel loses grip, the other can compensate independently</li>
 </ul>
 
-<h2>Rear-Wheel Dual Motor Steering</h2>
+<h2 style="margin-top:2.5rem;">Rear-Wheel Dual Motor Steering</h2>
 <p>Beyond just driving the wheels, the e³ platform's control architecture includes <strong>rear-wheel steering</strong> powered by the dual rear motors. At low speeds, the rear wheels turn in the opposite direction to the fronts, reducing the turning circle — handy for a 5-metre-long grand tourer in car parks. At high speeds, they turn in the same direction as the fronts for improved stability.</p>
 
-<h2>Cell-to-Body (CTB) Construction</h2>
+<h2 style="margin-top:2.5rem;">Cell-to-Body (CTB) Construction</h2>
 <p>The e³ platform uses BYD's <strong>Cell-to-Body</strong> technology, where the battery cells are integrated directly into the vehicle's structure rather than sitting in a separate battery pack. This:</p>
 <ul>
 <li>Increases structural rigidity (the battery becomes part of the chassis)</li>
@@ -544,7 +544,7 @@ export const articles: Article[] = [
 </ul>
 <p>BYD claims CTB gives the e³ platform a torsional rigidity comparable to luxury vehicles costing significantly more.</p>
 
-<h2>Which Cars Use e³?</h2>
+<h2 style="margin-top:2.5rem;">Which Cars Use e³?</h2>
 <p>The e³ platform is exclusive to Denza vehicles. Current and upcoming models built on e³ include:</p>
 <ul>
 <li><strong>Denza Z9 GT</strong> — the all-electric grand tourer debuting in Australia in Q3 2026. Tri-motor, 850kW, 0-100 in 2.7s.</li>
@@ -552,7 +552,7 @@ export const articles: Article[] = [
 <li>Future Denza models as the brand expands globally</li>
 </ul>
 
-<h2>e³ vs e-Platform 3.0</h2>
+<h2 style="margin-top:2.5rem;">e³ vs e-Platform 3.0</h2>
 <p>BYD's mainstream models (Atto 3, Seal, Dolphin, etc.) use <strong>e-Platform 3.0</strong> and its evolution <strong>e-Platform 3.0 Evo</strong>. The e³ platform is Denza's premium-exclusive upgrade:</p>
 <table>
 <tr><th>Feature</th><th>e-Platform 3.0</th><th>e³ (Denza)</th></tr>
@@ -583,10 +583,10 @@ export const articles: Article[] = [
     content: `
 <p>The Denza B5 and B8's infotainment system runs on Android. That's no secret — the 17.3-inch screen, the app drawer, the settings menu, it's all Android under the hood. What most people don't know is that you can <strong>sideload apps</strong> onto it, opening up a whole world of functionality that BYD didn't include from the factory.</p>
 
-<h2>What is Sideloading?</h2>
+<h2 style="margin-top:2.5rem;">What is Sideloading?</h2>
 <p>Sideloading means installing apps from outside the official app store — basically loading APK files directly onto the system. On a phone, this is common. On a car's infotainment system, it's a bit more involved, but the Denza's Android base makes it possible.</p>
 
-<h2>What We Installed</h2>
+<h2 style="margin-top:2.5rem;">What We Installed</h2>
 <p>After enabling ADB (Android Debug Bridge) access on our B8, we sideloaded several apps:</p>
 
 <h3>Sentry Mode</h3>
@@ -616,7 +616,7 @@ export const articles: Article[] = [
 <p>We also installed a few entertainment and connectivity apps. Video streaming apps like TikTok work while the car is in motion (for passengers, of course), and the large screen makes them surprisingly usable — especially with the B8's 6-seat layout where rear passengers can comfortably watch while parked or charging.</p>
 <p>One of the best additions is <strong>Baidu CarLink</strong> — the "CarPlay equivalent" for Chinese phones. If you're using an Oppo, Vivo, Xiaomi, OnePlus, or any other Chinese-brand phone, Baidu CarLink connects wirelessly the moment you start the car, just like wireless Apple CarPlay. No cables, no pairing menus, it just works.</p>
 
-<h2>How It Works</h2>
+<h2 style="margin-top:2.5rem;">How It Works</h2>
 <p>The process requires <strong>factory-level access</strong> to the Denza's system — this isn't something you can do through the normal settings menu. Once ADB is enabled, you can install apps in two ways:</p>
 <ul>
 <li><strong>Wired:</strong> Connect an Android phone or laptop via USB and use standard Android ADB tools to install APKs</li>
@@ -625,10 +625,10 @@ export const articles: Article[] = [
 
 <p><em>Note: Factory access should only be performed by qualified technicians.</em></p>
 
-<h2>Does It Affect Warranty?</h2>
+<h2 style="margin-top:2.5rem;">Does It Affect Warranty?</h2>
 <p>That depends on your dealer. The sideloaded apps run on the infotainment system, which is separate from the vehicle's core driving systems. In most cases, a dealer reset would restore the system to factory state. But if you're concerned, check with your dealer before making any changes.</p>
 
-<h2>Want This on Your Denza?</h2>
+<h2 style="margin-top:2.5rem;">Want This on Your Denza?</h2>
 <p>We offer a professional installation service for ADB access and app sideloading on the Denza B5 and B8. <a href="https://shop.baolab.au/products/denza-b5-b8-adb-unlocking-app-sideloading-service">Check out the product page</a> for pricing and availability.</p>
 
 <p><em>Watch our demos: <a href="https://youtu.be/0NnAfIczeRs" target="_blank">Sentry Mode</a> | <a href="https://youtu.be/WWS6Dddk2kY" target="_blank">Quad-View Dashcam</a></em></p>
@@ -651,21 +651,21 @@ export const articles: Article[] = [
     content: `
 <p>Denza has been on an absolute tear in Australia this month. Three developments landed in the span of two weeks, and each one matters if you own — or are considering — a Denza.</p>
 
-<h2>1. The BYD Zhengzhou: 4,810 Vehicles on BYD\'s Own Ship</h2>
+<h2 style="margin-top:2.5rem;">1. The BYD Zhengzhou: 4,810 Vehicles on BYD\'s Own Ship</h2>
 <p>On June 1, a 199.9-metre cargo carrier called the <strong>BYD Zhengzhou</strong> pulled into Webb Dock West in Melbourne. It\'s the first international run of BYD\'s purpose-built car carrier fleet — one of eight RORO (roll-on roll-off) vessels the company owns. The ship was named after Zhengzhou, the capital of Henan Province, and its maiden voyage was deliberately routed to Australia.</p>
 
 <p><strong>4,810 new BYD and Denza vehicles</strong> were unloaded, bound for Australian customers. The shipment includes B5, B8, and D9 models — exactly the models that have had waitlists stretching for months.</p>
 
 <p><strong>Why it matters:</strong> BYD isn\'t just shipping cars — it\'s shipping cars on its own ships. This is vertical integration on a level we haven\'t seen from a Chinese automaker in Australia. BYD controls the factory, the battery supply, and now the logistics. Shorter wait times, fewer supply chain bottlenecks, and a clear signal that Australia is a priority market.</p>
 
-<h2>2. Free OTA Update for B5 and B8</h2>
+<h2 style="margin-top:2.5rem;">2. Free OTA Update for B5 and B8</h2>
 <p>Denza pushed a free over-the-air software update to all B5 and B8 owners in Australia on May 28, improving towing and off-road capability. No dealer visit required — your car got better while you slept.</p>
 
 <p>The update refines the traction control logic for towing scenarios and improves the off-road drive modes. If you\'ve been towing a trailer or hitting gravel roads, the B5 and B8 now handle it better than at launch.</p>
 
 <p><strong>Why it matters:</strong> OTA updates are still rare in the PHEV/4WD space. Tesla does it. Rivian does it. But a Chinese PHEV SUV getting meaningful capability improvements over the air? That\'s new. Denza is treating these cars like software products — buy once, keep getting better.</p>
 
-<h2>3. DiSus-P Ultra: The Suspension That Changes Its Own Tyres</h2>
+<h2 style="margin-top:2.5rem;">3. DiSus-P Ultra: The Suspension That Changes Its Own Tyres</h2>
 <p><img src="/images/news/disus-ultra.jpg" alt="Fangchengbao Bao 8 DiSus-P Ultra three-wheel driving" style="width:100%;border-radius:12px;margin:16px 0" /></p>
 
 <p>This is the big one. In China, the 2026 <strong>Fangchengbao Bao 8</strong> (Denza B8 equivalent) launched with BYD\'s new <strong>DiSus-P Ultra</strong> hydraulic suspension system. The headline feature? It can lift any individual wheel completely off the ground.</p>
@@ -681,7 +681,7 @@ export const articles: Article[] = [
 
 <p><strong>Why it matters:</strong> This tech will almost certainly make its way to the Australian B8. BYD has been clear that the Denza B5 and B8 are global products — what launches in China today arrives here within months. The DiSus-P Ultra turns the B8 from \'a nice 4WD\' into \'the 4WD that doesn\'t need a jack.\'</p>
 
-<h2>The Bigger Picture</h2>
+<h2 style="margin-top:2.5rem;">The Bigger Picture</h2>
 <p>Three weeks. Three announcements. A cargo ship that means shorter wait times. An OTA update that makes existing cars better. And suspension technology that sounds like science fiction.</p>
 
 <p>Denza isn\'t just competing with Toyota and Ford anymore. It\'s competing with Tesla on software, with Land Rover on off-road tech, and with Porsche on logistics speed. And it\'s doing all of it at half the price.</p>
@@ -706,15 +706,15 @@ export const articles: Article[] = [
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1.5rem 0;border-radius:12px;"><iframe src="https://www.youtube.com/embed/6YEGRi57ub8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="How to Unlock ADB on BYD DiLink 5+"></iframe></div>
 
-<h2>What is ADB Unlocking?</h2>
+<h2 style="margin-top:2.5rem;">What is ADB Unlocking?</h2>
 <p>ADB (Android Debug Bridge) unlocking gives you full control over your BYD's infotainment system. Once unlocked, you can install any Android app — sentry mode, dashcam recording, wireless CarPlay for Chinese phones, and more.</p>
 <p><strong>Why doesn't BYD allow this by default?</strong> BYD restricts third-party apps for safety and warranty reasons. But for many owners, the factory apps don't cover everything they need — especially for features like parking surveillance and entertainment.</p>
 
-<h2>Step 1: Check Compatibility</h2>
+<h2 style="margin-top:2.5rem;">Step 1: Check Compatibility</h2>
 <p>Region or spec of car doesn't matter — follow step 2, if a QR code appears, then it's 100% compatible! If it says IMEI and ENTER PASSWORD, not compatible as the car is running a lower version of DiLink.</p>
 <p><strong>Known incompatible (AU/NZ):</strong> Atto 1, Atto 2, Atto 3, Seal, Sealion 6</p>
 
-<h2>Step 2: Access the QR Code Page</h2>
+<h2 style="margin-top:2.5rem;">Step 2: Access the QR Code Page</h2>
 <p>This is where most people get stuck. Here's how to access the hidden QR code page:</p>
 <ol>
 <li><strong>Open the Bluetooth phone dialer</strong> on your infotainment screen (NOT the regular phone app — use the one in the Bluetooth settings)</li>
@@ -725,7 +725,7 @@ export const articles: Article[] = [
 </ol>
 <p><strong>Important:</strong> The QR code is only valid for 300 seconds (5 minutes). Once it expires, you'll need to regenerate it.</p>
 
-<h2>Step 3: Get the QR Code Scanned</h2>
+<h2 style="margin-top:2.5rem;">Step 3: Get the QR Code Scanned</h2>
 <p>This is the part that requires professional tools. The QR code needs to be scanned by BYD's diagnostic software.</p>
 <p><strong>Options:</strong></p>
 <ul>
@@ -741,7 +741,7 @@ export const articles: Article[] = [
 <li>ADB is now enabled on your vehicle</li>
 </ul>
 
-<h2>Step 4: Install Apps via USB</h2>
+<h2 style="margin-top:2.5rem;">Step 4: Install Apps via USB</h2>
 <p>Once ADB is enabled, you can install apps via USB:</p>
 <ol>
 <li><strong>Download the APK files</strong> you want to install (see our <a href="https://baolab.au/lab">App Library</a>)</li>
@@ -753,7 +753,7 @@ export const articles: Article[] = [
 <li><strong>Install and enjoy!</strong></li>
 </ol>
 
-<h2>Step 5: Install Apps Wirelessly (Advanced)</h2>
+<h2 style="margin-top:2.5rem;">Step 5: Install Apps Wirelessly (Advanced)</h2>
 <p>For wireless installation, you'll need to enable wireless ADB:</p>
 <ol>
 <li><strong>Connect your car to WiFi</strong> (home WiFi or mobile hotspot)</li>
@@ -765,7 +765,7 @@ export const articles: Article[] = [
 adb install app.apk</code></pre>
 <p><strong>How it works:</strong> adb connect links your computer to the car over WiFi. adb install sends the APK file from your computer to the car and installs it directly. The APK needs to be on your computer — no need to copy it to the car first.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2 style="margin-top:2.5rem;">Frequently Asked Questions</h2>
 <p><strong>Q: Will this void my warranty?</strong><br>A: It depends on your dealer. Some don't mind, others might flag it. We recommend asking your dealer first.</p>
 <p><strong>Q: Can I reverse the unlock?</strong><br>A: Yes, you can disable ADB in the factory mode settings anytime.</p>
 <p><strong>Q: How long will the ADB authentication last?</strong><br>A: Forever, until a factory reset is performed.</p>
@@ -773,7 +773,7 @@ adb install app.apk</code></pre>
 <p><strong>Q: Is it safe?</strong><br>A: The apps we recommend are safe and widely used in the BYD community. However, installing unknown APKs always carries some risk.</p>
 <p><strong>Q: What if I brick my car?</strong><br>A: We are not responsible if you install a virus. Always run a security check on files downloaded from the internet.</p>
 
-<h2>Need Help?</h2>
+<h2 style="margin-top:2.5rem;">Need Help?</h2>
 <p>If you get stuck at any step, we're here to help:</p>
 <p><strong>Email:</strong> hello@baolab.au</p>
 <p><strong>Ready to unlock?</strong> <a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Unlock Service →</a></p>`,
@@ -790,13 +790,12 @@ adb install app.apk</code></pre>
       { slug: "denza-b8-sentry-mode", title: "Denza B8 Sentry Mode + Sideloaded Apps" },
       { slug: "how-to-install-apps-on-byd-dilink-5", title: "How to Install Third-Party Apps on BYD DiLink 5.0+" },
     ],
-    content: `<h1>Denza B8 Gets Factory Sentry Mode — Everything You Need to Know</h1>
-<p><strong>July 2026 — Denza has officially rolled out sentry mode to the B8 through an over-the-air software update.</strong></p>
+    content: `<p><strong>July 2026 — Denza has officially rolled out sentry mode to the B8 through an over-the-air software update.</strong></p>
 <p>After months of waiting, B8 owners can now monitor their vehicle's surroundings while parked — no third-party apps needed. Here's everything you need to know.</p>
 
-<img src="/images/news/b8-sentry-ota/update-notice.jpg" alt="B8 OTA update notification" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/update-notice.jpg" alt="B8 OTA update notification" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>What's in the Update</h2>
+<h2 style="margin-top:2.5rem;">What's in the Update</h2>
 <p>The OTA update brings sentry mode as the headline feature, along with several other improvements:</p>
 <ul>
 <li><strong>Sentry Mode</strong> — monitor your vehicle's surroundings while parked</li>
@@ -807,9 +806,9 @@ adb install app.apk</code></pre>
 <li>Improved ICC and LDA driving collaboration</li>
 </ul>
 
-<img src="/images/news/b8-sentry-ota/update-details.jpg" alt="OTA update details" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/update-details.jpg" alt="OTA update details" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>How to Update</h2>
+<h2 style="margin-top:2.5rem;">How to Update</h2>
 <ol>
 <li>Park your B8 in a safe location with stable WiFi</li>
 <li>Go to <strong>Settings → System → Software Update</strong></li>
@@ -817,14 +816,14 @@ adb install app.apk</code></pre>
 <li>Re-login to the Denza APP after update for sentry mode activation</li>
 </ol>
 
-<img src="/images/news/b8-sentry-ota/update-success.jpg" alt="Update successful" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/update-success.jpg" alt="Update successful" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>Finding Sentry Mode</h2>
+<h2 style="margin-top:2.5rem;">Finding Sentry Mode</h2>
 <p>After the update, a new <strong>Sentry Mode</strong> app appears in your app drawer. Tap it to open the main control screen.</p>
 
-<img src="/images/news/b8-sentry-ota/app-drawer.jpg" alt="Sentry mode in app drawer" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/app-drawer.jpg" alt="Sentry mode in app drawer" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>The Main Screen</h2>
+<h2 style="margin-top:2.5rem;">The Main Screen</h2>
 <p>The sentry mode interface shows a large shield icon with a red camera lens, indicating surveillance is active. On the left side you'll find:</p>
 <ul>
 <li><strong>Blue power button</strong> — enable or disable sentry mode</li>
@@ -834,26 +833,26 @@ adb install app.apk</code></pre>
 <p>On the right side there's an <strong>"About Sentry"</strong> link with more information about the feature.</p>
 <p>The key message displayed: <em>"Sentry mode will be activated after your vehicle is powered off and locked."</em></p>
 
-<img src="/images/news/b8-sentry-ota/hero.jpg" alt="Sentry mode main screen" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/hero.jpg" alt="Sentry mode main screen" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>Activation Modes</h2>
+<h2 style="margin-top:2.5rem;">Activation Modes</h2>
 <p>Sentry mode offers two activation modes to suit different needs:</p>
 
 <h3>Always ON</h3>
 <p>Sentry mode activates <strong>every time</strong> you power off and lock the vehicle. Set it and forget it — your B8 is always watching when parked.</p>
 
-<img src="/images/news/b8-sentry-ota/setting-always-on.jpg" alt="Always on mode" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/setting-always-on.jpg" alt="Always on mode" style="width:100%;border-radius:12px;margin:2rem 0;">
 
 <h3>Single ON</h3>
 <p>Sentry mode activates <strong>for one parked session only</strong>. It automatically turns off when you start the car next. Perfect for when you're parked in an unfamiliar area but don't want it running all the time.</p>
 
-<img src="/images/news/b8-sentry-ota/setting-single-on.jpg" alt="Single on mode" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/setting-single-on.jpg" alt="Single on mode" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>Battery Protection — Retained SOC</h2>
+<h2 style="margin-top:2.5rem;">Battery Protection — Retained SOC</h2>
 <p>One of the smartest features is the <strong>Retained SOC</strong> setting. This is a slider that lets you set a minimum battery level (between 30% and 80%).</p>
 <p>When your battery drops to this level, sentry mode automatically shuts off to preserve range. This means you'll never come back to a dead battery because sentry mode drained it overnight.</p>
 
-<h2>What Happens When It Detects Movement</h2>
+<h2 style="margin-top:2.5rem;">What Happens When It Detects Movement</h2>
 <p>When sentry mode detects someone approaching your vehicle, it:</p>
 <ul>
 <li>Starts recording video from the front, side, and rear cameras</li>
@@ -862,9 +861,9 @@ adb install app.apk</code></pre>
 </ul>
 <p>The recordings are <strong>stored only in the vehicle</strong> — they are not uploaded to the cloud. You can review and manage the clips directly on the infotainment screen.</p>
 
-<img src="/images/news/b8-sentry-ota/recording-active.jpg" alt="Sentry mode recording" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/recording-active.jpg" alt="Sentry mode recording" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>Important Notes</h2>
+<h2 style="margin-top:2.5rem;">Important Notes</h2>
 <ul>
 <li><strong>Side mirrors unfold</strong> when sentry mode is active — this is normal, as the cameras need a clear view. Be aware of potential mirror damage in tight parking spots.</li>
 <li><strong>Insert a memory card</strong> (32GB or larger) before using sentry mode — without it, recordings won't be saved.</li>
@@ -872,9 +871,9 @@ adb install app.apk</code></pre>
 <li><strong>Ambient light affects performance</strong> — in very dark or very bright conditions, detection may be less accurate.</li>
 </ul>
 
-<img src="/images/news/b8-sentry-ota/tip-car-off.jpg" alt="Sentry tips popup" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/tip-car-off.jpg" alt="Sentry tips popup" style="width:100%;border-radius:12px;margin:2rem 0;">
 
-<h2>How to Access Recordings</h2>
+<h2 style="margin-top:2.5rem;">How to Access Recordings</h2>
 <p>Open the Sentry Mode app and tap the <strong>video icon</strong> on the left side of the main screen. From there you can:</p>
 <ul>
 <li>Browse recorded events by date and time</li>
@@ -882,11 +881,11 @@ adb install app.apk</code></pre>
 <li>Delete clips to free up storage space</li>
 </ul>
 
-<h2>The Verdict</h2>
+<h2 style="margin-top:2.5rem;">The Verdict</h2>
 <p>Factory sentry mode on the B8 is a solid addition. It's officially supported, doesn't affect warranty, and integrates seamlessly with the Denza APP. The Retained SOC feature is particularly smart — it gives you peace of mind without worrying about battery drain.</p>
 <p>For most B8 owners, this is all you need. Park, lock, and let the car watch itself.</p>
 
-<h2>Frequently Asked Questions</h2>
+<h2 style="margin-top:2.5rem;">Frequently Asked Questions</h2>
 
 <h3>Does sentry mode drain the battery?</h3>
 <p>Yes, sentry mode consumes electricity while active. However, the <strong>Retained SOC</strong> setting automatically shuts it off when your battery drops to your chosen threshold (30-80%). Denza also recommends fully charging at least once a week if sentry mode is on all the time.</p>
