@@ -780,7 +780,6 @@ adb install app.apk</code></pre>
   },
 
   {
-  {
     slug: "denza-b8-factory-sentry-mode",
     image: "/images/news/b8-sentry-ota/hero.jpg",
     title: "Denza B8 Gets Factory Sentry Mode — Everything You Need to Know",
