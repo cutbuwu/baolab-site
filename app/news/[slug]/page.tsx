@@ -51,12 +51,74 @@ export default async function ArticlePage({
     },
   };
 
+  // FAQ schema for articles with FAQ sections
+  const faqJsonLd = slug === "denza-b8-factory-sentry-mode" ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does sentry mode drain the battery?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, sentry mode consumes electricity while active. However, the Retained SOC setting automatically shuts it off when your battery drops to your chosen threshold (30-80%). Denza recommends fully charging at least once a week if sentry mode is on all the time."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Do I need a memory card for sentry mode?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. You need a 32GB or larger memory card inserted in the vehicle's card slot. Without it, sentry mode will still detect movement and alert you, but recordings won't be saved."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Will sentry mode affect my warranty?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "No. Factory sentry mode is an official Denza feature delivered via OTA update. It's fully supported and does not affect your vehicle's warranty."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Does sentry mode work in the dark?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sentry mode uses the vehicle's cameras to detect movement. However, Denza notes that ambient light and camera performance limitations may affect detection accuracy in very dark or very bright conditions."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Can I use sentry mode and ADB-enabled apps at the same time?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. If you've enabled ADB on your B8, the factory sentry mode update won't affect your ADB access. Both can work independently."
+        }
+      },
+      {
+        "@type": "Question",
+        name: "Why do my side mirrors unfold when sentry mode is on?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "The side mirrors unfold to give the cameras a clear view of the vehicle's surroundings. This is normal behavior. Be mindful of mirror damage if you park in very tight spaces."
+        }
+      }
+    ]
+  } : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <article className="section">
         <div className="container article-container">
           <a href="/news" className="article-back">
