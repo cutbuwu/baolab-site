@@ -778,6 +778,92 @@ adb install app.apk</code></pre>
 <p><strong>Email:</strong> hello@baolab.au</p>
 <p><strong>Ready to unlock?</strong> <a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Unlock Service →</a></p>`,
   },
+
+  {
+    slug: "denza-b8-factory-sentry-mode",
+    image: "/images/news/b8-sentry-ota/hero.jpg",
+    title: "Denza B8 Gets Factory Sentry Mode via OTA Update — But ADB Enablement Still Has the Edge",
+    date: "2026-07-22",
+    category: "News",
+    excerpt: "Denza just shipped official sentry mode to the B8 via OTA update. We tested it alongside our sideloaded version — here's how they compare and why ADB enablement is still worth it.",
+    related: [
+      { slug: "denza-b8-sentry-mode", title: "Denza B8 Sentry Mode + Sideloaded Apps" },
+      { slug: "how-to-install-apps-on-byd-dilink-5", title: "How to Install Third-Party Apps on BYD DiLink 5.0+" },
+    ],
+    content: `<h1>Denza B8 Gets Factory Sentry Mode via OTA Update</h1>
+<p><strong>July 2026 — Denza has officially rolled out sentry mode to the B8 through an over-the-air software update.</strong></p>
+
+<img src="/images/news/b8-sentry-ota/update-notice.jpg" alt="B8 OTA update notification" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>What's New</h2>
+<p>The update brings a host of improvements beyond sentry mode:</p>
+<ul>
+<li><strong>Sentry Mode</strong> — monitor your vehicle's surroundings while parked</li>
+<li>Optimised seat heating performance</li>
+<li>CPD alarm one-tap deactivation (28 consecutive days)</li>
+<li>DMS switch in dropdown shortcut panel</li>
+<li>Optimised one-touch seat folding for second and third rows</li>
+<li>Improved ICC and LDA driving collaboration</li>
+</ul>
+
+<img src="/images/news/b8-sentry-ota/update-details.jpg" alt="OTA update details" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>How to Update</h2>
+<ol>
+<li>Park your B8 in a safe location with stable WiFi</li>
+<li>Go to <strong>Settings → System → Software Update</strong></li>
+<li>Download and install (approximately 120 minutes)</li>
+<li>Re-login to the Denza APP after update for sentry mode activation</li>
+</ol>
+
+<img src="/images/news/b8-sentry-ota/update-success.jpg" alt="Update successful" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>Sentry Mode in Action</h2>
+<p>Once updated, the sentry mode app appears in your app drawer. It's a dedicated app with its own interface for monitoring and settings.</p>
+
+<img src="/images/news/b8-sentry-ota/app-drawer.jpg" alt="Sentry mode in app drawer" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<p>The app provides a hero view with camera feeds and recording status when the car detects movement nearby.</p>
+
+<img src="/images/news/b8-sentry-ota/hero.jpg" alt="Sentry mode hero view" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>Activation Modes</h2>
+<p>Sentry mode offers two activation modes:</p>
+<ul>
+<li><strong>Always On</strong> — sentry mode activates every time you park</li>
+<li><strong>Single On</strong> — activate manually when needed</li>
+</ul>
+
+<img src="/images/news/b8-sentry-ota/setting-always-on.jpg" alt="Always on mode" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>Factory vs Sideloaded Sentry Mode</h2>
+<p>We've been running sideloaded sentry mode on our B8 for months via ADB enablement. Here's how the new factory version compares:</p>
+<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;">
+<tr style="background:rgba(255,255,255,0.05);"><th style="padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);">Feature</th><th style="padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);">Factory Sentry Mode</th><th style="padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);">Sideloaded (via ADB)</th></tr>
+<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Installation</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">OTA update</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Requires ADB enablement</td></tr>
+<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Camera coverage</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Depends on model</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Full 360° (if supported)</td></tr>
+<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Recording storage</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">SD card / cloud</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">SD card / local storage</td></tr>
+<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Customization</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Limited</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Full control</td></tr>
+<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Third-party apps</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">No</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Yes</td></tr>
+<tr><td style="padding:12px;">Works without ADB</td><td style="padding:12px;">Yes</td><td style="padding:12px;">No</td></tr>
+</table>
+
+<h2>The Verdict</h2>
+<p>Factory sentry mode is great for most users — it's officially supported, doesn't affect warranty, and works out of the box. But for enthusiasts who want full control over their infotainment system, ADB enablement still offers:</p>
+<ul>
+<li>Third-party app installation (dashcam, CarPlay, entertainment apps)</li>
+<li>Custom launcher and UI modifications</li>
+<li>Wireless ADB for remote management</li>
+<li>Full Android system access</li>
+</ul>
+
+<h2>Already Have ADB Enablement?</h2>
+<p>If you already enabled ADB on your B8 via our service, you'll still get the factory sentry mode update. Your ADB access will remain intact — OTA updates don't affect ADB enablement status.</p>
+
+<h2>Want the Full Experience?</h2>
+<p>Our ADB Enablement Service gives you factory-level access to your B8's infotainment system. Install any Android app, customize your experience, and unlock features that go beyond what factory updates offer.</p>
+<p><strong><a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Enablement Service →</a></strong></p>`,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
