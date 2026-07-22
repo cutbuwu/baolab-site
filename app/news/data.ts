@@ -905,6 +905,96 @@ adb install app.apk</code></pre>
 <h3>Why do my side mirrors unfold when sentry mode is on?</h3>
 <p>The side mirrors unfold to give the cameras a clear view of the vehicle's surroundings. This is normal behavior. Be mindful of mirror damage if you park in very tight spaces.</p>`,
   },
+  {
+    slug: "denza-b8-passenger-screen-world-first",
+    image: "/images/news/",
+    title: "World-First RHD Passenger Entertainment Screen for Denza B8 — Now Available in Australia",
+    date: "2026-07-13",
+    category: "Product",
+    excerpt: "BaoLab brings the first right-hand drive passenger entertainment screen for the Denza B8 to Australia. Factory-matched, plug-and-play, Android 13 powered.",
+    related: [
+      { slug: "denza-b8-factory-sentry-mode", title: "Denza B8 Gets Factory Sentry Mode" },
+      { slug: "denza-b5-b8-launch", title: "Denza B5 & B8 Launch in Australia" },
+    ],
+    content: `<p><strong>July 2026 — BaoLab has secured the world-first right-hand drive passenger entertainment screen for the Denza B8, now available for Australian customers.</strong></p>
+<p>The Denza B8 is one of the most popular electric SUVs in Australia, but it ships with one limitation: the infotainment screen is only for the driver. Passengers in the front seat have no dedicated display — until now.</p>
+
+<h2 style="margin-top:2.5rem;">What Is It?</h2>
+<p>The passenger entertainment screen is a <strong>12.3-inch HD display</strong> that mounts on the dashboard, giving the front-seat passenger their own dedicated screen. It's the same screen that comes factory-installed in Chinese-spec Denza B8 vehicles — but this is the <strong>right-hand drive version</strong>, specifically designed for Australian models.</p>
+
+<h2 style="margin-top:2.5rem;">Key Features</h2>
+<ul>
+<li><strong>12.3 inch HD touchscreen</strong> (1920×720 resolution)</li>
+<li><strong>Android 13 operating system</strong> — full Google Play Store access</li>
+<li><strong>6GB RAM + 64GB storage</strong> — smooth performance, plenty of space for apps</li>
+<li><strong>Plug-and-play installation</strong> — no wire cutting, no drilling, no permanent modifications</li>
+<li><strong>Anti-glare film included</strong> — compliant with Australian road safety regulations</li>
+<li><strong>WiFi + Bluetooth connectivity</strong> — connect to your phone hotspot or home WiFi</li>
+<li><strong>Loop recording support</strong> — can act as a secondary dashcam</li>
+<li><strong>Factory-matched design</strong> — looks like it came from the factory</li>
+</ul>
+
+<h2 style="margin-top:2.5rem;">What Can Passengers Do?</h2>
+<p>With Android 13 and full Google Play Store access, passengers can:</p>
+<ul>
+<li>Watch YouTube, Netflix, or any streaming service</li>
+<li>Browse the web</li>
+<li>Use navigation apps independently</li>
+<li>Play games</li>
+<li>Connect Bluetooth headphones for private audio</li>
+<li>Use any Android app — the possibilities are endless</li>
+</ul>
+
+<h2 style="margin-top:2.5rem;">Installation</h2>
+<p>The screen is designed for <strong>plug-and-play installation</strong>. That means:</p>
+<ul>
+<li>No wire cutting</li>
+<li>No drilling</li>
+<li>No permanent modifications to your vehicle</li>
+<li>Can be removed without trace</li>
+</ul>
+<p>The installation connects to the existing wiring harness behind the dashboard. The screen replaces the dashboard panel on the passenger side and fits flush with the interior.</p>
+
+<h2 style="margin-top:2.5rem;">Why RHD Matters</h2>
+<p>The Chinese-spec Denza B8 comes with a passenger screen designed for left-hand drive vehicles. The dashboard layout, mounting points, and cable routing are all different for right-hand drive models.</p>
+<p>That's why this screen took so long to develop — it's not just a mirror image. The mounting bracket, cable harness, and even the viewing angle have been specifically engineered for the Australian RHD dashboard.</p>
+
+<h2 style="margin-top:2.5rem;">UK Market</h2>
+<p>Interestingly, the UK-market Denza Bao 5 (the B8's equivalent in the UK) ships with a passenger screen from the factory. This confirms that RHD passenger screens are technically feasible — the hardware exists. BaoLab has worked directly with the manufacturer to bring this same technology to Australian B8 owners.</p>
+
+<h2 style="margin-top:2.5rem;">Pricing and Availability</h2>
+<p>The Denza B8 Passenger Entertainment Screen is available for pre-order now at <strong>$899 AUD</strong> (including GST).</p>
+<ul>
+<li><strong>Production time:</strong> 15-20 business days</li>
+<li><strong>Shipping:</strong> Air freight from factory, 3-5 business days</li>
+<li><strong>Total lead time:</strong> 21-25 business days from order</li>
+</ul>
+<p>Each unit undergoes quality inspection before dispatch. We inspect every screen for dead pixels, touch responsiveness, and fitment accuracy.</p>
+
+<h2 style="margin-top:2.5rem;">Frequently Asked Questions</h2>
+
+<h3>Will this void my warranty?</h3>
+<p>No. The screen is plug-and-play and connects to existing wiring. It can be removed without trace. However, we recommend consulting your dealer if you have concerns.</p>
+
+<h3>Does it work with ADB-enabled apps?</h3>
+<p>Yes. The screen runs Android 13 independently, so you can install any app you want — including apps you might use via ADB on the main infotainment.</p>
+
+<h3>Can the driver see the passenger screen?</h3>
+<p>The screen is positioned for the passenger's viewing angle. The driver cannot comfortably see the screen while driving, which is intentional for safety.</p>
+
+<h3>Does it affect the driver's screen?</h3>
+<p>No. The passenger screen operates independently. Both screens can run different apps at the same time.</p>
+
+<h3>Is it legal in Australia?</h3>
+<p>The screen comes with an anti-glare film pre-applied, which is required under Australian road safety regulations for dashboard-mounted displays. The screen is positioned so it doesn't obstruct the driver's view.</p>
+
+<h3>Can I install it myself?</h3>
+<p>We recommend professional installation, but the plug-and-play design means a skilled DIYer can do it in about 30-45 minutes. Full installation guide included.</p>
+
+<h2 style="margin-top:2.5rem;">Order Now</h2>
+<p>The Denza B8 Passenger Entertainment Screen is available exclusively through BaoLab.</p>
+<p><strong><a href="https://shop.baolab.au/products/denza-b8-passenger-entertainment-screen">Order the Passenger Entertainment Screen →</a></strong></p>`,
+  },
 ];
 
 export function getArticleBySlug(slug: string): Article | undefined {
