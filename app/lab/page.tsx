@@ -10,7 +10,7 @@ const apps = [
   {
     name: "DiPlus",
     description:
-      "The largest 3rd-party BYD companion app from China. Includes sentry mode, quad-view dashcam, remote vehicle control, automations, energy tracking, and more. Works with all Denza models. Requires ADB unlock for full features.",
+      "The largest 3rd-party BYD companion app from China. Includes sentry mode, quad-view dashcam, remote vehicle control, automations, energy tracking, and more. Works with all Denza models. Requires ADB enablement for full features.",
     version: "1.3.8-beta21",
     size: "~50MB",
         downloadUrl:
@@ -299,7 +299,7 @@ export default function LabPage() {
             }}
           >
             You&apos;ll need factory-level ADB access to install these apps. We
-            offer a remote unlock service that takes 10 minutes.
+            offer a remote enablement service that takes 10 minutes.
           </p>
           <Link
             href="https://shop.baolab.au/products/adb-unlocking-service"
@@ -320,7 +320,7 @@ export default function LabPage() {
               boxShadow: "0 1.5px 0 rgba(255, 255, 255, 0.22) inset, 0 -1px 0 rgba(0, 0, 0, 0.08) inset, 0 8px 24px rgba(0, 0, 0, 0.18)",
             }}
           >
-            Get ADB Unlock Service →
+            Get ADB Enablement Service →
           </Link>
         </div>
       </section>

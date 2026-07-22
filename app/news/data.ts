@@ -696,17 +696,17 @@ export const articles: Article[] = [
     title: "How to Install Third-Party Apps on BYD DiLink 5.0+",
     date: "2026-06-15",
     category: "Guide",
-    excerpt: "A step-by-step guide to unlocking ADB and sideloading apps on your BYD or Denza vehicle. Works on all DiLink 5.0+ models worldwide.",
+    excerpt: "A step-by-step guide to enabling ADB and sideloading apps on your BYD or Denza vehicle. Works on all DiLink 5.0+ models worldwide.",
     related: [
       { slug: "denza-b8-sentry-mode", title: "Denza B8 Sentry Mode + Sideloaded Apps" },
       { slug: "denza-triple-threat", title: "Denza Triple Threat" },
     ],
     content: `<h1>How to Install Third-Party Apps on BYD DiLink 5.0+</h1>
-<p><strong>A step-by-step guide to unlocking ADB and sideloading apps on your BYD or Denza vehicle.</strong></p>
+<p><strong>A step-by-step guide to enabling ADB and sideloading apps on your BYD or Denza vehicle.</strong></p>
 
 <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:1.5rem 0;border-radius:12px;"><iframe src="https://www.youtube.com/embed/6YEGRi57ub8" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="How to Unlock ADB on BYD DiLink 5+"></iframe></div>
 
-<h2 style="margin-top:2.5rem;">What is ADB Unlocking?</h2>
+<h2 style="margin-top:2.5rem;">What is ADB Enablement?</h2>
 <p>ADB (Android Debug Bridge) unlocking gives you full control over your BYD's infotainment system. Once unlocked, you can install any Android app — sentry mode, dashcam recording, wireless CarPlay for Chinese phones, and more.</p>
 <p><strong>Why doesn't BYD allow this by default?</strong> BYD restricts third-party apps for safety and warranty reasons. But for many owners, the factory apps don't cover everything they need — especially for features like parking surveillance and entertainment.</p>
 

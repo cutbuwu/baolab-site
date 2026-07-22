@@ -27,7 +27,7 @@ export default function TermsPage() {
               lineHeight: 1.7,
             }}
           >
-            ADB Unlocking Service — BAOLAB
+            ADB Enablement Service — BAOLAB
           </p>
           <p style={{ marginTop: 8, color: "var(--muted2)", fontSize: 13 }}>
             Last updated: June 16, 2026
@@ -50,11 +50,11 @@ export default function TermsPage() {
             Contents
           </p>
           
-          {/* ADB Unlocking Service Section */}
+          {/* ADB Enablement Service Section */}
           <div style={{ marginBottom: 24 }}>
             <p style={{ color: "var(--text)", fontSize: 14, fontWeight: 600, marginBottom: 12, display: "flex", alignItems: "center", gap: 8 }}>
               <span style={{ background: "rgba(255, 255, 255, 0.08)", borderRadius: 6, padding: "2px 8px", fontSize: 11, color: "var(--muted2)" }}>I</span>
-              ADB Unlocking Service
+              ADB Enablement Service
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 8, paddingLeft: 32 }}>
               {["Service Description", "Eligibility", "Service Process", "Payment & Pricing", "Your Responsibilities", "Limitation of Liability", "Indemnification", "Intellectual Property", "Privacy", "Governing Law", "Changes to Terms", "Severability", "Entire Agreement", "Contact", "Acceptance"].map((item, i) => (
@@ -101,20 +101,20 @@ export default function TermsPage() {
           
           <div style={{ marginBottom: 20 }}>
             <p style={{ color: "var(--muted2)", fontSize: 12, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 8 }}>
-              ADB Unlocking Service
+              ADB Enablement Service
             </p>
             <h2 style={{ fontSize: 28, fontWeight: 700, color: "var(--text)", marginBottom: 8 }}>
-              Terms & Conditions — ADB Unlocking Service
+              Terms & Conditions — ADB Enablement Service
             </h2>
             <p style={{ color: "var(--muted)", fontSize: 14 }}>
-              This section applies to the ADB Unlocking Service provided by BAOLAB for BYD and Denza vehicles.
+              This section applies to the ADB Enablement Service provided by BAOLAB for BYD and Denza vehicles.
             </p>
           </div>
 
           <Section id="section-1" number="1" title="Service Description">
             <p>
               BAOLAB (&quot;we&quot;, &quot;us&quot;, &quot;our&quot;) provides an ADB (Android Debug Bridge)
-              unlocking service for BYD and Denza vehicles running DiLink 5.0 or
+              enablement service for BYD and Denza vehicles running DiLink 5.0 or
               newer. The service involves:
             </p>
             <ul>
@@ -149,7 +149,7 @@ export default function TermsPage() {
           <Section id="section-3" number="3" title="Service Process">
             <ol>
               <li>
-                <strong>Order Placement:</strong> Purchase the ADB Unlocking Service
+                <strong>Order Placement:</strong> Purchase the ADB Enablement Service
                 through our website
               </li>
               <li>
@@ -271,7 +271,7 @@ export default function TermsPage() {
             <h3>6.1 No Warranty for Third-Party Applications</h3>
             <p>
               We are not responsible for any third-party applications you install on
-              your vehicle&apos;s infotainment system after the ADB unlock. This
+              your vehicle&apos;s infotainment system after the ADB enablement. This
               includes but is not limited to:
             </p>
             <ul>
@@ -410,7 +410,7 @@ export default function TermsPage() {
           <Section id="section-13" number="13" title="Entire Agreement">
             <p>
               These terms constitute the entire agreement between you and BAOLAB
-              regarding the ADB Unlocking Service, superseding any prior agreements
+              regarding the ADB Enablement Service, superseding any prior agreements
               or understandings.
             </p>
           </Section>
@@ -435,7 +435,7 @@ export default function TermsPage() {
 
           <Section id="section-14" number="14" title="Acceptance">
             <p>
-              By purchasing and using our ADB Unlocking Service, you acknowledge
+              By purchasing and using our ADB Enablement Service, you acknowledge
               that you have read, understood, and agree to be bound by these Terms
               &amp; Conditions.
             </p>
