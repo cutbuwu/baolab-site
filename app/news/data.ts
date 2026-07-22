@@ -780,23 +780,25 @@ adb install app.apk</code></pre>
   },
 
   {
+  {
     slug: "denza-b8-factory-sentry-mode",
     image: "/images/news/b8-sentry-ota/hero.jpg",
-    title: "Denza B8 Gets Factory Sentry Mode via OTA Update — But ADB Enablement Still Has the Edge",
+    title: "Denza B8 Gets Factory Sentry Mode — Everything You Need to Know",
     date: "2026-07-22",
     category: "News",
-    excerpt: "Denza just shipped official sentry mode to the B8 via OTA update. We tested it alongside our sideloaded version — here's how they compare and why ADB enablement is still worth it.",
+    excerpt: "The Denza B8 just received official sentry mode via OTA update. We break down how it works, the settings, and what it means for B8 owners.",
     related: [
       { slug: "denza-b8-sentry-mode", title: "Denza B8 Sentry Mode + Sideloaded Apps" },
       { slug: "how-to-install-apps-on-byd-dilink-5", title: "How to Install Third-Party Apps on BYD DiLink 5.0+" },
     ],
-    content: `<h1>Denza B8 Gets Factory Sentry Mode via OTA Update</h1>
+    content: `<h1>Denza B8 Gets Factory Sentry Mode — Everything You Need to Know</h1>
 <p><strong>July 2026 — Denza has officially rolled out sentry mode to the B8 through an over-the-air software update.</strong></p>
+<p>After months of waiting, B8 owners can now monitor their vehicle's surroundings while parked — no third-party apps needed. Here's everything you need to know.</p>
 
 <img src="/images/news/b8-sentry-ota/update-notice.jpg" alt="B8 OTA update notification" style="width:100%;border-radius:12px;margin:1.5rem 0;">
 
-<h2>What's New</h2>
-<p>The update brings a host of improvements beyond sentry mode:</p>
+<h2>What's in the Update</h2>
+<p>The OTA update brings sentry mode as the headline feature, along with several other improvements:</p>
 <ul>
 <li><strong>Sentry Mode</strong> — monitor your vehicle's surroundings while parked</li>
 <li>Optimised seat heating performance</li>
@@ -818,51 +820,72 @@ adb install app.apk</code></pre>
 
 <img src="/images/news/b8-sentry-ota/update-success.jpg" alt="Update successful" style="width:100%;border-radius:12px;margin:1.5rem 0;">
 
-<h2>Sentry Mode in Action</h2>
-<p>Once updated, the sentry mode app appears in your app drawer. It's a dedicated app with its own interface for monitoring and settings.</p>
+<h2>Finding Sentry Mode</h2>
+<p>After the update, a new <strong>Sentry Mode</strong> app appears in your app drawer. Tap it to open the main control screen.</p>
 
 <img src="/images/news/b8-sentry-ota/app-drawer.jpg" alt="Sentry mode in app drawer" style="width:100%;border-radius:12px;margin:1.5rem 0;">
 
-<p>The app provides a hero view with camera feeds and recording status when the car detects movement nearby.</p>
+<h2>The Main Screen</h2>
+<p>The sentry mode interface shows a large shield icon with a red camera lens, indicating surveillance is active. On the left side you'll find:</p>
+<ul>
+<li><strong>Blue power button</strong> — enable or disable sentry mode</li>
+<li><strong>Video icon</strong> — access recorded clips</li>
+<li><strong>Settings gear</strong> — configure sentry mode options</li>
+</ul>
+<p>On the right side there's an <strong>"About Sentry"</strong> link with more information about the feature.</p>
+<p>The key message displayed: <em>"Sentry mode will be activated after your vehicle is powered off and locked."</em></p>
 
-<img src="/images/news/b8-sentry-ota/hero.jpg" alt="Sentry mode hero view" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+<img src="/images/news/b8-sentry-ota/hero.jpg" alt="Sentry mode main screen" style="width:100%;border-radius:12px;margin:1.5rem 0;">
 
 <h2>Activation Modes</h2>
-<p>Sentry mode offers two activation modes:</p>
-<ul>
-<li><strong>Always On</strong> — sentry mode activates every time you park</li>
-<li><strong>Single On</strong> — activate manually when needed</li>
-</ul>
+<p>Sentry mode offers two activation modes to suit different needs:</p>
+
+<h3>Always ON</h3>
+<p>Sentry mode activates <strong>every time</strong> you power off and lock the vehicle. Set it and forget it — your B8 is always watching when parked.</p>
 
 <img src="/images/news/b8-sentry-ota/setting-always-on.jpg" alt="Always on mode" style="width:100%;border-radius:12px;margin:1.5rem 0;">
 
-<h2>Factory vs Sideloaded Sentry Mode</h2>
-<p>We've been running sideloaded sentry mode on our B8 for months via ADB enablement. Here's how the new factory version compares:</p>
-<table style="width:100%;border-collapse:collapse;margin:1.5rem 0;">
-<tr style="background:rgba(255,255,255,0.05);"><th style="padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);">Feature</th><th style="padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);">Factory Sentry Mode</th><th style="padding:12px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1);">Sideloaded (via ADB)</th></tr>
-<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Installation</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">OTA update</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Requires ADB enablement</td></tr>
-<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Camera coverage</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Depends on model</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Full 360° (if supported)</td></tr>
-<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Recording storage</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">SD card / cloud</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">SD card / local storage</td></tr>
-<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Customization</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Limited</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Full control</td></tr>
-<tr><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Third-party apps</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">No</td><td style="padding:12px;border-bottom:1px solid rgba(255,255,255,0.05);">Yes</td></tr>
-<tr><td style="padding:12px;">Works without ADB</td><td style="padding:12px;">Yes</td><td style="padding:12px;">No</td></tr>
-</table>
+<h3>Single ON</h3>
+<p>Sentry mode activates <strong>for one parked session only</strong>. It automatically turns off when you start the car next. Perfect for when you're parked in an unfamiliar area but don't want it running all the time.</p>
 
-<h2>The Verdict</h2>
-<p>Factory sentry mode is great for most users — it's officially supported, doesn't affect warranty, and works out of the box. But for enthusiasts who want full control over their infotainment system, ADB enablement still offers:</p>
+<img src="/images/news/b8-sentry-ota/setting-single-on.jpg" alt="Single on mode" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>Battery Protection — Retained SOC</h2>
+<p>One of the smartest features is the <strong>Retained SOC</strong> setting. This is a slider that lets you set a minimum battery level (between 30% and 80%).</p>
+<p>When your battery drops to this level, sentry mode automatically shuts off to preserve range. This means you'll never come back to a dead battery because sentry mode drained it overnight.</p>
+
+<h2>What Happens When It Detects Movement</h2>
+<p>When sentry mode detects someone approaching your vehicle, it:</p>
 <ul>
-<li>Third-party app installation (dashcam, CarPlay, entertainment apps)</li>
-<li>Custom launcher and UI modifications</li>
-<li>Wireless ADB for remote management</li>
-<li>Full Android system access</li>
+<li>Starts recording video from the front, side, and rear cameras</li>
+<li>Alerts you via the Denza APP on your phone</li>
+<li>Saves the footage locally on a memory card (32GB or larger required)</li>
+</ul>
+<p>The recordings are <strong>stored only in the vehicle</strong> — they are not uploaded to the cloud. You can review and manage the clips directly on the infotainment screen.</p>
+
+<img src="/images/news/b8-sentry-ota/recording-active.jpg" alt="Sentry mode recording" style="width:100%;border-radius:12px;margin:1.5rem 0;">
+
+<h2>Important Notes</h2>
+<ul>
+<li><strong>Side mirrors unfold</strong> when sentry mode is active — this is normal, as the cameras need a clear view. Be aware of potential mirror damage in tight parking spots.</li>
+<li><strong>Insert a memory card</strong> (32GB or larger) before using sentry mode — without it, recordings won't be saved.</li>
+<li><strong>Charge regularly</strong> — if sentry mode is on all the time, Denza recommends fully charging at least once a week to maintain battery balance.</li>
+<li><strong>Ambient light affects performance</strong> — in very dark or very bright conditions, detection may be less accurate.</li>
 </ul>
 
-<h2>Already Have ADB Enablement?</h2>
-<p>If you already enabled ADB on your B8 via our service, you'll still get the factory sentry mode update. Your ADB access will remain intact — OTA updates don't affect ADB enablement status.</p>
+<img src="/images/news/b8-sentry-ota/tip-car-off.jpg" alt="Sentry tips popup" style="width:100%;border-radius:12px;margin:1.5rem 0;">
 
-<h2>Want the Full Experience?</h2>
-<p>Our ADB Enablement Service gives you factory-level access to your B8's infotainment system. Install any Android app, customize your experience, and unlock features that go beyond what factory updates offer.</p>
-<p><strong><a href="https://shop.baolab.au/products/adb-unlocking-service">Get the ADB Enablement Service →</a></strong></p>`,
+<h2>How to Access Recordings</h2>
+<p>Open the Sentry Mode app and tap the <strong>video icon</strong> on the left side of the main screen. From there you can:</p>
+<ul>
+<li>Browse recorded events by date and time</li>
+<li>Play back footage from any of the vehicle's cameras</li>
+<li>Delete clips to free up storage space</li>
+</ul>
+
+<h2>The Verdict</h2>
+<p>Factory sentry mode on the B8 is a solid addition. It's officially supported, doesn't affect warranty, and integrates seamlessly with the Denza APP. The Retained SOC feature is particularly smart — it gives you peace of mind without worrying about battery drain.</p>
+<p>For most B8 owners, this is all you need. Park, lock, and let the car watch itself.</p>`,
   },
 ];
 
