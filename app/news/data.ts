@@ -884,7 +884,27 @@ adb install app.apk</code></pre>
 
 <h2>The Verdict</h2>
 <p>Factory sentry mode on the B8 is a solid addition. It's officially supported, doesn't affect warranty, and integrates seamlessly with the Denza APP. The Retained SOC feature is particularly smart — it gives you peace of mind without worrying about battery drain.</p>
-<p>For most B8 owners, this is all you need. Park, lock, and let the car watch itself.</p>`,
+<p>For most B8 owners, this is all you need. Park, lock, and let the car watch itself.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Does sentry mode drain the battery?</h3>
+<p>Yes, sentry mode consumes electricity while active. However, the <strong>Retained SOC</strong> setting automatically shuts it off when your battery drops to your chosen threshold (30-80%). Denza also recommends fully charging at least once a week if sentry mode is on all the time.</p>
+
+<h3>Do I need a memory card for sentry mode?</h3>
+<p>Yes. You need a <strong>32GB or larger memory card</strong> inserted in the vehicle's card slot. Without it, sentry mode will still detect movement and alert you, but recordings won't be saved.</p>
+
+<h3>Will sentry mode affect my warranty?</h3>
+<p>No. Factory sentry mode is an official Denza feature delivered via OTA update. It's fully supported and does not affect your vehicle's warranty.</p>
+
+<h3>Does sentry mode work in the dark?</h3>
+<p>Sentry mode uses the vehicle's cameras to detect movement. However, Denza notes that <strong>ambient light and camera performance limitations</strong> may affect detection accuracy in very dark or very bright conditions.</p>
+
+<h3>Can I use sentry mode and ADB-enabled apps at the same time?</h3>
+<p>Yes. If you've enabled ADB on your B8, the factory sentry mode update won't affect your ADB access. Both can work independently.</p>
+
+<h3>Why do my side mirrors unfold when sentry mode is on?</h3>
+<p>The side mirrors unfold to give the cameras a clear view of the vehicle's surroundings. This is normal behavior. Be mindful of mirror damage if you park in very tight spaces.</p>`,
   },
 ];
 
