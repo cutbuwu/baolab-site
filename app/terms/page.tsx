@@ -200,7 +200,7 @@ export default function TermsPage() {
           <Section id="section-4" number="4" title="Payment & Pricing">
             <ul>
               <li>
-                <strong>Price:</strong> $99 AUD (Australian Dollars) per vehicle
+                <strong>Price:</strong> $149 AUD (Australian Dollars) per vehicle
               </li>
               <li>
                 <strong>Payment:</strong> Required before service commencement
@@ -325,7 +325,7 @@ export default function TermsPage() {
             <h3>6.4 Maximum Liability</h3>
             <p>
               Our total liability to you for any claims arising from or related to
-              this service shall not exceed the amount you paid for the service ($99
+              this service shall not exceed the amount you paid for the service ($149
               AUD).
             </p>
 
