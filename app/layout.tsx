@@ -6,14 +6,14 @@ import Footer from "./Footer";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  title: "BAOLAB — Denza Accessories & ADB Enablement Service Australia",
+  title: "BAOLAB — Denza Accessories and ADB Enablement Service Australia",
   description:
-    "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB enablement & app sideloading service for BYD/Denza vehicles.",
+    "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB enablement and app sideloading service for BYD/Denza vehicles.",
   metadataBase: new URL("https://baolab.au"),
   openGraph: {
-    title: "BAOLAB — Denza Accessories & ADB Enablement Service Australia",
+    title: "BAOLAB — Denza Accessories and ADB Enablement Service Australia",
     description:
-      "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB enablement & app sideloading service.",
+      "Australia's first dedicated Denza accessory store. Premium B5, B8, D9 upgrades. ADB enablement and app sideloading service.",
     url: "https://baolab.au",
     siteName: "BAOLAB",
     locale: "en_AU",
@@ -28,7 +28,7 @@ const jsonLd = {
   url: "https://baolab.au",
   logo: "https://baolab.au/logo.png",
   description:
-    "Australia's first dedicated Denza accessory store. Premium B5, B8, D9, Z9 GT, N7 upgrades. ADB enablement & app sideloading service for BYD/Denza vehicles.",
+    "Australia's first dedicated Denza accessory store. Premium B5, B8, D9, Z9 GT, N7 upgrades. ADB enablement and app sideloading service for BYD/Denza vehicles.",
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
