@@ -61,6 +61,28 @@ const apps = [
     icon: "⚡",
     category: "Connectivity",
   },
+  {
+    name: "YouTube Ad-Free",
+    description:
+      "Ad-free YouTube with background playback. Requires MicroG to be installed first. Log in with your Google account for full features including subscriptions and recommendations.",
+    version: "latest",
+    size: "~156MB",
+    downloadUrl:
+      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/Youtube_premiumDrMajdi.apk",
+    icon: "📺",
+    category: "Entertainment",
+  },
+  {
+    name: "MicroG",
+    description:
+      "Google Services framework replacement. Required for YouTube Ad-Free to work. Install this FIRST before installing YouTube.",
+    version: "0.2.27",
+    size: "~101MB",
+    downloadUrl:
+      "https://pub-e837942233b04df9a2c9004f84601ce7.r2.dev/microg-drmajdi-0796899009.apk",
+    icon: "🔧",
+    category: "Utilities",
+  },
 ];
 
 export default function LabPage() {
@@ -88,9 +110,9 @@ export default function LabPage() {
           >
             BAOLAB Lab
           </p>
-          <h2 style={{ fontSize: 38, fontWeight: 700, lineHeight: 1.2 }}>
+          <h1 style={{ fontSize: 38, fontWeight: 700, lineHeight: 1.2 }}>
             App Library
-          </h2>
+          </h1>
           <p
             style={{
               marginTop: 16,
