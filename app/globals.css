@@ -824,18 +824,28 @@ body::after {
   border-radius: var(--pill);
   padding: 0 8px 0 22px;
 
-  backdrop-filter: blur(34px) saturate(1.7);
-  -webkit-backdrop-filter: blur(34px) saturate(1.7);
+  /* TWO-STATE DESIGN (intentional — don't flatten these):
+       at rest  -> darker + more blur, because it sits over the BRIGHT hero
+                   video and readability wins.
+       scrolled -> retracts, tint drops, blur drops -> the glass "opens up"
+                   over the dark content below. See .header-scrolled.
+     Values below are the Safari/Firefox fallback; Chromium overrides with
+     the #nav-lens refraction in layout.tsx. */
+  backdrop-filter: blur(20px) saturate(1.8) brightness(1.02);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8) brightness(1.02);
   background: rgba(11, 12, 15, 0.48);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 
   box-shadow:
-    0 1.5px 0 rgba(255, 255, 255, 0.22) inset,
-    0 -1px 0 rgba(0, 0, 0, 0.18) inset,
-    -1px 0 3px rgba(160, 180, 255, 0.06) inset,
-    1px 0 3px rgba(255, 180, 160, 0.06) inset,
-    0 10px 40px rgba(0, 0, 0, 0.38),
-    0 2px 10px rgba(0, 0, 0, 0.24);
+    /* crisp top specular — the strongest "this is glass" cue */
+    0 2px 1px -1px rgba(255, 255, 255, 0.55) inset,
+    0 -1.5px 1px -1px rgba(255, 255, 255, 0.20) inset,
+    /* inner glow = perceived thickness */
+    0 0 22px rgba(255, 255, 255, 0.07) inset,
+    -1px 0 4px rgba(160, 180, 255, 0.10) inset,
+    1px 0 4px rgba(255, 180, 160, 0.10) inset,
+    0 10px 40px rgba(0, 0, 0, 0.42),
+    0 2px 10px rgba(0, 0, 0, 0.26);
 
   transition:
     background var(--ts),
@@ -857,36 +867,30 @@ body::after {
     rgba(255, 255, 255, 0.15) 22%,
     transparent 50%
   );
+  opacity: 0;
+  transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: -1;
 }
+.header:hover::before { opacity: 1; }
 
 /* on scroll — pill tightens + glass deepens */
 .header-scrolled {
   max-width: 920px;
   background: rgba(9, 10, 13, 0.22);
-  border-color: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(40px) saturate(1.9);
-  -webkit-backdrop-filter: blur(40px) saturate(1.9);
-
-/* Chromium-only: enable backdrop displacement.
-   Safari/Firefox keep the plain blur. */
-html.lg-displace .header {
-  backdrop-filter: blur(34px) saturate(1.7);
-  -webkit-backdrop-filter: blur(34px) saturate(1.7);
-}
-
-html.lg-displace .header-scrolled {
-  backdrop-filter: blur(40px) saturate(1.9);
-  -webkit-backdrop-filter: blur(40px) saturate(1.9);
-}
+  border-color: rgba(255, 255, 255, 0.24);
+  /* blur drops hard here so the lens refraction is actually visible.
+     Non-Chromium keeps a little more blur so the bar doesn't vanish. */
+  backdrop-filter: blur(10px) saturate(2.0) brightness(1.06);
+  -webkit-backdrop-filter: blur(10px) saturate(2.0) brightness(1.06);
   box-shadow:
-    0 1.5px 0 rgba(255, 255, 255, 0.28) inset,
-    0 -1px 0 rgba(0, 0, 0, 0.20) inset,
-    -1px 0 3px rgba(160, 180, 255, 0.08) inset,
-    1px 0 3px rgba(255, 180, 160, 0.08) inset,
-    0 12px 44px rgba(0, 0, 0, 0.44),
-    0 2px 12px rgba(0, 0, 0, 0.28);
+    0 2px 1px -1px rgba(255, 255, 255, 0.60) inset,
+    0 -1.5px 1px -1px rgba(255, 255, 255, 0.22) inset,
+    0 0 24px rgba(255, 255, 255, 0.08) inset,
+    -1px 0 4px rgba(160, 180, 255, 0.12) inset,
+    1px 0 4px rgba(255, 180, 160, 0.12) inset,
+    0 12px 44px rgba(0, 0, 0, 0.48),
+    0 2px 12px rgba(0, 0, 0, 0.30);
 }
 
 .nav {
@@ -909,8 +913,8 @@ html.lg-displace .header-scrolled {
 .main-nav { display: flex; align-items: center; }
 .main-nav a {
   margin-left: 26px; text-decoration: none;
-  color: rgba(255,255,255,0.80); font-size: 13px;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.45);
+  color: rgba(255,255,255,0.94); font-size: 13px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.80), 0 0 14px rgba(0,0,0,0.55);
   position: relative; z-index: 1;
   transition: color var(--tb), transform 0.25s cubic-bezier(0.22,1,0.36,1);
 }

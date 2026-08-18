@@ -49,7 +49,7 @@ function MagBtn({
    MARQUEE STRIP
 ───────────────────────────────────────────── */
 const MARQUEE_ITEMS = [
-  "B5", "B8", "D9", "Z9 GT", "N7",
+  "B5", "B8", "D9", "Z9 GT", "?", 
   "OEM-FIT", "AUSTRALIA", "BAOLAB",
   "PREMIUM EV", "OVERLAND READY", "FREE SHIPPING",
 ];
@@ -83,13 +83,13 @@ export default function Home() {
     },
     {
       key: "b8",   note: "Full-Size Adventure SUV",
-      image: "/images/vehicles/B8.png",
+      image: "/images/vehicles/b8.png",
       logo:  "/images/vehicle-logos/b8.png",
       shop:  "https://shop.baolab.au/collections/b8",
     },
     {
       key: "d9",   note: "Luxury Electric MPV",
-      image: "/images/vehicles/D9.png",
+      image: "/images/vehicles/d9.png",
       logo:  "/images/vehicle-logos/d9.png",
       shop:  "https://shop.baolab.au/collections/d9",
     },
@@ -100,10 +100,10 @@ export default function Home() {
       shop:  "https://shop.baolab.au/collections/z9gt",
     },
     {
-      key: "n7",   note: "Premium Electric SUV",
-      image: "/images/vehicles/n7.png",
-      logo:  "/images/vehicle-logos/n7.png",
-      shop:  "https://shop.baolab.au/collections/n7",
+      key: "mystery",   note: "Coming Soon",
+      image: "/images/vehicles/mystery.png",
+      logo:  "/images/vehicle-logos/mystery.png",
+      shop:  "#",
     },
   ], []);
 
