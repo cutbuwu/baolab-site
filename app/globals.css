@@ -562,17 +562,15 @@ body::after {
     0 20px 48px rgba(0,0,0,0.30);
 }
 .vehicle-card.active {
-  transform: translateY(-4px);
-  background: rgba(255,255,255,0.065);
-  border-color: rgba(255,255,255,0.20);
+  /* subtle selected indicator — no spotlight glow */
+  border-color: rgba(255,255,255,0.12);
 }
 
 /* dim siblings on hover */
 .vehicle-grid:hover .vehicle-card {
   opacity: 0.45; filter: saturate(0.6);
 }
-.vehicle-grid:hover .vehicle-card:hover,
-.vehicle-grid:hover .vehicle-card.active {
+.vehicle-grid:hover .vehicle-card:hover {
   opacity: 1; filter: none;
 }
 
