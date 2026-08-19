@@ -630,7 +630,7 @@ body::after {
 }
 
 .vehicle-logo {
-  position: absolute; top: -12px; left: 50%;
+  position: absolute; top: 8px; left: 50%;
   transform: translateX(-50%) translate(var(--mx), calc(var(--my)*0.6)) scale(1);
   z-index: 3;
   transition: transform 0.44s cubic-bezier(0.22,1,0.36,1), opacity var(--tb);
